@@ -1,0 +1,250 @@
+@use '../abstracts/' as *;
+.footer-top {
+    .footer-inner {
+        margin-bottom: -6%;
+        background: rgba(0, 176, 252, 0.95);
+        @include flex(center,space-between);
+        padding: 45px 70px;
+        position: relative;
+        .overlay {
+            @include overlay;
+            background: url('./../../assets/images/backgroup/bg-footer.jpg') center center no-repeat;
+            background-size: cover;
+            z-index: -2;
+        }
+        h3 {
+            color: $white;
+            margin-bottom: 0;
+            text-transform: capitalize;
+        }
+        .tf-button {
+            z-index: 9;
+            padding: 0px 41px;
+            &:hover {
+                background: $white;
+                span {
+                    color: $color-hover;
+                }
+            }
+        }
+    }
+}
+
+.footer-main {
+    position: relative;
+    padding: 160px 0 30px;
+    .bg-overlay2 {
+        background: $color-main1;
+        z-index: -2;
+        @include overlay;
+    }
+    .bg-overlay {
+        @include overlay;
+        background: url('./../../assets/images/backgroup/bg-footer.png') center center no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    .widget-logo {
+        padding-right: 60px;
+        width: 30%;
+        .footer__logo {
+            margin-bottom: 21px;
+        }
+        .desc {
+            margin-bottom: 28px;
+            color: #D1D2D3;
+            text-transform: capitalize;
+        }
+    }
+    .footer-bottom {
+        border-top: 1px solid rgba(232, 232, 233, 0.1);
+        margin-top: 90px;
+        padding: 22px 0 0;
+        .wrap-fx {
+            @include flex(center,space-between);
+        }
+        .Copyright {
+            font-family: $font-main;
+            color: $white;
+            text-transform: capitalize;
+            a {
+                color: $color-hover;
+                margin-left: 5px;
+            }
+        }
+        .list {
+            position: relative;
+            @include flex2;
+            li {
+                position: relative;
+                padding-right: 18px;
+                margin-right: 17px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 1px;
+                    height: 13px;
+                    background: #fff;
+                    right: 0;
+                    top: 8px;
+                }
+                &:last-child {
+                    padding-right: 0;
+                    margin-right: 0;
+                    &::after {
+                        display: none;
+                    }
+                }
+                a {
+                    color: $white;
+                    font-family: $font-main;
+                    &:hover {
+                        color: $color-hover;
+                    }
+                }
+            }
+            &::after {
+                position: absolute;
+                width: 234px;
+                left: 0;
+                bottom: 4px;
+                height: 2px;
+                background: $white;
+                content: "";
+                z-index: -1;
+            }
+        }
+    }
+}
+
+#footer {
+    position: relative;
+    .widget {
+        &.widget-service {
+            width: 20%;
+            padding-left: 40px;
+        }
+        &.widget-infomation {
+            padding-left: 17px;
+            width: 22%;
+            .infomation {
+                display: block;
+                margin-top: 29px;
+                li {
+                    text-transform: lowercase;
+                    @include flex(center,flex-start);
+                    position: relative;
+                    padding-left: 35px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: $font-main;
+                    font-weight: 500;
+                    color: $white;
+                    margin-bottom: 15px;
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        &::before {
+                            position: absolute;
+                            left: 5px;
+                            top: 0px;
+                            font-size: 20px;
+                            color: $color-hover;
+                            font-family: 'monal';
+                        }
+                    }
+                    &:nth-child(1) {
+                        &::before {
+                            content: "\e907";
+                        }
+                    }
+                    &:nth-child(2) {
+                        &::before {
+                            left: 5px;
+                            top: 0px;
+                            content: "\e906";
+                            font-size: 20px;
+                        }
+                    }
+                    &:nth-child(3) {
+                        &::before {
+                            content: "\e905";
+                        }
+                    }
+                    &.style {
+                        ul {
+                            li {
+                                margin-bottom: 5px;
+                                padding-left: 0;
+                                &::before {
+                                    display: none;
+                                }
+                                &:nth-child(2) {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.widget-subscribe {
+            width: 28%;
+            padding-left: 52px;
+            .widget-title {
+                margin-bottom: 27px;
+            }
+        }
+    }
+    .widget-title {
+        color: $white;
+        margin-bottom: 20px;
+    }
+}
+
+.widget-subscribe {
+    p {
+        color: #D1D2D3;
+        font-family: $font-main2;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+    form {
+        border-radius: 2px;
+        overflow: hidden;
+        position: relative;
+        input[type=text] {
+            padding: 13px 15px 13px 18px;
+            background: $white;
+            color: #76777A;
+            font-family: $font-main2;
+            font-size: 14px;
+            line-height: 24px;
+            &::placeholder {
+                color: #76777A;
+                font-family: $font-main2;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        button {
+            @include transition3;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            border: none;
+            i {
+                color: $white;
+            }
+            background: $color-hover;
+            &:hover {
+                background: $color-6;
+            }
+        }
+    }
+}

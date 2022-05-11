@@ -1,0 +1,105 @@
+@use '../abstracts/' as *;
+
+.breadcrumbs {
+    text-align: center;
+    .heading {
+        text-transform: capitalize;
+        color: $white;
+        margin-bottom: 20px;
+    }
+    ul {
+        @include flex(center,center);
+        li {
+            font-family: $font-main;
+            position: relative;
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 1.55;
+            color: $color-5;
+            font-weight: 700;
+            &:last-child {
+                padding-left: 15px;
+                margin-left: 10px;
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    content: "/";
+                    color: $white;
+                }
+            }
+            a {
+                color: $white;
+                &:hover {
+                    color: $color-5;
+                }
+            }
+        }
+    }
+}
+
+.page-title {
+    position: relative;
+    padding: 100px 0 107px;
+    background: rgba(1, 12, 42, 0.85);
+    .overlay {
+        @include overlay;
+        background: url('./../../assets/images/backgroup/bg-page-title.jpg') center center no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.tf-post {
+    article {
+        width: 66%;
+        padding-right: 2px;
+    }
+    #sidebar {
+        width: 34%;
+        padding-left: 48px
+    }
+    #comments {
+        article {
+            width: 100%;
+        }  
+    }
+}
+
+.themesflat-pagination {
+    ul {
+        @include flex2;
+        li {
+            margin-right: 10px;
+            a {
+                @include flex(center,center);
+                width: 50px;
+                height: 50px;
+                background: transparent;
+                border: 1px solid $color-hover;
+                border-radius: 50%;
+                font-size: 16px;
+                line-height: 24px;
+                font-family: $font-main;
+                font-weight: bold;
+                color: $color-hover;
+                &:hover,
+                &.active {
+                    background: $color-hover;
+                    color: $white;
+                }
+            }
+            &.st {
+                font-size: 16px;
+                line-height: 24px;
+                font-family: $font-main;
+                font-weight: bold;
+                color: #000000;
+                padding-top: 13px;
+                margin: 0 9px 0 18px;
+            }
+            &:last-child {
+                margin-left: 20px;
+            }
+        }
+    }
+}

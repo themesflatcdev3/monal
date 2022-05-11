@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+.wrap-fx {
+    @include flex2;
+}
+.m-t51 {
+    margin-top: 51px;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}

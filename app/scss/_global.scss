@@ -1,0 +1,289 @@
+@use './abstracts/' as *;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    margin-right: 0 !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main2;
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 400;
+    color: $txt-color;
+    background-color: $white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-main;
+    font-weight: 700;
+    color: $color-main1;
+}
+h1 {
+	font-size: 72px;
+    line-height: 1.18;
+}
+h2 {
+	font-size: 48px;
+    line-height: 1.25;
+}
+
+h3 {
+	font-size: 30px;
+    line-height: 1.333;
+}
+
+h4 {
+	font-size: 22px;
+    line-height: 1.454;
+}
+
+h5 {
+	font-size: 20px;
+    line-height: 1.5;
+}
+
+h6 {
+	font-size: 16px;
+    line-height: 1.75;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.z-index {
+    z-index: 999;
+}
+
+#wrapper {
+    width: $w100;
+    height: $w100;
+    overflow: hidden;
+    position: relative;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+ul, li {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    transition: all .3s;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+        color: $color-hover;
+        transition: all .3s;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+.container-fluid,
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+// form //
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"], 
+input[type="tel"], 
+input[type="color"] {
+    border: 1px solid rgba(255,255,255,0.2);
+    font-family: $font-main2;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 4px;
+    padding: 13px 15px 13px 27px;
+    height: 60px;
+    width: 100%;
+    background: #F6F6F6;
+    color: $color-main1;
+}
+
+textarea::placeholder,
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="datetime"]::placeholder,
+input[type="datetime-local"]::placeholder,
+input[type="date"]::placeholder,
+input[type="month"]::placeholder,
+input[type="time"]::placeholder,
+input[type="week"]::placeholder,
+input[type="number"]::placeholder,
+input[type="email"]::placeholder,
+input[type="url"]::placeholder,
+input[type="search"]::placeholder, 
+input[type="tel"]::placeholder, 
+input[type="color"]::placeholder {
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-main1;
+}
+
+
+
+/* Scroll Top
+-------------------------------------------------------------- */
+#scroll-top {
+    position             : fixed;
+    display              : block;
+    width                : 50px;
+    height               : 50px;
+    line-height          : 50px;
+    border-radius        : 4px;
+    text-align           : center;
+    z-index              : 999;
+    right                : 14px;
+    bottom               : 23px;
+    border-radius        : 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius   : 50%;
+    -ms-border-radius    : 50%;
+    -o-border-radius     : 50%;
+    opacity              : 0;
+    visibility           : hidden;
+    cursor               : pointer;
+    overflow             : hidden;
+}
+
+#scroll-top.show {
+    right     : 15px;
+    opacity   : 1;
+    visibility: visible;
+}
+
+#scroll-top:before,
+#scroll-top:after {
+    content           : "";
+    position          : absolute;
+    top               : 0;
+    left              : 0;
+    width             : 100%;
+    height            : 100%;
+    @include transition3;
+}
+
+#scroll-top:before {
+    z-index         : -1;
+    background: $color-hover;
+}
+
+
+#scroll-top:after {
+    content    : "\f077";
+    font-family: "Font Awesome 5 Pro";
+    font-size  : 18px;
+    color      : #ffffff;
+    font-weight: 600;
+}
+
+#scroll-top:hover {
+    transform: translateY(-7%);
+}
+
+
+/* PreLoad
+-------------------------------------------------------------- */
+
+// .preload {
+//     overflow: hidden;
+// } 
+
+// .preload-container {
+//     position  : relative;
+//     width     : 100%;
+//     height    : 100%;
+//     background: #fff;
+//     position  : fixed;
+//     top       : 0;
+//     bottom    : 0;
+//     right     : 0;
+//     left      : 0;
+//     z-index   : 99999999999;
+//     display   : block;
+//     overflow: hidden;
+// }
+
+// .preload-logo {
+// 	position           : absolute;
+// 	top                : 50%;
+// 	left               : 50%;
+// 	width              : 50px;
+// 	height             : 50px;
+// 	z-index            : 100;
+// 	margin             : -30px 0 0 -30px;
+// 	background: #ffffff;
+// 	border-radius: 50%;
+// 	background-image   : url('./../../assets/images/logo/preload.png');
+// 	background-repeat  : no-repeat;
+// 	background-position: center center;
+// 	animation: 
+// 	preload 1s linear infinite alternate;
+// 	-webkit-animation-name:bounceIn; 
+// 	animation-name:bounceIn; 
+// }
+
+// @keyframes spin {
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// } 
+
+// .tf-section {  
+//     position: relative;
+//     padding: 80px 0;
+//     margin-bottom: 0 !important;
+// }
+

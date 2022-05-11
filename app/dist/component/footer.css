@@ -1,0 +1,253 @@
+.footer-top .footer-inner {
+  margin-bottom: -6%;
+  background: rgba(0, 176, 252, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 70px;
+  position: relative;
+}
+.footer-top .footer-inner .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./../../assets/images/backgroup/bg-footer.jpg") center center no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+.footer-top .footer-inner h3 {
+  color: #fff;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.footer-top .footer-inner .tf-button {
+  z-index: 9;
+  padding: 0px 41px;
+}
+.footer-top .footer-inner .tf-button:hover {
+  background: #fff;
+}
+.footer-top .footer-inner .tf-button:hover span {
+  color: #00B0FC;
+}
+
+.footer-main {
+  position: relative;
+  padding: 160px 0 30px;
+}
+.footer-main .bg-overlay2 {
+  background: #010C2A;
+  z-index: -2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.footer-main .bg-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./../../assets/images/backgroup/bg-footer.png") center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.footer-main .widget-logo {
+  padding-right: 60px;
+  width: 30%;
+}
+.footer-main .widget-logo .footer__logo {
+  margin-bottom: 21px;
+}
+.footer-main .widget-logo .desc {
+  margin-bottom: 28px;
+  color: #D1D2D3;
+  text-transform: capitalize;
+}
+.footer-main .footer-bottom {
+  border-top: 1px solid rgba(232, 232, 233, 0.1);
+  margin-top: 90px;
+  padding: 22px 0 0;
+}
+.footer-main .footer-bottom .wrap-fx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-main .footer-bottom .Copyright {
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+.footer-main .footer-bottom .Copyright a {
+  color: #00B0FC;
+  margin-left: 5px;
+}
+.footer-main .footer-bottom .list {
+  position: relative;
+  display: flex;
+}
+.footer-main .footer-bottom .list li {
+  position: relative;
+  padding-right: 18px;
+  margin-right: 17px;
+}
+.footer-main .footer-bottom .list li::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 13px;
+  background: #fff;
+  right: 0;
+  top: 8px;
+}
+.footer-main .footer-bottom .list li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+.footer-main .footer-bottom .list li:last-child::after {
+  display: none;
+}
+.footer-main .footer-bottom .list li a {
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+}
+.footer-main .footer-bottom .list li a:hover {
+  color: #00B0FC;
+}
+.footer-main .footer-bottom .list::after {
+  position: absolute;
+  width: 234px;
+  left: 0;
+  bottom: 4px;
+  height: 2px;
+  background: #fff;
+  content: "";
+  z-index: -1;
+}
+
+#footer {
+  position: relative;
+}
+#footer .widget.widget-service {
+  width: 20%;
+  padding-left: 40px;
+}
+#footer .widget.widget-infomation {
+  padding-left: 17px;
+  width: 22%;
+}
+#footer .widget.widget-infomation .infomation {
+  display: block;
+  margin-top: 29px;
+}
+#footer .widget.widget-infomation .infomation li {
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 35px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 15px;
+}
+#footer .widget.widget-infomation .infomation li:nth-child(1)::before, #footer .widget.widget-infomation .infomation li:nth-child(2)::before, #footer .widget.widget-infomation .infomation li:nth-child(3)::before {
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  font-size: 20px;
+  color: #00B0FC;
+  font-family: "monal";
+}
+#footer .widget.widget-infomation .infomation li:nth-child(1)::before {
+  content: "\e907";
+}
+#footer .widget.widget-infomation .infomation li:nth-child(2)::before {
+  left: 5px;
+  top: 0px;
+  content: "\e906";
+  font-size: 20px;
+}
+#footer .widget.widget-infomation .infomation li:nth-child(3)::before {
+  content: "\e905";
+}
+#footer .widget.widget-infomation .infomation li.style ul li {
+  margin-bottom: 5px;
+  padding-left: 0;
+}
+#footer .widget.widget-infomation .infomation li.style ul li::before {
+  display: none;
+}
+#footer .widget.widget-infomation .infomation li.style ul li:nth-child(2) {
+  margin-bottom: 0;
+}
+#footer .widget.widget-subscribe {
+  width: 28%;
+  padding-left: 52px;
+}
+#footer .widget.widget-subscribe .widget-title {
+  margin-bottom: 27px;
+}
+#footer .widget-title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.widget-subscribe p {
+  color: #D1D2D3;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.widget-subscribe form {
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.widget-subscribe form input[type=text] {
+  padding: 13px 15px 13px 18px;
+  background: #fff;
+  color: #76777A;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.widget-subscribe form input[type=text]::placeholder {
+  color: #76777A;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.widget-subscribe form button {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: #00B0FC;
+}
+.widget-subscribe form button i {
+  color: #fff;
+}
+.widget-subscribe form button:hover {
+  background: #7141B1;
+}
+
+/*# sourceMappingURL=footer.css.map */

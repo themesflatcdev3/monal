@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+
+.tf-button {
+    @include transition3;
+    position: relative;
+    display: inline-block;
+    background: $color-6;
+    color: $white;
+    font-weight: $font-w7;
+    padding: 0px 43px;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    line-height: 60px;
+    span {
+        @include transition3;
+        font-family: $font-main;
+        font-size: 16px;
+        line-height: 1.31875;
+        color: $white;
+        text-transform: uppercase;
+    }
+    &:hover {
+        background: $color-hover;
+        span {
+            color: $white;
+        }
+    }
+}

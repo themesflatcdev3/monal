@@ -1,0 +1,474 @@
+.post {
+  position: relative;
+  margin-bottom: 30px;
+}
+.post .image {
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.post .image .overlay {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 12, 42, 0.8);
+}
+.post .image .popup-youtube {
+  animation: move3 5s infinite linear;
+  border: 1px solid #00B0FC;
+  padding: 15px;
+  position: absolute;
+  top: 26%;
+  right: 10%;
+  z-index: 2;
+  border-radius: 4px;
+}
+.post .image .popup-youtube .play {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00B0FC;
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+.post .image .popup-youtube .play i {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 30px;
+  color: #fff;
+}
+.post .image .popup-youtube:hover {
+  border-color: #fff;
+}
+.post .image .popup-youtube:hover .play {
+  background: #fff;
+}
+.post .image .popup-youtube:hover .play i {
+  color: #00B0FC;
+}
+.post .content {
+  box-shadow: 0 10px 70px 0 rgba(0, 0, 0, 0.07);
+  position: relative;
+  text-align: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #fff;
+  margin-top: -20.8%;
+  padding: 20px 52px 50px;
+  border-radius: 5px;
+  z-index: 2;
+}
+.post .content .meta-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+  margin-top: -29px;
+}
+.post .content .meta-post li {
+  position: relative;
+  padding-right: 25px;
+  text-transform: capitalize;
+  margin: 0 5px 0 18px;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #494A4D;
+  font-weight: 500;
+}
+.post .content .meta-post li:nth-child(3), .post .content .meta-post li:nth-child(2) {
+  color: #010C2A;
+}
+.post .content .meta-post li a {
+  padding-left: 30px;
+  position: relative;
+}
+.post .content .meta-post li a::before {
+  position: absolute;
+  font-family: "monal";
+  top: 0;
+  left: 0;
+  color: #00B0FC;
+  font-size: 20px;
+}
+.post .content .meta-post li::after {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  content: "";
+  width: 1px;
+  height: 20px;
+  background: #C4C4C4;
+  transform: rotate(15deg);
+}
+.post .content .meta-post li:nth-child(1) a::before {
+  content: "\e904";
+  font-size: 18px;
+}
+.post .content .meta-post li:nth-child(2) a::before {
+  content: "\e903";
+}
+.post .content .meta-post li:nth-child(3) a::before {
+  content: "\e902";
+}
+.post .content .meta-post li:nth-child(3)::after {
+  display: none;
+}
+.post .content .date {
+  position: relative;
+  margin-left: -72px;
+  background-color: #7141B1;
+  padding: 7px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+}
+.post .content .date::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  border-left: 20px solid transparent;
+  border-bottom: 11px solid #7141B1;
+}
+.post .content .title {
+  margin-bottom: 20px;
+}
+.post .content p {
+  text-transform: capitalize;
+  margin-bottom: 33px;
+}
+.post .content .read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 40px;
+  font-weight: bold;
+  border-radius: 4px;
+  background: #00B0FC;
+  height: 60px;
+  max-width: 190px;
+}
+.post .content .read-more:hover {
+  background: #7141B1;
+  color: #fff;
+}
+.post.style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post.style .content {
+  margin-top: 0;
+  position: absolute;
+  padding: 20px 52px 40px;
+}
+.post.style .content .title {
+  padding-right: 40px;
+  margin-bottom: 28px;
+}
+
+.blogdetail .post {
+  box-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.07);
+  background: #fff;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+}
+.blogdetail .post .content {
+  margin-top: -15.5%;
+  padding: 20px 52px 39px;
+}
+.blogdetail .post .content .title {
+  margin-bottom: 0;
+}
+.blogdetail .post .image.animated-effect.tfanimated {
+  opacity: 1 !important;
+  transform: none !important;
+}
+.blogdetail .post .wrap-inner {
+  margin-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.blogdetail .post .wrap-inner .txt {
+  text-transform: capitalize;
+  margin-bottom: 26px;
+}
+.blogdetail .post .wrap-inner .heading {
+  margin-top: 41px;
+  margin-bottom: 29px;
+  text-transform: capitalize;
+}
+.blogdetail .post .post-inner {
+  display: flex;
+  margin-bottom: 37px;
+}
+.blogdetail .post .post-inner .img img {
+  min-width: 270px;
+  min-height: 170px;
+}
+.blogdetail .post .post-inner .desc {
+  color: #494A4D;
+  margin-left: 40px;
+  text-transform: capitalize;
+}
+.blogdetail .post .testimonior {
+  margin-bottom: 40px;
+  display: flex;
+  background: #F6F6F6;
+  padding: 32px 40px 30px;
+}
+.blogdetail .post .testimonior .img {
+  margin-right: 30px;
+}
+.blogdetail .post .testimonior .img img {
+  min-width: 70px;
+  min-height: 70px;
+}
+.blogdetail .post .testimonior .desc {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #010C2A;
+  text-transform: capitalize;
+  margin-bottom: 21px;
+}
+.blogdetail .post .testimonior .name {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 40px;
+  position: relative;
+  color: #010C2A;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.blogdetail .post .testimonior .name::before {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 30px;
+  height: 2px;
+  content: "";
+  background: #00B0FC;
+}
+.blogdetail .post .author-post {
+  margin-bottom: 83px;
+  background: #F6F6F6;
+  padding: 38px 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.blogdetail .post .author-post .img {
+  margin-right: 40px;
+}
+.blogdetail .post .author-post .img img {
+  border-radius: 50%;
+  min-width: 170px;
+  min-height: 170px;
+}
+.blogdetail .post .author-post .content-inner .name {
+  margin-bottom: 18px;
+}
+.blogdetail .post .author-post .content-inner p {
+  margin-bottom: 26px;
+  text-transform: capitalize;
+}
+.blogdetail .post .author-post .content-inner .social li {
+  margin-right: 21px;
+  margin-left: 5px;
+}
+.blogdetail .post .author-post .content-inner .social li a {
+  background: none;
+  width: auto;
+  height: auto;
+  color: #010C2A;
+  font-size: 16px;
+}
+.blogdetail .post .author-post .content-inner .social li a:hover {
+  color: #00B0FC;
+}
+
+.comment-post {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.comment-post .title-comment {
+  margin-bottom: 29px;
+}
+
+#comments .comment-list {
+  overflow: hidden;
+  padding-left: 0;
+  margin-bottom: 40px;
+}
+#comments .comment-list li.comment {
+  padding: 0px;
+}
+#comments .comment-list article {
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+#comments .comment-list article .gravatar {
+  margin-right: 30px;
+}
+#comments .comment-list article .gravatar img {
+  border-radius: 50%;
+  min-width: 100px;
+  min-height: 100px;
+}
+#comments .comment-list article .comment-content {
+  border-bottom: 1px solid #E8E8E9;
+  padding-bottom: 17px;
+}
+#comments .comment-list article .comment-content .wrap-fx {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#comments .comment-list article .comment-content .wrap-fx p {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #76777A;
+  text-transform: capitalize;
+}
+#comments .comment-list article .comment-content .wrap-fx .comment-author {
+  margin-bottom: 0;
+  margin-right: 30px;
+  text-transform: capitalize;
+}
+#comments .comment-list article .comment-content .comment-text {
+  text-transform: capitalize;
+  margin-bottom: 19px;
+}
+#comments .comment-list article .comment-content .comment-text .text {
+  margin-bottom: 0;
+}
+#comments .comment-list article .comment-content .reply a {
+  position: relative;
+  padding-left: 34px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #010C2A;
+  font-weight: 500;
+  font-style: italic;
+}
+#comments .comment-list article .comment-content .reply a:hover {
+  color: #00B0FC;
+}
+#comments .comment-list article .comment-content .reply a::before {
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  font-family: "monal";
+  content: "\e909";
+  font-size: 20px;
+  color: #00B0FC;
+}
+#comments .comment-list article.inner {
+  padding-left: 100px;
+}
+#comments.widget .widget-title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #020e28;
+  margin-left: 2px;
+  margin-bottom: 37px;
+}
+#comments .form-comment .heading {
+  margin-bottom: 30px;
+}
+
+.comment-form {
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment-form fieldset {
+  width: calc(50% - 30px);
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.comment-form fieldset.message {
+  width: 100%;
+  margin-bottom: 23px;
+}
+.comment-form fieldset.message textarea {
+  height: 150px;
+}
+.comment-form textarea,
+.comment-form input[type=text],
+.comment-form input[type=email] {
+  color: #494A4D;
+  font-family: "Inter", sans-serif;
+}
+.comment-form textarea::placeholder,
+.comment-form input[type=text]::placeholder,
+.comment-form input[type=email]::placeholder {
+  color: #494A4D;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+}
+.comment-form input[type=text],
+.comment-form input[type=email] {
+  padding: 13px 15px 13px 29px;
+}
+.comment-form textarea {
+  padding: 16px 15px 13px 29px;
+}
+.comment-form .btn-submit {
+  margin-left: 30px;
+}
+.comment-form .btn-submit button {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 60px;
+  padding: 0 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  background: #00B0FC;
+  border-radius: 4px;
+}
+.comment-form .btn-submit button:hover {
+  background: #7141B1;
+}
+
+/*# sourceMappingURL=post.css.map */
