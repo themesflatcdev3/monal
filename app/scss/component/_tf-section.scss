@@ -3,3 +3,24 @@
 .tf-section {
     padding: 120px 0;
 }
+
+.main {
+    .header__logo {
+        background: $bg-gradient;
+        background-size: 200% 100%;
+        background-position: 0% 0%;
+    }
+    .tf-button {
+        background: $bg-gradient;
+        border-radius: 30px;
+        background-size: 200% 100%;
+        background-position: 0% 0%;
+        &:hover {
+            background-position: 100% 0%; 
+        }
+    }
+    .page-title {
+        background: url('./../../assets/images/backgroup/bgslider1.jpg') center center no-repeat;
+        background-size: cover;
+    }
+}

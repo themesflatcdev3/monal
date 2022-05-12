@@ -410,6 +410,12 @@
   margin-right: 20px;
   border-radius: 5px;
   overflow: hidden;
+  min-width: 80px;
+  min-height: 80px;
+}
+.wrap-box-details .previous .img img {
+  min-width: 80px;
+  min-height: 80px;
 }
 .wrap-box-details .previous .desc .job {
   font-size: 18px;
@@ -452,6 +458,8 @@
   margin-left: 20px;
   border-radius: 5px;
   overflow: hidden;
+  min-width: 80px;
+  min-height: 80px;
 }
 .wrap-box-details .next .desc .job {
   font-size: 18px;

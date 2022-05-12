@@ -1,5 +1,98 @@
 @use '../abstracts/' as *;
 
+/* animation slider */
+.box-slider .content-box .btn-slider,
+.box-slider .content-box .desc,
+.box-slider .content-box .title,
+.box-slider .content-box .sub-title {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.box-slider .image {
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+.swiper-slide-active .box-slider .image {
+    opacity           : 1;
+    visibility        : visible;
+    -webkit-transition: transform 500ms ease, opacity 500ms ease;
+    -moz-transition   : transform 500ms ease, opacity 500ms ease;
+    -ms-transition    : transform 500ms ease, opacity 500ms ease;
+    -o-transition     : transform 500ms ease, opacity 500ms ease;
+    transition        : transform 500ms ease, opacity 500ms ease;
+    transition-delay  : 500ms;
+}
+.swiper-slide-active .box-slider .content-box .btn-slider,
+.swiper-slide-active .box-slider .content-box .desc,
+.swiper-slide-active .box-slider .content-box .title,
+.swiper-slide-active .box-slider .content-box .sub-title {
+    opacity           : 1;
+    visibility        : visible;
+    -webkit-transition: transform 800ms ease, opacity 800ms ease;
+    -moz-transition   : transform 800ms ease, opacity 800ms ease;
+    -ms-transition    : transform 800ms ease, opacity 800ms ease;
+    -o-transition     : transform 800ms ease, opacity 800ms ease;
+    transition        : transform 800ms ease, opacity 800ms ease;
+    transition-delay  : 1000ms;
+}
+.swiper-slide-active .box-slider .content-box .btn-slider,
+.swiper-slide-active .box-slider .content-box .desc,
+.swiper-slide-active .box-slider .content-box .title,
+.swiper-slide-active .box-slider .content-box .sub-title {
+    transform: translateY(0px) !important;
+}
+
+.swiper-slide-active .box-slider .image {
+    transform: translateX(0px) !important;
+}
+.swiper-slide-active .box-slider .image,
+.swiper-slide-active .box-slider .content-box .sub-title {
+    transition-delay: 400ms;
+}
+
+.swiper-slide-active .box-slider .content-box .title {
+    transition-delay: 500ms;
+}
+
+.swiper-slide-active .box-slider .content-box .desc {
+    transition-delay: 600ms;
+}
+
+.swiper-slide-active .box-slider .content-box .btn-slider {
+    transition-delay: 700ms;
+}
+
+.title-section {
+    margin-bottom: 60px;
+    text-align: center;
+    .sub-title {
+        padding-left: 70px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        color: #9000FF;
+        @include font-16;
+        font-family: $font-main;
+        font-weight: 500;
+        text-transform: capitalize;
+        &::before {
+            position: absolute;
+            height: 4px;
+            width: 60px;
+            content: "";
+            left: 0;
+            top: 11px;
+            transform: rotate(-180deg);
+            background: linear-gradient(246.06deg, #CF00FE 15.37%, rgba(255, 255, 255, 0) 87.05%);
+        }
+    }
+    &.style2 {
+        text-align: left;
+    }
+}
+
 .breadcrumbs {
     text-align: center;
     .heading {
@@ -99,6 +192,136 @@
             }
             &:last-child {
                 margin-left: 20px;
+            }
+        }
+    }
+}
+
+.box-slider {
+    @include flex2;
+    .image,
+    .content-box {
+        width: 50%;
+    }
+    .image {
+        text-align: right;
+        .img {
+            animation: move3 3s infinite linear;
+            margin-right: -220px;
+            position: relative;
+            border-radius: 5px;
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: 10px solid $white;
+                content: "";
+                width: 100%;
+                height: 100%;
+                box-shadow: $box-shadow3;
+                border-radius: 5px;
+            }
+        }
+    }
+    .content-box {
+        padding-top: 100px;
+        padding-right: 30px;
+        .sub-title {
+            color: $color-7;
+            text-transform: capitalize;
+            font-family: $font-main;
+            font-weight: 500;
+            @include font-16;
+            padding-left: 65px;
+            position: relative;
+            &::before {
+                position: absolute;
+                height: 4px;
+                width: 60px;
+                content: "";
+                left: 0;
+                top: 12px;
+                transform: rotate(-180deg);
+                background: linear-gradient(246.06deg, #CF00FE 15.37%, rgba(255, 255, 255, 0) 87.05%);
+                box-shadow: 0 -3px 4px 0 rgb(0 0 0 / 0.25);
+            }
+        }
+        .title {
+            text-transform: capitalize;
+        }
+        .desc {
+            font-size: 20px;
+            line-height: 32px;
+            text-transform: capitalize;
+            padding-right: 100px;
+        }
+    }
+}
+
+.img-about {
+    position: relative;
+    .experience-box {
+        max-width: 290px;
+        text-align: left;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: $color-main1;
+        border-radius: 5px;
+        padding: 30px 30px 30px;
+        .number-content {
+            font-size: 70px;
+            line-height: 80px;
+            font-weight: bold;
+            font-family: $font-main;
+            color: $white;
+        }
+        p,
+        h5 {
+            color: $white;
+        }
+        p {
+            margin-bottom: 0;
+            position: relative;
+            padding-left: 15px;
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background: #C4C4C4;
+            }
+        }
+    }
+}
+
+.content-about {
+    .wrap-icon-box {
+        border-bottom: 1px solid #E8E8E9;
+        padding-bottom: 50px;
+        margin-bottom: 40px;
+    }
+    .wrap {
+        @include flex(center,space-between);
+        .img-box {
+            @include flex(center,space-between);
+            .img {
+                margin-right: 20px;
+            }
+            .name {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 600;
+                font-family: $font-main;
+                color: #1B1D21;
+                text-transform: capitalize;
+            }
+            p {
+                margin-bottom: 0;
+                color: #005DE0;
+                @include font-14;
             }
         }
     }

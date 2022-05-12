@@ -381,6 +381,12 @@
             margin-right: 20px;
             border-radius: 5px;
             overflow: hidden;
+            min-width: 80px;
+            min-height: 80px;
+            img {
+                min-width: 80px;
+                min-height: 80px;
+            }
         }
         .desc{
             .job {
@@ -422,6 +428,8 @@
             margin-left: 20px;
             border-radius: 5px;
             overflow: hidden;
+            min-width: 80px;
+            min-height: 80px;
         }
         .desc{
             .job {

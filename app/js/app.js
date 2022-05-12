@@ -428,42 +428,24 @@
           });
         }
       };
-      var dropdown = function(id){
-        var obj = $(id+'.dropdown');
-        var btn = obj.find('.btn-selector');
-        var dd = obj.find('ul');
-        var opt = dd.find('li');
-            opt.on("click", function() {
-                // dd.hide();
-                var txt = $(this).text();
-                opt.removeClass("active");
-                $(this).toggleClass("active");
-                btn.text(txt);
-            });
-    };
-    var no_link = function(){
-        $('a.nolink').on('click', function(e){
-          e.preventDefault();
-      });
-    }
-
 
     var flatCounter = function () {
         if ($(document.body).hasClass("counter-scroll")) {
           var a = 0;
           $(window).scroll(function () {
-            var oTop = $(".box").offset().top - window.innerHeight;
+            var oTop = $(".counter").offset().top - window.innerHeight;
             if (a == 0 && $(window).scrollTop() > oTop) {
               if ($().countTo) {
-                $(".box")
-                  .find(".number")
+                $(".counter")
+                  .find(".count-number")
                   .each(function () {
                     var to = $(this).data("to"),
-                      speed = $(this).data("speed");
-    
+                      speed = $(this).data("speed"),
+                      formatter = $(this).data('formatter');
                     $(this).countTo({
                       to: to,
                       speed: speed,
+                      formatter: formatter,
                     });
                   });
               }
@@ -485,37 +467,11 @@
           }
         });
     };
-
-    var ButtonSlide = function () {
-        $('.btn-next-team,.btn-next').on('click', function () {
-            $('.swiper-button-next').click();
-        });
-        $('.btn-prev-team,.btn-prev').on('click', function () {
-            $('.swiper-button-prev').click();
-        });
-    };
-
     var parallax = function () {
         if ($().parallax && isMobile.any() == null) {
           $(".parallax").parallax("50%", 0.2);
         }
       };
-
-      var flatAccordions2 = function() {
-        var args = {easing:'easeOutExpo', duration:400};
-        $('.widget.active').find('.content-widget').show();
-        $('.widget-title').on('click', function () {
-            if ( !$(this).parent().is('.active') ) {
-                $(this).parent().toggleClass('active')
-                    .children('.content-widget').slideToggle(args)
-                    .children('.content-widget').slideToggle(args);
-                    this.addClass('show');
-            } else {
-                $(this).parent().toggleClass('active');
-                $(this).next().slideToggle(args);
-            }
-        });
-    };
 
     var Preloader = function () {
         setTimeout(function () {
@@ -541,13 +497,8 @@
         goTop();
         AOS.init();
         flatAccordion();
-        flatAccordions2();
         popupVideo();
-        dropdown('#artworks');
-        dropdown('#category');
-        no_link();
         flatCounter();
-        // ButtonSlide();
         $(window).on("load resize", function () {
             parallax();
         });

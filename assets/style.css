@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'monal';
   src:  url('../assets/font/monal.eot');
@@ -25,6 +26,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Icon9:before {
+  content: "\e912";
+}
+.icon-Icon8:before {
+  content: "\e910";
+  color: #fff;
+}
+.icon-Icon7:before {
+  content: "\e911";
+}
+.icon-Icon6:before {
+  content: "\e90e";
+}
+.icon-Icon5:before {
+  content: "\e90f";
+}
+.icon-cloud:before {
+  content: "\e90a";
+}
+.icon-app:before {
+  content: "\e90b";
+}
+.icon-coding:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-Page-1_50:before {
+  content: "\e90d";
+}
 .icon-Reply:before {
   content: "\e909";
   color: #00b0fc;
