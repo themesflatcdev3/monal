@@ -94,6 +94,7 @@ ul, li {
 }
 
 a {
+    @include transition3;
     text-decoration: none;
     color: unset;
     transition: all .3s;

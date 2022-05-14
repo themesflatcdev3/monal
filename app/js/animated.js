@@ -21,9 +21,12 @@
         }).scroll();
     };
     var themesflat_animation_classes_fadeup = function () {
+        themesflat_animation_fadeup(".tf-animated-fadeup", ".content-about");
         themesflat_animation_fadeup(".tf-animated-fadeup", ".breadcrumbs");
         themesflat_animation_fadeup(".tf-animated-fadeup.post", ".image");
         themesflat_animation_fadeup(".tf-animated-fadeup.post", ".content");
+        themesflat_animation_fadeup(".tf-animated-fadeup", ".title-section");
+        themesflat_animation_fadeup(".tf-animated-fadeup", ".effect-img-about");
         themesflat_animation_fadeup(".tf-animated-fadeup", ".animated-effect");
         themesflat_animation_fadeup(".tf-animated-fadeup#sidebar", ".widget");
     };
@@ -69,9 +72,8 @@
         }).scroll();
     };
     var themesflat_animation_classes_fadeleft = function () {
+        themesflat_animation_fadeleft(".tf-animated-fadeleft", ".experience-box");
         themesflat_animation_fadeleft(".tf-animated-fadeleft", ".animated-effect");
-        themesflat_animation_fadeleft(".tf-animated-fadeleft", ".boder-rd10");
-        themesflat_animation_fadeleft(".tf-animated-fadeleft", ".box-left");
         themesflat_animation_fadeleft(".tf-animated-fadeleft.img-box-service", ".image");
     };
 
@@ -95,6 +97,7 @@
         }).scroll();
     };
     var themesflat_animation_classes_faderight = function () {
+        themesflat_animation_faderight(".tf-animated-faderight", ".experience-box");
         themesflat_animation_faderight(".tf-animated-faderight", ".animated-effect");
         themesflat_animation_faderight(".tf-animated-faderight", ".img-style");
         themesflat_animation_faderight(".tf-animated-faderight", ".bg-about");

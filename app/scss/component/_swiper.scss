@@ -31,9 +31,13 @@
 .swiper-container {
     &.slider-main {
         overflow: visible;
+        .swiper-pagination {
+            left: 0;
+            bottom: 9px;
+        }
     }
 }
-
+.swiper-pagination,
 .swiper-pagination-bullet {
     opacity: 1;
 }
@@ -41,7 +45,7 @@
 .slider-main {
     .swiper-pagination {
         .swiper-pagination-bullet {
-            margin-right: 25px;
+            margin-right: 45px;
             width: auto;
             height: auto;
             color: $color-main1;
@@ -62,35 +66,36 @@
                 visibility: hidden;
                 position: absolute;
                 content: "";
-                height: 3px;
-                width: 14px;
+                height: 2px;
+                width: 20px;
                 background: #9000FF;
                 bottom: -28px;
-                left: -2px;
+                left: 3px;
             }
             &:nth-child(1) {
                 &::after {
-                    content: "1";
+                    content: "01";
                 }
             }
             &:nth-child(2) {
+                margin-right: 65px;
                 &::after {
-                    content: "2";
+                    content: "02";
                 }
             }
             &:nth-child(3) {
                 &::after {
-                    content: "3";
+                    content: "03";
                 }
             }
             &:nth-child(4) {
                 &::after {
-                    content: "4";
+                    content: "04";
                 }
             }
             &:nth-child(5) {
                 &::after {
-                    content: "5";
+                    content: "05";
                 }
             }
             &.swiper-pagination-bullet-active {
@@ -112,6 +117,8 @@
     position: relative;
     .next-project,
     .prev-project {
+        @include transition3;
+        position: relative;
         @include flex(center,center);
         width: 60px;
         height: 60px;
@@ -119,9 +126,70 @@
         border-radius: 50%;
         margin-right: 10px;
         svg {
+            z-index: 1;
             rect {
+                @include transition3;
                 fill: #473eea;
             }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: $w100;
+            height: $w100;
+            background: $bg-gradient;
+            opacity: 0;
+            @include transition3;
+            z-index: 0;
+            border-radius: 50%;
+        }
+        &.swiper-button-disabled,
+        &:hover {
+            background: transparent;
+            &::before {
+                opacity: 1;
+            }
+            svg {
+                rect {
+                    fill: $white;
+                }
+            }
+        }
+    }
+}
+
+.swiper-container {
+    &.slider-project {
+        margin-right: -400px;
+    }
+    &.slider-team {
+        padding: 30px 0;
+    }
+}
+
+.testimonior-pagination {
+    position: absolute;
+    bottom: 3px;
+    left: -60px;
+    @include flex(center,center);
+    .swiper-pagination-bullet {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        margin: 0 0px;
+        border: 1px solid transparent;
+        @include flex(center,center);
+        background: transparent;
+        &.swiper-pagination-bullet-active {
+            border: 1px solid $color-hover;
+        }
+        &::after {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            content: "";
+            background: $color-hover;
         }
     }
 }

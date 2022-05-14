@@ -196,7 +196,9 @@
                 margin-bottom: 0;
             }
         }
+        .tf-animated-fadeup.post .image,
         .image.animated-effect.tfanimated {
+            transition: none !important;
             opacity: 1 !important;
             transform: none !important;
         }
@@ -464,6 +466,147 @@
             border-radius: 4px;
             &:hover {
                 background: $color-6;
+            }
+        }
+    }
+}
+
+.blog-post {
+    position: relative;
+    .image {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            webkit-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            transition: all 0.3s ease;
+            @include transition5;
+        }
+        .date {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 40px;
+            padding: 0 20px;
+            @include flex(center,center);
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 500;
+            font-family: $font-main;
+            background: $bg-gradient;
+            color: $white;
+            border-radius: 0 4px 4px 0;
+            span {
+                padding-left: 26px;
+                position: relative;
+                &::before {
+                    font-family: 'monal';
+                    content: "\e913";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+    .content {
+        background: $white;
+        padding: 23px 40px 40px;
+        box-shadow: $box-shadow4;
+        ul {
+            @include flex2;
+            border-bottom: 1px solid #E8E8E9;
+            padding-bottom: 21px;
+            margin-bottom: 21px;
+            li {
+                a {
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-weight: 500;
+                    font-family: $font-main;
+                    color: $color-main1;
+                    @include flex(center,flex-start);
+                    position: relative;
+                    padding-left: 28px;
+                    &:hover {
+                        color: $color-hover;
+                    }
+                    &::before {
+                        position: absolute;
+                        left: 0;
+                        top: -2px;
+                        font-family: 'monal';
+                        font-size: 18px;
+                        color: #005DE0;
+                    }
+                }
+                &:first-child {
+                    margin-right: 42px;
+                    a {
+                        &::before {
+                            content: "\e915";
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    a {
+                        &::before {
+                            content: "\e914";
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .title {
+            text-transform: capitalize;
+            margin-bottom: 15px;
+            a {
+                &:hover {
+                    color: $color-7;
+                }
+            }
+        }
+        p {
+            text-transform: capitalize;
+            margin-bottom: 18px;
+        }
+        .readmore {
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 26px;
+            font-family: $font-main;
+            font-weight: bold;
+            position: relative;
+            padding-right: 21px;
+            &::after {
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-family: "Font Awesome 5 Pro";
+                content: "\f324";
+                font-weight: 600;
+                background: -webkit-gradient(linear, left top, left bottom, from(#CF00FE ), to(#005DE0));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 12px;
+            }
+            &:hover {
+                color: $color-7;
+            }
+        }
+    }
+    &:hover {
+        .image {
+            img {
+                transform: scale(1.2);
+                -webkit-filter: grayscale(0%);
+                -ms-filter: grayscale(0%);
+                -moz-filter: grayscale(0%);
+                transition: all 0.3s ease;
+                @include transition5;
             }
         }
     }
