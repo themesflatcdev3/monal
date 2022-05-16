@@ -201,6 +201,7 @@
 .blogdetail .post .content .title {
   margin-bottom: 0;
 }
+.blogdetail .post .tf-animated-fadeup.post.image.animated-effect,
 .blogdetail .post .tf-animated-fadeup.post .image,
 .blogdetail .post .image.animated-effect.tfanimated {
   transition: none !important;
@@ -600,7 +601,7 @@
   color: #9000FF;
 }
 .blog-post:hover .image img {
-  transform: scale(1.2);
+  transform: scale(1.1);
   -webkit-filter: grayscale(0%);
   -ms-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
@@ -610,6 +611,36 @@
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.blog-post.style2 .image .date {
+  background: #7141B1;
+  right: 0;
+  left: auto;
+  border-radius: 0;
+}
+.blog-post.style2 .image .date span {
+  padding-left: 0;
+}
+.blog-post.style2 .image .date span::before {
+  display: none;
+}
+.blog-post.style2 .content .readmore {
+  color: #010C2A;
+}
+.blog-post.style2 .content .readmore::after {
+  color: #00B0FC;
+}
+.blog-post.style2 .content .readmore:hover {
+  color: #00B0FC;
+}
+.blog-post.style2 .content .readmore::before {
+  position: absolute;
+  bottom: 3px;
+  height: 1px;
+  width: 90px;
+  content: "";
+  background: #e2c5f8;
+  left: 0;
 }
 
 /*# sourceMappingURL=post.css.map */

@@ -159,8 +159,18 @@
         }
     }
     &.st3 {
+        text-align: center;
+        background: $white;
+        box-shadow: $box-shadow5;
+        @include transition3;
+        padding: 23px 40px 18px;
         .icon {
+            margin-left: 0;
+            margin-bottom: 15px;
+            margin-right: 18px;
             span {
+                color: $color-hover;
+                font-size: 60px;
                 &::after {
                     font-family: 'monal';
                     content: "\e917";
@@ -168,10 +178,71 @@
                     background: transparent;
                     width: auto;
                     height: auto;
-                    bottom: -20px;
-                    right: -25px;
+                    bottom: -30px;
+                    font-size: 53px;
+                    right: -24px;
                     top: auto;
                     left: auto;
+                    -webkit-transition: all 0s ease;
+                    -moz-transition: all 0s ease;
+                    -ms-transition: all 0s ease;
+                    -o-transition: all 0s ease;
+                    transition: all 0s ease;
+                    color: $color-hover;
+                }
+            }
+        }
+        .title {
+            padding: 0 20px;
+            font-size: 22px;
+            line-height: 32px;
+        }
+        p {
+            border-bottom: 1px solid #E8E8E9;
+            padding-bottom: 26px;
+            margin-bottom: 12px;
+        }
+        .readmore {
+            padding-right: 22px;
+            &::after {
+                right: 0;
+            }
+            &::before {
+                position: absolute;
+                bottom: 2px;
+                height: 1px;
+                width: 94px;
+                content: "";
+                background: #e2c5f8;
+                left: 0;
+            }
+        }
+        &::before {
+            display: none;
+        }
+        &:hover {
+            background: $color-main1;
+            .icon {
+                span {
+                    color: $white;
+                    &::after {
+                        background: none;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .readmore {
+            &::before {
+                @include transition3;
+            }
+            &:hover {
+                color: $color-hover;
+                &::after {
+                    color: $color-hover;
+                }
+                &::before {
+                    background: $color-hover;
                 }
             }
         }
@@ -204,7 +275,7 @@
 .project-box {
     .hover-effect {
         opacity: 0;
-        @include transition4;
+        @include transition5;
         bottom: -100%;
         position: absolute;
         @include leftcenter;
@@ -233,6 +304,9 @@
                 font-size: 24px;
                 line-height: 34px;
                 color: $white;
+                a {
+                    color: $white;
+                }
             }
             .btn {
                 width: 56px;
@@ -271,6 +345,31 @@
             background-color: rgba(1, 12, 42, 0.7)
         }
     }
+    &.style2 {
+        border-radius: 5px;
+        .image {
+            .overlay-effect {
+                background: rgba(1, 12, 42, 0.5);
+            }
+        }
+        .hover-effect {
+            .content-box {
+                background: $white;
+                p {
+                    color: $txt-color;
+                }
+                h4 {
+                    color: $color-main1;
+                    a {
+                        color: $color-main1;
+                        &:hover {
+                            color: $color-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -288,7 +387,6 @@
 
 .team-box {
     position: relative;
-    // padding-bottom: 30px;
     text-align: center;
     .content {
         z-index: 9;
@@ -408,6 +506,119 @@
             }
         }
     }
+    &.style2 {
+        overflow: hidden;
+        border-radius: 5px;
+        &::before {
+            background-color: rgba(1, 12, 42, 0.6);
+            position: absolute;
+            top: -100%;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            content: '';
+            z-index: 1;
+            opacity: 0;
+            @include transition4;
+            border-radius: 5px;
+            visibility: hidden;
+        }
+        .content {
+            @include transition4;
+            margin-top: 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding: 20px 30px 0px;
+            left: 0;
+            border-radius: 0;
+            h5,a {
+                color: #010C2A;
+            }
+            p {
+                color: #76777A;
+                border-bottom: 1px solid transparent;
+                padding-bottom: 20px;
+                margin-bottom: 0;
+            }
+            .social {
+                @include transition4;
+                position: absolute;
+                bottom: -20px;
+                opacity: 0;
+                visibility: hidden;
+                li {
+                    @include transition3;
+                    opacity: 0;
+                    visibility: hidden;
+                    a {
+                        background: $color-4;
+                        &.active,
+                        &:hover {
+                            background: $color-hover;
+                            color: $white;
+                        }
+                    }
+                    &:nth-child(1) {
+                        -webkit-transition-delay: 0s;
+                        -moz-transition-delay: 0s;
+                        -ms-transition-delay: 0s;
+                        -o-transition-delay: 0s;
+                        transition-delay: 0s;
+                    }
+                    &:nth-child(2) {
+                        -webkit-transition-delay: 0.2s;
+                        -moz-transition-delay: 0.2s;
+                        -ms-transition-delay: 0.2s;
+                        -o-transition-delay: 0.2s;
+                        transition-delay: 0.2s;
+                    }
+                    &:nth-child(3) {
+                        -webkit-transition-delay: 0.3s;
+                        -moz-transition-delay: 0.3s;
+                        -ms-transition-delay: 0.3s;
+                        -o-transition-delay: 0.3s;
+                        transition-delay: 0.3s;
+                    }
+                    &:nth-child(4) {
+                        -webkit-transition-delay: 0.4s;
+                        -moz-transition-delay: 0.4s;
+                        -ms-transition-delay: 0.4s;
+                        -o-transition-delay: 0.4s;
+                        transition-delay: 0.4s;
+                    }
+                }
+            }
+            &::after,
+            &::before {
+                display: none;
+            }
+        }
+        &.active,
+        &:hover {
+            &::before {
+                opacity: 1;
+                top: 0;
+                visibility: visible;
+            }
+            .content {
+                background: $white;
+                padding: 20px 30px 70px;
+                p {
+                    border-color: #E8E8E9;
+                }
+                .social {
+                    bottom: 20px;
+                    opacity: 1;
+                    visibility: visible;
+                    li {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .testimonior-box {
@@ -460,5 +671,183 @@
     .image {
         @include flex(center,flex-start);
         min-height: 47px;
+    }
+}
+
+.pricing-box {
+    position: relative;
+    padding: 0 15px 15px;
+    .img-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .pricing-inner {
+        @include transition3;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+        background: $white;
+        box-shadow: $box-shadow4;
+        text-align: left;
+        padding: 30px 40px 40px;
+        .discount {
+            top: -6px;
+            right: -48px;
+            transform: rotate(45deg);
+            position: absolute;
+            background: #00B0FC;
+            padding: 22px 40px 14px;
+            text-align: center;
+            z-index: 99;
+            p {
+                color: $white;
+                font-size: 14px;
+                line-height: 26px;
+                font-family: $font-main;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+        }
+        .icon {
+            @include transition3;
+            width: 71px;
+            height: 59px;
+            color: #00B0FC;
+            font-size: 50px;
+            position: relative;
+            padding-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 30px;
+            &::after {
+                @include transition3;
+                font-family: "monal";
+                content: "\e917";
+                border-radius: 0;
+                background: transparent;
+                width: auto;
+                height: auto;
+                top: 0;
+                left: 0;
+                color: #00B0FC;
+                opacity: 0.1;
+                position: absolute;
+            }
+        }
+        .title {
+            @include flex(center,flex-start);
+            margin-bottom: 30px;
+            p {
+                @include font-16;
+                color: $color-hover;
+                font-family: $font-main;
+                font-weight: 500;
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+            .divider {
+                width: 30%;
+                background: #E8E8E9;
+                height: 1px;
+                @include transition3;
+            }
+        }
+        .pricing {
+            @include flex(flex-end,flex-start);
+            margin-bottom: 30px;
+            .number {
+                position: relative;
+                font-size: 70px;
+                line-height: 1;
+                color: $color-main1;
+                font-weight: bold;
+                font-family: $font-main;
+                padding-left: 5px;
+                margin-right: 5px;
+                @include transition3;
+                &::before {
+                    @include transition3;
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    content: "$";
+                    font-size: 18px;
+                    color: $color-main1;
+                    font-weight: 500;
+                    font-family: $font-main;
+                }
+            }
+            p {
+                @include transition3;
+                @include font-16;
+                font-family: $font-main;
+                font-weight: 500;
+                color: $txt-color;
+                margin-bottom: 0;
+            }
+        }
+        .list {
+            li {
+                @include font-16;
+                text-transform: capitalize;
+                margin-bottom: 15px;
+                position: relative;
+                padding-left: 30px;
+                @include transition3;
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    font-family: 'monal';
+                    content: "\e91d";
+                    color: $color-hover;
+                }
+            }
+        }
+        .tf-button {
+            background: $color-hover;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: $w100;
+            height: 4px;
+            background: $color-main1;
+            z-index: 1;
+        }
+        &.active,
+        &:hover {
+            background: $color-main1;
+            .icon {
+                &::after {
+                    color: $white;
+                }
+            }
+            .title {
+                .divider {
+                    background: #494A4D;
+                }
+            }
+            .pricing {
+                p,
+                .number {
+                    color: $white;
+                    &::before {
+                        color: $white;
+                    }
+                }
+            }
+            .list {
+                li {
+                    color: $white;
+                }
+            }
+            .tf-button {
+                background: #7141B1 !important;
+            }
+        }
     }
 }

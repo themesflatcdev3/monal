@@ -56,6 +56,34 @@ var swiper =  new Swiper(".slider-project", {
     },
 });
 
+var swiper =  new Swiper(".slider-project2", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 30,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        991: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+    navigation: {
+        nextEl: ".next-project2",
+        prevEl: ".prev-project2",
+    },
+});
+
 var swiper =  new Swiper(".slider-team", {
     slidesPerView: 1,
     loop: false, 
@@ -124,6 +152,34 @@ var swiper =  new Swiper(".sl-partner", {
         1280: {
             slidesPerView: 5,
             spaceBetween: 90,
+        },
+    },
+});
+
+var swiper =  new Swiper(".slider-service", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 30,
+    pagination: {
+        el: ".service-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
         },
     },
 });

@@ -115,6 +115,8 @@
 .btn-slider-project {
     @include flex2;
     position: relative;
+    .next-project2,
+    .prev-project2, 
     .next-project,
     .prev-project {
         @include transition3;
@@ -156,6 +158,19 @@
             }
         }
     }
+    &.style {
+        .next-project2,
+        .prev-project2 {
+            background: $color-hover;
+            svg {
+                z-index: 1;
+                rect {
+                    @include transition3;
+                    fill: $white;
+                }
+            }
+        }
+    }
 }
 
 .swiper-container {
@@ -165,12 +180,47 @@
     &.slider-team {
         padding: 30px 0;
     }
+    &.show-shadow {
+        padding: 20px;
+        margin: -20px;
+    }
+    &.slider-project2 {
+        overflow: visible;
+    }
 }
 
 .testimonior-pagination {
     position: absolute;
     bottom: 3px;
     left: -60px;
+    @include flex(center,center);
+    .swiper-pagination-bullet {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        margin: 0 0px;
+        border: 1px solid transparent;
+        @include flex(center,center);
+        background: transparent;
+        &.swiper-pagination-bullet-active {
+            border: 1px solid $color-hover;
+        }
+        &::after {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            content: "";
+            background: $color-hover;
+        }
+    }
+}
+
+.service-pagination {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    z-index: 99;
     @include flex(center,center);
     .swiper-pagination-bullet {
         position: relative;

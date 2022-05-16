@@ -196,6 +196,7 @@
                 margin-bottom: 0;
             }
         }
+        .tf-animated-fadeup.post.image.animated-effect,
         .tf-animated-fadeup.post .image,
         .image.animated-effect.tfanimated {
             transition: none !important;
@@ -601,12 +602,48 @@
     &:hover {
         .image {
             img {
-                transform: scale(1.2);
+                transform: scale(1.1);
                 -webkit-filter: grayscale(0%);
                 -ms-filter: grayscale(0%);
                 -moz-filter: grayscale(0%);
                 transition: all 0.3s ease;
                 @include transition5;
+            }
+        }
+    }
+    &.style2 {
+        .image {
+            .date {
+                background: #7141B1;
+                right: 0;
+                left: auto;
+                border-radius: 0;
+                span {
+                    padding-left: 0;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .content {
+            .readmore {
+                color: $color-main1;
+                &::after {
+                    color: $color-hover;
+                }
+                &:hover {
+                    color: $color-hover;
+                }
+                &::before {
+                    position: absolute;
+                    bottom: 3px;
+                    height: 1px;
+                    width: 90px;
+                    content: "";
+                    background: #e2c5f8;
+                    left: 0;
+                }
             }
         }
     }

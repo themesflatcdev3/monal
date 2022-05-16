@@ -230,7 +230,7 @@
         }
     }
     .content-box {
-        padding-top: 110px;
+        padding-top: 103px;
         padding-right: 30px;
         .sub-title {
             color: $color-7;
@@ -415,7 +415,10 @@
                     color: $color-main1;
                     font-family: $font-main;
                     position: relative;
-                    padding-left: 30px;
+                    padding-left: 40px;
+                    span {
+                        margin-left: 5px;
+                    }
                     &::before {
                         position: absolute;
                         font-family: "monal";
@@ -425,14 +428,25 @@
                     }
                     &:nth-child(1) {
                         margin-right: 30px;
+                        padding-right: 34px;
+                        &::after {
+                            right: 0;
+                            top: 2px;
+                            position: absolute;
+                            content: "";
+                            width: 1px;
+                            height: 20px;
+                            background: #D1D2D3;
+                        }
                         &::before {
-                            content: "\e906";
-                            font-size: 18px;
+                            content: "\e91f";
+                            font-size: 20px;
                         }
                     }
                     &:nth-child(2) {
+                        padding-left: 38px;
                         &::before {
-                            content: "\e907";
+                            content: "\e91e";
                             font-size: 20px;
                         }
                     }
@@ -450,8 +464,9 @@
                     content: "\e916";
                     font-family: 'monal';
                     left: 0;
-                    top: 10px;
+                    top: 8px;
                     color: $color-hover;
+                    font-size: 20px;
                 }
                 &::after {
                     position: absolute;
@@ -463,15 +478,13 @@
                     top: 15px;
                 }
                 >a {
-                    padding-top: 12px;
-                    padding-bottom: 12px;
                     color: $color-main1;
                     font-size: 16px;
                     line-height: 24px;
                     font-weight: 500;
-                    font-family: $font-main;
+                    font-family: $font-main2;
                     position: relative;
-                    padding-right: 20px;
+                    padding: 12px 16px 12px 6px;
                     &::after {
                         position: absolute;
                         right: 0;
@@ -512,9 +525,10 @@
                 }
             }
             .social {
-                margin-left: 30px;
+                margin-left: 34px;
                 li {
-                    margin-left: 10px;
+                    margin-left: 24px;
+                    margin-right: 3px;
                     a {
                         width: auto;
                         height: auto;
@@ -641,4 +655,59 @@
     -ms-transition: all 0.2s ease-in-out 0s;
     -o-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
+}
+
+.progress-bar {
+    text-align: left;
+    display: block;background: transparent;
+}
+
+.progress-title-holder {
+    @include flex(center,flex-start);
+    margin-bottom: 30px;
+    height: 50px;
+    position: relative;
+    .progress-title {
+        font-size: 18px;
+        line-height: 26px;
+        color: $white;
+        font-weight: 500;
+        font-family: $font-main;
+    }
+    .progress-number-wrapper {
+        .progress-number-mark {
+            -moz-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            position: absolute;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: $color-hover;
+            @include flex(center,center);
+            @include font-16;
+            color: $white;
+            font-weight: 600;
+            font-family: $font-main;
+            border-radius: 50%;
+        }
+    }
+}
+
+.progress-content-outter {
+    height: 18px;
+    background-color: transparent;
+    border: 1px solid $white;
+    @include flex(center,flex-start);
+    border-radius: 2px;
+    padding-left: 5px;
+}
+
+.progress-content {
+    height: 8px;
+    background-color: $white;
+    border-radius: 2px;
+    width: 0%;
 }
