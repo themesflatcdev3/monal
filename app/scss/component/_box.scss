@@ -353,7 +353,10 @@
             }
         }
         .hover-effect {
+            width: 89%;
+            height: 157px;
             .content-box {
+                padding: 30px;
                 background: $white;
                 p {
                     color: $txt-color;
@@ -529,7 +532,7 @@
             width: 100%;
             position: absolute;
             bottom: 0;
-            padding: 20px 30px 0px;
+            padding: 30px 30px 20px;
             left: 0;
             border-radius: 0;
             h5,a {
@@ -538,8 +541,9 @@
             p {
                 color: #76777A;
                 border-bottom: 1px solid transparent;
-                padding-bottom: 20px;
+                padding-bottom: 10px;
                 margin-bottom: 0;
+                text-transform: capitalize;
             }
             .social {
                 @include transition4;
@@ -547,6 +551,7 @@
                 bottom: -20px;
                 opacity: 0;
                 visibility: hidden;
+                @include leftcenter;
                 li {
                     @include transition3;
                     opacity: 0;
@@ -603,12 +608,12 @@
             }
             .content {
                 background: $white;
-                padding: 20px 30px 70px;
+                padding: 30px 30px 85px;
                 p {
                     border-color: #E8E8E9;
                 }
                 .social {
-                    bottom: 20px;
+                    bottom: 30px;
                     opacity: 1;
                     visibility: visible;
                     li {
@@ -661,8 +666,8 @@
         }
         .quote {
             position: absolute;
-            bottom: 53px;
-            right: 16%;
+            bottom: 60px;
+            right: 8%;
         }
     }
 }
@@ -691,14 +696,14 @@
         background: $white;
         box-shadow: $box-shadow4;
         text-align: left;
-        padding: 30px 40px 40px;
+        padding: 35px 50px 50px 50px;
         .discount {
-            top: -6px;
-            right: -48px;
+            top: -8px;
+            right: -45px;
             transform: rotate(45deg);
             position: absolute;
             background: #00B0FC;
-            padding: 22px 40px 14px;
+            padding: 24px 40px 10px;
             text-align: center;
             z-index: 99;
             p {
@@ -717,9 +722,9 @@
             color: #00B0FC;
             font-size: 50px;
             position: relative;
-            padding-top: 10px;
-            padding-left: 10px;
-            margin-bottom: 30px;
+            padding-top: 9px;
+            padding-left: 16px;
+            margin-bottom: 45px;
             &::after {
                 @include transition3;
                 font-family: "monal";
@@ -737,25 +742,30 @@
         }
         .title {
             @include flex(center,flex-start);
-            margin-bottom: 30px;
+            margin-bottom: 27px;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 42%;
+                background: #E8E8E9;
+                height: 1px;
+                @include transition3;
+                right: 0;
+                top: 13px;
+            }
             p {
                 @include font-16;
                 color: $color-hover;
                 font-family: $font-main;
                 font-weight: 500;
                 margin-bottom: 0;
-                margin-right: 20px;
-            }
-            .divider {
-                width: 30%;
-                background: #E8E8E9;
-                height: 1px;
-                @include transition3;
+                margin-right: 30px;
             }
         }
         .pricing {
             @include flex(flex-end,flex-start);
-            margin-bottom: 30px;
+            margin-bottom: 29px;
             .number {
                 position: relative;
                 font-size: 70px;
@@ -763,14 +773,14 @@
                 color: $color-main1;
                 font-weight: bold;
                 font-family: $font-main;
-                padding-left: 5px;
-                margin-right: 5px;
+                padding-left: 16px;
+                margin-right: 11px;
                 @include transition3;
                 &::before {
                     @include transition3;
                     position: absolute;
-                    top: -10px;
-                    left: -10px;
+                    top: -2px;
+                    left: 0px;
                     content: "$";
                     font-size: 18px;
                     color: $color-main1;
@@ -788,12 +798,13 @@
             }
         }
         .list {
+            margin-bottom: 30px;
             li {
                 @include font-16;
                 text-transform: capitalize;
                 margin-bottom: 15px;
                 position: relative;
-                padding-left: 30px;
+                padding-left: 25px;
                 @include transition3;
                 &::before {
                     position: absolute;
@@ -807,6 +818,8 @@
         }
         .tf-button {
             background: $color-hover;
+            width: $w100;
+            text-align: center;
         }
         &::before {
             position: absolute;
@@ -851,3 +864,94 @@
         }
     }
 }
+
+.feature-box {
+    @include flex2;
+    width: 100%;
+    position: relative;
+    .box {
+        width: 33.333%;
+        @include flex2;
+        padding: 40px 30px 40px;
+        box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.04);
+        background: $white;
+        position: relative;
+        @include transition3;
+        .icon {
+            margin-right: 30px;
+            border: dashed 1px #048EDF;
+            min-width: 80px;
+            min-height: 80px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            @include flex(center,center);
+            overflow: hidden;
+            @include transition3;
+            .bg {
+                @include transition3;
+                @include flex(center,center);
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                background: $bg-gradient4;
+                span {
+                    background: -webkit-gradient(linear, left top, left bottom, from(#CF00FE ), to(#005DE0));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 40px;
+                }
+            }
+        }
+        .content {
+            h5 {
+                text-decoration: underline transparent solid 1px;
+                text-transform: capitalize;
+                position: relative;
+                @include transition3;
+            }
+            p {
+                @include transition3;
+                color: #76777A;
+                text-transform: capitalize;
+                margin-bottom: 0;
+            }
+        }
+        &::after {
+            @include transition3;
+            @include overlay;
+            content: "";
+            background: $bg-gradient3;
+            opacity: 1;
+            visibility: hidden;
+            z-index: -1;
+        }
+
+        &.active,
+        &:hover {
+            background: transparent;
+            .content {
+                h5,
+                p {
+                    color: $white;
+                }
+                h5 {
+                    text-decoration: underline $white solid 1px;
+                }
+            }
+            .icon {
+                border-color: $white;
+                .bg {
+                    background: $white;
+                }
+            }
+            &::after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+

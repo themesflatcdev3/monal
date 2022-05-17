@@ -617,12 +617,25 @@
   right: 0;
   left: auto;
   border-radius: 0;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 20px 0 15px;
 }
 .blog-post.style2 .image .date span {
   padding-left: 0;
 }
 .blog-post.style2 .image .date span::before {
   display: none;
+}
+.blog-post.style2 .content {
+  padding: 23px 40px 28px;
+}
+.blog-post.style2 .content ul {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.blog-post.style2 .content .title {
+  margin-bottom: 22px;
 }
 .blog-post.style2 .content .readmore {
   color: #010C2A;

@@ -36,6 +36,20 @@
     }
 }
 @include res1440 { 
+    .home2 {
+        .box-slider {
+            .content-box {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            .image {
+                .img {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
     .project-box {
         .hover-effect {
             .content-box {
@@ -79,6 +93,42 @@
 }
 
 @include res1200 {
+    .blog-post {
+        .content {
+            padding: 23px 25px 30px;
+        }
+        &.style2 {
+            .content {
+                padding: 23px 25px 30px;
+            }
+        }
+    }
+    .content-about {
+        &.pr20 {
+            padding-right: 0;
+        }
+    }
+
+    .img-about {
+        &.pr70 {
+            padding-right: 0;
+        }
+    }
+     
+    .home2 {
+        .box-slider {
+            .content-box {
+                .title {
+                    font-size: 75px;
+                }
+            }
+        }
+        .img-about {
+            .experience-box {
+                right: 0;
+            }
+        }
+    }
     .get-solution {
         .image {
             margin-top: 0;
@@ -180,6 +230,105 @@
 }
 
 @include res991 {
+    .pricing-box {  
+        padding: 0 0 15px 0;
+        .pricing-inner {
+            padding: 20px 20px 30px 20px;
+        }
+    }
+    .pr60 {
+        padding-right: 0;
+    }
+    .home2 {
+        &.main {
+            .page-title {
+                padding: 90px 0;
+            }
+            .box-slider {
+                .content-box {
+                    padding: 0;
+                    .title {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .img-about {
+            .experience-box {
+                max-width: 220px;
+                padding: 35px 20px;
+                .number-content {
+                    font-size: 45px;    
+                }
+            }
+        }
+        .content-about {
+            .wrap-icon-box {
+                .icon-box {
+                    margin-bottom: 15px;
+                    width: $w100;
+                }
+            }
+            .wrap {
+                display: block;
+            }
+        }
+        .tf-section {
+            &.tf-about {
+                .content-about {
+                    .wrap {
+                        display: block;
+                        .img-box {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #top-bar {
+        @include flex(center,center);
+        height: 90px;
+        .topbar-inner {
+            height: auto;
+            display: block;
+            text-align: center;
+            .right {
+                height: 40px;
+                justify-content: center;
+                width: $w100;
+                .social {
+                    margin-left: 0;
+                    li {
+                        margin-right: 0;
+                        margin-left: 18px;
+                    }
+                }
+                .language {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+            .left {
+                height: 40px;
+                width: $w100;
+                @include flex(center,center);
+                ul {
+                    justify-content: center;
+                    li {
+                        padding-left: 30px;
+                        &:nth-child(1) {
+                            margin-right: 15px;
+                            padding-right: 15px;
+                        }
+                        &:nth-child(2) {
+                            padding-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     #footer {
         &.style2 {
             .widget {
@@ -404,9 +553,100 @@
             }
         }
     }
+    .icon-box {
+        &.st3 {
+            .title {
+                padding: 0 25px;
+            }
+        }
+    }
 }
 
 @include res767 {
+    .pricing-box {  
+        margin-bottom: 30px;
+        padding: 0 15px 15px;
+        .pricing-inner {
+            padding: 20px 20px 30px 20px;
+            .list {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .ml104 {
+        margin-left: 0;
+    }
+    .pr75 {
+        padding-right: 0;
+    }
+    .tf-section {
+        &.get-solutions {
+            .overlay {
+                height: 95%;
+            }
+            padding: 0 0 70px;
+            .content-progress-box {
+                padding-left: 0;
+            }
+            .image-video {
+                margin-bottom: 30px;
+                .popup-youtube {
+                    margin: 0;
+                }
+            }
+            .box {
+                margin-right: 0;
+                margin-top: 0;
+                padding: 30px;
+            }
+        }
+    }
+    .btn-slider-project,
+    .service-pagination {
+        display: none;
+    }
+    .title-section {
+        .title {
+            font-size: 42px;
+        }
+    }
+    .home2 {
+        .tf-project {
+            padding: 70px 0 0;
+            .swiper-container {
+                &.slider-project2 {
+                    margin: 10px 0 0;
+                }
+            }
+        }
+        &.main {
+            .box-slider {
+                .content-box {
+                    .title {
+                        font-size: 54px;
+                    }
+                }
+            }
+        }
+        .tf-section {
+            &.tf-about {
+                .img-about {
+                    margin-bottom: 40px;
+                    .img2 {
+                        width: 43%;
+                    }
+                }
+            }
+            &.tf-team,
+            &.tf-partner {
+                padding: 70px 0;
+            }
+        }
+    }
     .get-solution {
         .title-section {
             padding: 70px 0 40px;
@@ -601,6 +841,15 @@
 }
 
 @include res600 {
+    #top-bar {
+        @include flex(center,center);
+        height: 60px;
+        .topbar-inner {
+            .left {
+               display: none;
+            }
+        }
+    }
     .footer-main {
         .footer-bottom {
             .wrap-fx {

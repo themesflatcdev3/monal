@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'monal';
   src:  url('../assets/font/monal.eot');
@@ -25,6 +26,50 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Icon81:before {
+  content: "\e926";
+
+}
+.icon-Icon71:before {
+  content: "\e927";
+
+}
+.icon-Icon61:before {
+  content: "\e928";
+
+}
+.icon-Icon51:before {
+  content: "\e929";
+
+}
+.icon-Icon4:before {
+  content: "\e92a";
+}
+.icon-Icon3:before {
+  content: "\e92b";
+}
+.icon-Icon2:before {
+  content: "\e92c";
+}
+.icon-Icon10:before {
+  content: "\e92d";
+}
+.icon-play:before {
+  content: "\e925";
+
+}
+.icon-Line:before {
+  content: "\e924";
+  color: #005de0;
+}
+.icon-phone-message-1:before {
+  content: "\e923";
+  color: #005de0;
+}
+.icon-Union:before {
+  content: "\e920";
+
+}
 .icon-ux-interface:before {
   content: "\e918";
 
@@ -86,11 +131,21 @@
 .icon-Page-1_50:before {
   content: "\e90d";
 }
+.icon-pin:before {
+  content: "\e921";
+
+}
+.icon-mail3:before {
+  content: "\e922";
+
+}
 .icon-Icon13:before {
   content: "\e91e";
+
 }
 .icon-Icon12:before {
   content: "\e91f";
+
 }
 .icon-world:before {
   content: "\e916";

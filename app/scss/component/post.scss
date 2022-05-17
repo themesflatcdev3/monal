@@ -618,6 +618,9 @@
                 right: 0;
                 left: auto;
                 border-radius: 0;
+                font-size: 16px;
+                line-height: 26px;
+                padding: 0 20px 0 15px;
                 span {
                     padding-left: 0;
                     &::before {
@@ -627,6 +630,14 @@
             }
         }
         .content {
+            padding: 23px 40px 28px;
+            ul {
+                padding-bottom: 16px;
+                margin-bottom: 16px;
+            }
+            .title {
+                margin-bottom: 22px;
+            }
             .readmore {
                 color: $color-main1;
                 &::after {

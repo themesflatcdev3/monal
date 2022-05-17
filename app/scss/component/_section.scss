@@ -230,7 +230,7 @@
         }
     }
     .content-box {
-        padding-top: 103px;
+        padding-top: 110px;
         padding-right: 30px;
         .sub-title {
             color: $color-7;
@@ -664,7 +664,7 @@
 
 .progress-title-holder {
     @include flex(center,flex-start);
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     height: 50px;
     position: relative;
     .progress-title {
@@ -673,25 +673,30 @@
         color: $white;
         font-weight: 500;
         font-family: $font-main;
+        margin-top: 18px;
     }
     .progress-number-wrapper {
         .progress-number-mark {
-            -moz-transform: translateX(-50%);
-            -o-transform: translateX(-50%);
-            transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-18%);
+            -o-transform: translateX(-18%);
+            transform: translateX(-18%);
+            -ms-transform: translateX(-18%);
+            -webkit-transform: translateX(-18%);
             position: absolute;
             top: 0;
             width: 50px;
-            height: 50px;
+            height: 60px;
             background: $color-hover;
             @include flex(center,center);
             @include font-16;
             color: $white;
             font-weight: 600;
             font-family: $font-main;
-            border-radius: 50%;
+            background: url('./../../assets/images/backgroup/bgunion.png') center center no-repeat;
+            background-size: cover;
+            .percent {
+                margin-top: -10px;
+            }
         }
     }
 }
@@ -702,7 +707,7 @@
     border: 1px solid $white;
     @include flex(center,flex-start);
     border-radius: 2px;
-    padding-left: 5px;
+    padding-left: 3px;
 }
 
 .progress-content {
@@ -710,4 +715,21 @@
     background-color: $white;
     border-radius: 2px;
     width: 0%;
+}
+
+.wrap-counter {
+    background: $bg-gradient2;
+    position: relative;
+    @include flex2;
+    margin-left: -30px;
+    .box {
+        width: calc(25% - 30px);
+        margin-left: 30px;
+        .icon {
+            span {
+                font-size: 60px;
+                color: $white;
+            }
+        }
+    }
 }

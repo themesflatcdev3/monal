@@ -140,6 +140,8 @@
               if(retina) {
                   $('.header__logo').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'141',height:'38'} );
                   $('.header__logo.style2').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'176',height:'43'} );
+                  $('.header__logo.style3').find('img').attr( {src:'assets/images/logo/logo4@2x.png',width:'176',height:'43'} );
+                  $('.header__logo.style4').find('img').attr( {src:'assets/images/logo/logo5@2x.png',width:'176',height:'43'} );
 
                   $('.footer__logo').find('img').attr( {src:'assets/images/logo/logo2@2x.png',width:'141',height:'38'} );
                   $('.footer__logo.style2').find('img').attr( {src:'assets/images/logo/logo3header__logo@2x.png',width:'141',height:'38'} );
@@ -157,7 +159,6 @@
                      injectSpace = $('<div />', {
                     height: headerHeight
                 }).insertAfter(nav);
-                        console.log(headerHeight);
 
                 $(window).on('load scroll', function () {
                     if ($(window).scrollTop() > 200) {
@@ -177,7 +178,31 @@
             }
         }
     };
+    var headerFixed2 = function () {
+        if ($('body').hasClass('header-fixed2')) {
+            var nav = $('#header_main');
+            if (nav.length) {
+                var offsetTop = nav.offset().top,
+                injectSpace = $('<div />', {
+                }).insertAfter(nav);
+                $(window).on('load scroll', function () {
+                    if ($(window).scrollTop() > 200) {
+                        nav.addClass('is-fixed');
+                        injectSpace.show();
+                    } else {
+                        nav.removeClass('is-fixed');
+                        injectSpace.hide();
+                    }
 
+                    if ($(window).scrollTop() > 300) {
+                        nav.addClass('is-small');
+                    } else {
+                        nav.removeClass('is-small');
+                    }
+                })
+            }
+        }
+    };
     var topSearch=function(){
         
         $(document).on('click',function(e){
@@ -522,6 +547,7 @@
             retinaLogos();
         });
         headerFixed();
+        headerFixed2();
         topSearch();
         mobileNav();
         ajaxSubscribe.eventLoad();

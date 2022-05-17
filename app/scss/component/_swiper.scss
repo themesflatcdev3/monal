@@ -161,6 +161,8 @@
     &.style {
         .next-project2,
         .prev-project2 {
+            width: 56px;
+            height: 56px;
             background: $color-hover;
             svg {
                 z-index: 1;
