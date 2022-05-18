@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'monal';
   src:  url('../assets/font/monal.eot');
@@ -26,6 +25,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-iconmail:before {
+  content: "\e937";
+  color: #005de0;
+}
+.icon-Iconbox .path1:before {
+  content: "\e92f";
+  color: rgb(0, 0, 0);
+}
+.icon-Iconbox .path2:before {
+  content: "\e936";
+  margin-left: -0.9677734375em;
+  color: rgb(255, 255, 255);
+}
+.icon-Group13:before {
+  content: "\e92e";
+
+}
 .icon-Icon81:before {
   content: "\e926";
 
@@ -61,6 +77,28 @@
 .icon-Line:before {
   content: "\e924";
   color: #005de0;
+}
+.icon-mail:before {
+  content: "\e930";
+}
+.icon-customer-service:before {
+  content: "\e931";
+
+}
+.icon-web-design:before {
+  content: "\e932";
+
+}
+.icon-cyber-security:before {
+  content: "\e933";
+
+}
+.icon-surface:before {
+  content: "\e934";
+
+}
+.icon-app-development:before {
+  content: "\e935";
 }
 .icon-phone-message-1:before {
   content: "\e923";

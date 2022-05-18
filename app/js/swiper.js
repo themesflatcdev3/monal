@@ -183,3 +183,28 @@ var swiper =  new Swiper(".slider-service", {
         },
     },
 });
+
+var swiper = new Swiper(".swiper-loop", {
+    spaceBetween: 30,
+    loop: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        600: {
+            slidesPerView: 3
+        },
+        991: {
+            slidesPerView: 3
+        },
+        1200: {
+            slidesPerView: 3
+        },
+    },
+    // autoplay: {
+    // delay: 0.3, 
+    // }, 
+    autoplay: false,
+    speed: 2000,
+    disableOnInteraction: true
+});

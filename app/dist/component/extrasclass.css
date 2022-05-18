@@ -30,6 +30,10 @@
   padding-right: 70px;
 }
 
+.pr80 {
+  padding-right: 80px;
+}
+
 .bg-st1 {
   background: #F6F6F6;
 }
@@ -81,6 +85,9 @@
 .title-section.mb0 {
   margin-bottom: 0;
 }
+.title-section.mb19 {
+  margin-bottom: 19px;
+}
 
 .mb52 {
   margin-bottom: 52px;
@@ -112,6 +119,18 @@
 
 .pr10 {
   padding-right: 10%;
+}
+
+.pr15 {
+  padding-right: 15%;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.pt13 {
+  padding-top: 13px;
 }
 
 /*# sourceMappingURL=extrasclass.css.map */

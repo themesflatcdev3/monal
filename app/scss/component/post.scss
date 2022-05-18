@@ -658,4 +658,48 @@
             }
         }
     }
+    &.style3 {
+        .image {
+            img {
+                border-radius: 0;
+            }
+        }
+        .content {
+            position: relative;
+            padding: 40px 40px 30px;
+            .date {
+                position: absolute;
+                top: -15px;
+                padding: 0 20px;
+                @include flex(center,center);
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 600;
+                font-family: $font-main;
+                height: 30px;
+                left: 40px;
+                background: $bg-gradient3;
+                border-radius: 4px;
+                color: $white;
+                span {
+                    &::before {
+                        display: none;
+                    }
+                }
+                svg {
+                    margin-right: 5px;
+                }
+            }
+            .title {
+                color: #1B1D21;
+                margin-bottom: 20px;
+            }
+            ul {
+                border-bottom: 0;
+                border-top: 1px solid #E8E8E9;
+                padding-top: 30px;
+                margin-bottom: 0;
+            }
+        }
+    }
 }

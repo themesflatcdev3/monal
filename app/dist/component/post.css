@@ -655,5 +655,45 @@
   background: #e2c5f8;
   left: 0;
 }
+.blog-post.style3 .image img {
+  border-radius: 0;
+}
+.blog-post.style3 .content {
+  position: relative;
+  padding: 40px 40px 30px;
+}
+.blog-post.style3 .content .date {
+  position: absolute;
+  top: -15px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  height: 30px;
+  left: 40px;
+  background: linear-gradient(180deg, #0869c1 0%, #00b0fc 100%);
+  border-radius: 4px;
+  color: #fff;
+}
+.blog-post.style3 .content .date span::before {
+  display: none;
+}
+.blog-post.style3 .content .date svg {
+  margin-right: 5px;
+}
+.blog-post.style3 .content .title {
+  color: #1B1D21;
+  margin-bottom: 20px;
+}
+.blog-post.style3 .content ul {
+  border-bottom: 0;
+  border-top: 1px solid #E8E8E9;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=post.css.map */

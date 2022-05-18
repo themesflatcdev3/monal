@@ -245,3 +245,11 @@
         }
     }
 }
+
+.swiper-container {
+    &.swiper-loop {
+        transform: translateX(-200px);
+        overflow: visible;
+        padding: 20px 0 0 !important;
+    }
+}

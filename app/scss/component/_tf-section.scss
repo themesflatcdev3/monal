@@ -5,6 +5,9 @@
     &.pb0 {
         padding-bottom: 0;
     }
+    &.pd0 {
+        padding: 0;
+    }
 }
 
 .main {
@@ -18,9 +21,6 @@
         border-radius: 30px;
         background-size: 200% 100%;
         background-position: 0% 0%;
-        &:hover {
-            background-position: 100% 0%; 
-        }
     }
     .page-title {
         background: url('./../../assets/images/backgroup/bgslider1.jpg') center center no-repeat;
@@ -605,6 +605,7 @@
     .tf-button {
         background: linear-gradient(90deg, #005DE0 0%, #00B0FC 100%);
         border-radius: 4px;
+        padding: 0px 34px;
         span {
             &.icon {
                 margin-left: 10px;
@@ -625,24 +626,29 @@
     }
     .title-section {
         .sub-title {
-            padding-left: 65px;
+            padding-left: 60px;
             position: relative;
+            margin-bottom: 11px;
             &::before {
                 font-family: 'monal';
                 content: "\e924";
                 background: none;
                 transform: none;
                 font-size: 12px;
-                top: 0;
+                top: 2px;
+                left: -5px;
             }
         }
         .title {
             text-decoration: underline $color-main1 solid 2px;
+            text-transform: capitalize;
+            letter-spacing: -0.2px;
+            text-underline-offset: 4px;
         }
     }
     &.main {
         .page-title {
-            padding: 140px 0 100px;
+            padding: 310px 0 228px;
             background: url(./../../assets/images/backgroup/bg-page-title2.jpg) center center no-repeat;
             background-size: cover;
             .overlay {
@@ -655,6 +661,7 @@
     .box-slider {
         .content-box {
             width: 60%;
+            padding: 0;
             .sub-title {
                 color: #005DE0;
                 &::before {
@@ -672,6 +679,8 @@
                 color: $white;
                 font-size: 100px;
                 line-height: 1.1;
+                font-family: $font-main;
+                margin-bottom: 35px;
             }
             .desc {
                 font-size: 18px;
@@ -679,17 +688,20 @@
                 font-family: $font-main2;
                 color: $white;
                 padding-right: 50px;
+                letter-spacing: 0.1px;
+                margin-bottom: 49px;
             }
             .tf-button {
-                margin-right: 30px;
+                margin-right: 23px;
                 background: $bg-gradient2;
                 border-radius: 4px;
+                padding: 0px 36px;
                 span {
                     &.icon {
-                        margin-left: 10px;
+                        margin-left: 8px;
                         i {
-                            font-size: 25px;
-                            transform: translateY(3px);
+                            font-size: 20px;
+                            transform: translateY(2px);
                         }
                     }
                    
@@ -748,7 +760,7 @@
         &.tf-feature {
             padding: 0;
             z-index: 9;
-            margin-top: -3%;
+            margin-top: -58px;
         }
         &.tf-about {
             .img-bg {
@@ -764,6 +776,9 @@
             .img-about {
                 .img2 {
                     margin-top: -60%;
+                }
+                img {
+                    border-radius: 0;
                 }
             }
             .content-about {
@@ -807,6 +822,246 @@
                     }
                 } 
                
+            }
+        }
+        &.tf-service {
+            .container {
+                max-width: 1300px;
+            }
+            .wrap-service {
+                padding: 0px;
+                .title-section {
+                    margin-bottom: 60px;
+                    padding: 0 18%;
+                    .title {
+                        color: $white;
+                        text-decoration: underline $white solid 2px;
+                        margin-bottom: 20px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            .overlay {
+                position: absolute;
+                width: $w100;
+                height: 50%;
+                top: 0;
+                left: 0;
+                background: url('./../../assets/images/backgroup/bg-service.jpg') center center no-repeat;
+                background-size: cover;
+                z-index: -1;
+            }
+            .overlay2 {
+                @include overlay;
+                background: #F6F6F6;
+                z-index: -2;
+            }
+            .service-box {
+                padding: 30px 30px 30px;
+                position: relative;
+                z-index: 9;
+                &::before {
+                    @include overlay;
+                    background: $white;
+                    content: "";
+                    z-index: -3;
+                }
+                .wrap-inner {
+                    padding: 0 15px;
+                    margin-bottom: 30px;
+                    @include flex(flex-end,flex-start);
+                    .title-section {
+                        width: 50%;
+                        margin-bottom: 0;
+                        .title {
+                            margin-bottom: 0;
+                            text-transform: capitalize;
+                        }
+                    }
+                    .wrap-btn {
+                        width: 50%;
+                        text-align: right;
+                        .tf-button {
+                            background: $color-main1;
+                            color: $white;
+                        }
+                    }
+                }
+                .feature-box {
+                    flex-wrap: wrap;
+                    .col-50 {
+                        width: 50%;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    .box {
+                        box-shadow: none;
+                        margin-bottom: 30px;
+                        background: $color-4;
+                        width: 100%;
+                        &::after {
+                            z-index: -2;
+                        }
+                        .icon {
+                            width: 100px;
+                            height: 100px;
+                            min-width: 100px;
+                            min-height: 100px;
+                            .bg {
+                                background: transparent;
+                                width: 80px;
+                                height: 80px;
+                                position: relative;
+                                z-index: 9;
+                                &::after {
+                                    border-radius: 50%;
+                                    -webkit-transition: all 0.15s ease;
+                                    -moz-transition: all 0.15s ease;
+                                    -ms-transition: all 0.15s ease;
+                                    -o-transition: all 0.15s ease;
+                                    transition: all 0.15s ease;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    left: 0;
+                                    top: 0;
+                                    background: $bg-gradient3;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    z-index: -1;
+                                    content: "";
+                                }
+                                span {
+                                    @include transition3;
+                                    color: $white;
+                                }
+                            }
+                        }
+                        .content {
+                            h5 {
+                                text-decoration: underline $color-main1 solid 1px;
+                                a {
+                                    text-decoration: underline $color-main1 solid 1px;
+                                }
+                            }
+                            p {
+                                color: $txt-color;
+                            }
+                            .learnmore {
+                                position: relative;
+                                text-transform: uppercase;
+                                color: $color-main1;
+                                font-weight: bold;
+                                font-family: $font-main;
+                                font-size: 14px;
+                                line-height: 1;
+                                &::before {
+                                    position: absolute;
+                                    bottom: -1px;
+                                    height: 1px;
+                                    width: 93px;
+                                    content: "";
+                                    background: #e2c5f8;
+                                    left: 0;
+                                }
+                                &::after {
+                                    @include transition3;
+                                    position: absolute;
+                                    font-family: "Font Awesome 5 Pro";
+                                    content: "\f324";
+                                    color: $color-hover;
+                                    right: -21px;
+                                    top: 0;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        &:hover {
+                            background: transparent;
+                            .icon {
+                                border-color: $white;
+                                .bg {
+                                    background: $white;
+                                    &::after {
+                                        visibility: hidden;
+                                    }
+                                    span {
+                                        color: #005DE0;
+                                    }
+                                }
+                            }
+                            .content {
+                                h5 {
+                                    text-decoration: underline $white solid 1px;
+                                    a {
+                                        text-decoration: underline $white solid 1px;
+                                    }
+                                }
+                                p {
+                                    color: $white;
+                                }
+                                .learnmore {
+                                    color: $white;
+                                    &::after,
+                                    &::before {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.tf-about2 {
+            .image {
+                margin-bottom: 30px;
+                @include flex(flex-start,flex-start);
+                .img2 {
+                    padding-top: 20px;
+                }
+                .img1 {
+                    margin-left: 10px;
+                    margin-right: 80px;
+                }
+            }
+            .content-about {
+                .wrap-box {
+                    display: block;
+                    border-bottom: 0;
+                    .box {
+                        position: relative;
+                        padding-left: 50px;
+                        .icon {
+                            width: 30px;
+                            height: 30px;
+                            @include flex(center,center);
+                            background: $bg-gradient3;
+                            position: absolute;
+                            left: 0;
+                            top: 10px;
+                            border-radius: 50%;
+                            color: $white;
+                            font-size: 15px;
+                        }
+                        .title {
+                            text-decoration: underline $color-main1 solid 1px;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            margin-bottom: 0;
+                            @include font-16;
+                            color: #76777A;
+                        }
+                    }
+                }
+            }
+        }
+        &.tf-partner {
+            padding: 0;
+            .sl-partner {
+                padding: 80px 0;
+                border-top: 1px solid #E8E8E9;
             }
         }
     }
@@ -878,5 +1133,75 @@
         }
     }
 }
-
-
+.tf-section {
+    &.section-contact {
+        padding: 120px 0 0;
+    }
+}
+.section-contact {
+    background: rgba(1, 12, 42, 0.91);
+    .overlay {
+        @include overlay;
+        background: url('./../../assets/images/backgroup/bg1contact.jpg') center center no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    .title-section {
+        margin-bottom: 20px;
+        .title {
+            color: $white;
+        }
+    }
+    .desc {
+        color: $white;
+        margin-bottom: 15px;
+    }
+    .tf-button {
+        background: $color-hover;
+    }
+    .right-box {
+        position: relative;
+        .box {
+            background: $white;
+            position: absolute;
+            min-width: 210px;
+            min-height: 210px;
+            padding: 20px;
+            .wrap {
+                width: 100%;
+                height: 100%;
+                padding: 10px 10px 40px;
+                border: 1px dashed #E8E8E9;
+                .icon {
+                    width: 60px;
+                    height: 60px;
+                    background: $bg-gradient3;
+                    border-radius: 50%;
+                    @include flex(center,center);
+                    margin-bottom: 10px;
+                    span {
+                        font-size: 30px;
+                        color: $white;
+                    }
+                }
+                ul {
+                    li {
+                        font-family: $font-main;
+                        font-weight: bold;
+                        &:nth-child(1) {
+                            color: #005DE0;
+                            font-size: 12px;
+                            line-height: 22px;
+                            margin-bottom: 10px;
+                        }
+                        &:nth-child(2) {
+                            color: $color-main1;
+                            font-size: 20px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
