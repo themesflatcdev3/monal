@@ -385,14 +385,52 @@
                         right: 0;
                         width: 60px;
                         height: 60px;
+                        background: transparent;
                         border: none;
+                        z-index: 1;
+                        &::before {
+                            opacity: 0;
+                            @include transition5;
+                            position: absolute;
+                            content: "";
+                            background: $bg-gradient3;
+                            background-size: 200% 100%;
+                            background-position: 0% 0%;
+                            width: 100%;
+                            height: 100%;
+                            left: 0%;
+                            top: 0;
+                            z-index: -1;
+                            visibility: hidden;
+                        }
+                        &::after {
+                            opacity: 1;
+                            @include transition5;
+                            position: absolute;
+                            content: "";
+                            background: $bg-gradient;
+                            background-size: 200% 100%;
+                            background-position: 0% 0%;
+                            width: 100%;
+                            height: 100%;
+                            left: 0%;
+                            top: 0;
+                            z-index: -1;
+                            visibility: visible;
+                        }
                         i {
                             color: $white;
                         }
-                        background: $bg-gradient;
                         &:hover {
-                            background: $bg-gradient;
-                            opacity: 0.6;
+                            &::before {
+                                opacity: 1;
+                                visibility: visible;
+                                top: 0;
+                            }
+                            &::after {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
                         }
                     }
                 }
@@ -413,6 +451,10 @@
         }
     }
     &.style3 {
+        .widget-title {
+            text-decoration: underline #fff solid 1px;
+            text-underline-offset: 1px;
+        }
         .footer-top {
             position: relative;
             background: linear-gradient(90deg, #005DE0 0%, #00B0FC 100%);
@@ -425,10 +467,13 @@
                 @include flex2;
                 margin-bottom: 0;
                 background: none;
+                padding: 72px 0 60px;
                 .left {
                     width: 50%;
                     h3 {
-                        margin-bottom: 15px;
+                        margin-bottom: 18px;
+                        text-decoration: underline $white solid 1px;
+                        text-underline-offset: 1px;
                     }
                     p {
                         margin-bottom: 0;
@@ -439,14 +484,16 @@
                 }
                 .right {
                     width: 50%;
+                    padding-left: 35px;
                     form {
+                        margin-top: -10px;
                         position: relative;
                         button {
                             position: absolute;
                             top: 5px;
                             right: 5px;
                             &.tf-button {
-                                background: $color-main1;
+                                padding: 0px 33px;
                             }
                         }
                         input[type=email] {
@@ -455,7 +502,7 @@
                             color: #76777A;
                             font-family: $font-main2;
                             height: 70px;
-                            padding: 10px 15px 10px 50px;
+                            padding: 8px 15px 10px 50px;
                             position: relative;
                             &::placeholder {
                                 font-size: 14px;
@@ -466,11 +513,56 @@
                         }
                         .icon-iconmail {
                             position: absolute;
-                            left: 20px;
-                            top: 21px;
+                            left: 22px;
+                            top: 23px;
+                            font-size: 15px;
                             z-index: 99;
                         }
                     }
+                }
+            }
+        }
+        .footer-main {
+            background: rgba(1, 12, 42, 0.96);
+            .bg-overlay {
+                @include overlay;
+                background: url('./../../assets/images/backgroup/bg-footer3.jpg') center center no-repeat;
+                background-size: cover;
+                z-index: -2;
+            }
+            padding: 90px 0 30px;
+            .widget-logo {
+                padding-right: 50px;
+                .footer__logo {
+                    margin-bottom: 24px;
+                }
+                .desc {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .footer-bottom {
+            border: none;
+            margin-top: 76px;
+            background: $color-main1;
+            border-radius: 4px;
+            height: 70px;
+            padding: 15px 30px;
+            @include flex(center,space-between);
+            .wrap-fx {
+                width: $w100;
+            }
+            .list {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    width: 234px;
+                    left: 0;
+                    bottom: 4px;
+                    height: 2px;
+                    background: #fff;
+                    content: "";
+                    z-index: 0;
                 }
             }
         }
@@ -492,8 +584,16 @@
         }
         .widget {
             &.widget-recent-posts {
+                padding-left: 75px;
                 width: 30%;
+                .widget-title {
+                    margin-bottom: 34px;
+                }
                 .recent-posts {
+                    margin-bottom: 20px;
+                    img {
+                        border-radius: 0;
+                    }
                     li {
                         .content {
                             a {
@@ -501,13 +601,18 @@
                                 &:hover {
                                     color: #005DE0;
                                 }
+                                &.title {
+                                    text-decoration: underline #fff solid 2px;
+                                } 
                             }
                             .meta-post {
                                 a {
+                                    font-size: 12px;
+                                    line-height: 22px;
                                     color: #A4A5A6;
                                     @include flex(center,flex-start);
                                     svg {
-                                        margin-right: 5px;
+                                        margin-right: 8px;
                                     }
                                     &:hover {
                                         color: #005DE0;
@@ -515,21 +620,32 @@
                                 }
                             }
                         }
+                        &:first-child {
+                            margin-bottom: 6px;
+                        }
                     }
                 }
             }
             &.widget-logo {
                 .box {
                     @include flex(center,flex-start);
+                    padding-left: 5px;
                     svg {
-                        margin-right: 15px;
+                        margin-right: 13px;
                     }
                     span {
                         @include font-16;
                         color: $white;
                         font-family: $font-main;
                         font-weight: bold;
+                        text-transform: none;
                     }
+                }
+            }
+            &.widget-service {
+                padding-left: 65px;
+                &.style {
+                    padding-left: 45px;
                 }
             }
         }

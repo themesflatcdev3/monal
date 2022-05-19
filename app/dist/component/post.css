@@ -570,7 +570,7 @@
   margin-bottom: 15px;
 }
 .blog-post .content .title a:hover {
-  color: #9000FF;
+  color: #00B0FC;
 }
 .blog-post .content p {
   text-transform: capitalize;
@@ -660,11 +660,11 @@
 }
 .blog-post.style3 .content {
   position: relative;
-  padding: 40px 40px 30px;
+  padding: 33px 40px 30px;
 }
 .blog-post.style3 .content .date {
   position: absolute;
-  top: -15px;
+  top: -18px;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -683,16 +683,16 @@
   display: none;
 }
 .blog-post.style3 .content .date svg {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 .blog-post.style3 .content .title {
   color: #1B1D21;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 }
 .blog-post.style3 .content ul {
   border-bottom: 0;
   border-top: 1px solid #E8E8E9;
-  padding-top: 30px;
+  padding-top: 22px;
   margin-bottom: 0;
 }
 

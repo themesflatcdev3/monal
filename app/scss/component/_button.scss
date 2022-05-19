@@ -27,3 +27,57 @@
         }
     }
 }
+
+.btn-effect1 {
+    .tf-button {
+            overflow: hidden;
+            border-radius: 30px;
+            position: relative;
+            background: transparent;
+            @include transition3;
+            &::before {
+                opacity: 0;
+                @include transition5;
+                position: absolute;
+                border-radius: 30px;
+                content: "";
+                background: $bg-gradient3;
+                background-size: 200% 100%;
+                background-position: 0% 0%;
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0;
+                z-index: -1;
+                visibility: hidden;
+            }
+            &::after {
+                opacity: 1;
+                @include transition5;
+                position: absolute;
+                border-radius: 30px;
+                content: "";
+                background: $bg-gradient;
+                background-size: 200% 100%;
+                background-position: 0% 0%;
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0;
+                z-index: -1;
+                visibility: visible;
+            }
+        &:hover {
+            &::before {
+                opacity: 1;
+                visibility: visible;
+                top: 0;
+            }
+            &::after {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+    }
+}

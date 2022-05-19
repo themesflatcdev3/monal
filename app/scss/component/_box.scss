@@ -57,15 +57,38 @@
         font-family: $font-main;
         font-weight: bold;
         position: relative;
-        &::after {
-            @include transition3;
-            position: absolute;
-            font-family: "Font Awesome 5 Pro";
-            content: "\f324";
-            color: $color-7;
-            right: -21px;
-            top: 1px;
-            font-size: 13px;
+        span {
+            position: relative;
+            &::after,
+            &::before {
+                position: absolute;
+                font-family: "Font Awesome 5 Pro";
+                content: "\f324";
+                color: $color-7;
+                right: -21px;
+                font-size: 13px;
+                top: 56%;
+            }
+            &::after {
+                opacity: 1;
+                visibility: visible;
+                @include transition3;
+                -webkit-transform: translate(0, -50%);
+                -moz-transform: translate(0, -50%);
+                -ms-transform: translate(0, -50%);
+                -o-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+            }
+            &::before {
+                opacity: 0;
+                visibility: hidden;
+                @include transition3;
+                -webkit-transform: translate(-7px, -50%);
+                -moz-transform: translate(-7px, -50%);
+                -ms-transform: translate(-7px, -50%);
+                -o-transform: translate(-7px, -50%);
+                transform: translate(-7px, -50%);
+            }
         }
         &::before {
             position: absolute;
@@ -75,6 +98,30 @@
             content: "";
             background: #e2c5f8;
             left: 0;
+        }
+        &:hover {
+            span {
+                &::after {
+                    opacity: 0;
+                    visibility: hidden;
+                    @include transition3;
+                    -webkit-transform: translate(7px, -50%);
+                    -moz-transform: translate(7px, -50%);
+                    -ms-transform: translate(7px, -50%);
+                    -o-transform: translate(7px, -50%);
+                    transform: translate(7px, -50%);
+                }
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                    @include transition3;
+                    -webkit-transform: translate(2px, -50%);
+                    -moz-transform: translate(2px, -50%);
+                    -ms-transform: translate(2px, -50%);
+                    -o-transform: translate(2px, -50%);
+                    transform: translate(2px, -50%);
+                }
+            }
         }
     }
     &.ecffect {
@@ -111,9 +158,6 @@
             .icon {
                 span {
                     color: $white;
-                    // background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
-                    // -webkit-background-clip: text;
-                    // -webkit-text-fill-color: transparent;
                     &::after {
                         background: $white;
                     }
@@ -133,6 +177,12 @@
                 color: $white;
                 &::after {
                     color: $white;
+                }
+                span {
+                    &::after,
+                    &::before {
+                        color: $white;
+                    }
                 }
             }
         }
@@ -237,12 +287,8 @@
                 @include transition3;
             }
             &:hover {
-                color: $color-hover;
                 &::after {
                     color: $color-hover;
-                }
-                &::before {
-                    background: $color-hover;
                 }
             }
         }
@@ -264,6 +310,10 @@
         overflow: hidden;
         @include transition3;
         @include flex(center,center);
+        img {
+            border-radius: 0;
+            width: $w100;
+        }
         .icon {
             @include transition3;
             z-index: 2;
@@ -286,7 +336,7 @@
             border-radius: 5px;
         }
         &:hover {
-            margin-top: -10px;
+            margin-top: -20px;
             &::before {
                 opacity: 1;
             }
@@ -508,6 +558,19 @@
             }
         }
     }
+    .image {
+        position: relative;
+        overflow: hidden;
+        &::before {
+            @include transition3;
+            @include overlay;
+            content: "";
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            background: rgba(1, 12, 42, 0.5);
+        }
+    }
     &.active,
     &:hover {
         .content {
@@ -538,6 +601,12 @@
                         }
                     }
                 }
+            }
+        }
+        .image {
+            &::before {
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
@@ -658,9 +727,10 @@
     }
     &.style3 {
         .image {
-            position: relative;
-            overflow: hidden;
-            border-radius: 5px;
+            border-radius: 0px;
+            img {
+                border-radius: 0;
+            }
             &::before {
                 @include transition3;
                 @include overlay;
@@ -672,10 +742,13 @@
             }
         }
         .content {
-            margin-top: -60%;
+            margin-top: -170px;
             background: $white;
             margin-left: 0;
-            width: 90%;
+            width: 93%;
+            text-align: left;
+            border-radius: 0;
+            padding: 30px 30px 20px;
             &::after,
             &::before {
                 display: none;
@@ -684,11 +757,16 @@
                 text-transform: capitalize;
                 color: $color-main1;
                 text-decoration: underline transparent solid 1px;
+                text-underline-offset: 1px;
             }
             p {
                 color: $txt-color;
+                margin-bottom: 15px;
+                text-transform: capitalize;
             }
             .social {
+                border-top: 1px solid #E8E8E9;
+                padding-top: 16px;
                 li {
                     a {
                         &.active,
@@ -705,7 +783,6 @@
                 text-decoration: underline $color-main1 solid 1px;
             }
             .image {
-                position: relative;
                 &::before {
                     opacity: 1;
                     visibility: visible;

@@ -191,8 +191,11 @@ var swiper = new Swiper(".swiper-loop", {
         0: {
             slidesPerView: 1
         },
+        500: {
+            slidesPerView: 2
+        },
         600: {
-            slidesPerView: 3
+            slidesPerView: 2
         },
         991: {
             slidesPerView: 3
