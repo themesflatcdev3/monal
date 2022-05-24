@@ -684,4 +684,13 @@
   background: #7141B1;
 }
 
+.inner-page #footer .widget.widget-infomation {
+  padding-left: 17px;
+}
+.inner-page #footer .widget.widget-infomation .infomation li:nth-child(1)::before {
+  left: 1px;
+  top: 4px;
+  font-size: 24px;
+}
+
 /*# sourceMappingURL=footer.css.map */

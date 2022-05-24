@@ -698,3 +698,20 @@
         }
     }
 }
+
+.inner-page {
+    #footer {
+        .widget {
+            &.widget-infomation {
+                padding-left: 17px;
+                .infomation {
+                    li:nth-child(1)::before {
+                        left: 1px;
+                        top: 4px;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -25,6 +25,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-web-1:before {
+  content: "\e944";
+
+}
+.icon-user-7-1:before {
+  content: "\e941";
+
+}
+.icon-tag-1-1:before {
+  content: "\e942";
+
+}
+.icon-Group1:before {
+  content: "\e943";
+
+}
+.icon-bg-Vector:before {
+  content: "\e938";
+
+}
+.icon-creative-1:before {
+  content: "\e939";
+
+}
+.icon-choose-1:before {
+  content: "\e93a";
+
+}
+.icon-drag-1:before {
+  content: "\e93b";
+
+}
 .icon-iconmail:before {
   content: "\e937";
   color: #005de0;
@@ -108,6 +140,14 @@
   content: "\e920";
 
 }
+.icon-development-1:before {
+  content: "\e93c";
+
+}
+.icon-training-1:before {
+  content: "\e93d";
+
+}
 .icon-ux-interface:before {
   content: "\e918";
 
@@ -145,6 +185,18 @@
 }
 .icon-Icon7:before {
   content: "\e911";
+}
+.icon-email-10-1:before {
+  content: "\e93e";
+
+}
+.icon-phone-1-1:before {
+  content: "\e93f";
+
+}
+.icon-meeting-point-1:before {
+  content: "\e940";
+
 }
 .icon-diskette-1:before {
   content: "\e91c";

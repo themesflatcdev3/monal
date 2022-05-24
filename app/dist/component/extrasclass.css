@@ -86,6 +86,9 @@
 .title-section.mb39 {
   margin-bottom: 39px;
 }
+.title-section.mb49 {
+  margin-bottom: 49px;
+}
 .title-section.mb0 {
   margin-bottom: 0;
 }
@@ -125,6 +128,10 @@
   padding-right: 10%;
 }
 
+.pr100 {
+  padding-right: 100px;
+}
+
 .pr15 {
   padding-right: 15%;
 }
@@ -143,6 +150,14 @@
 
 .mr-15 {
   margin-right: -15px;
+}
+
+.mt131 {
+  margin-top: 131px;
+}
+
+.mb26 {
+  margin-bottom: 26px;
 }
 
 /*# sourceMappingURL=extrasclass.css.map */

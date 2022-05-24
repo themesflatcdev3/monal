@@ -1702,6 +1702,36 @@
 }
 }
 
+@keyframes move6 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+50% {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+}
+
+@keyframes move7 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+50% {
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+}
+
 @keyframes myanimation {
   0% {
       width: 0;
