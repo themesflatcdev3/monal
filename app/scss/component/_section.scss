@@ -1,6 +1,10 @@
 @use '../abstracts/' as *;
 
 /* animation slider */
+.gallery-slider2 .image {
+    transform: translateY(30px);
+    opacity: 0;
+}
 .box-slider .content-box .btn-slider,
 .box-slider .content-box .desc,
 .box-slider .content-box .title,
@@ -8,12 +12,10 @@
     transform: translateY(100px);
     opacity: 0;
 }
-
 .box-slider .image {
     transform: translateX(100px);
     opacity: 0;
 }
-
 .swiper-slide-active .box-slider .image {
     opacity           : 1;
     visibility        : visible;
@@ -24,6 +26,7 @@
     transition        : transform 500ms ease, opacity 500ms ease;
     transition-delay  : 500ms;
 }
+.gallery-slider2 .swiper-slide-active .image,
 .swiper-slide-active .box-slider .content-box .btn-slider,
 .swiper-slide-active .box-slider .content-box .desc,
 .swiper-slide-active .box-slider .content-box .title,
@@ -37,15 +40,18 @@
     transition        : transform 800ms ease, opacity 800ms ease;
     transition-delay  : 1000ms;
 }
+.gallery-slider2 .swiper-slide-active .image,
 .swiper-slide-active .box-slider .content-box .btn-slider,
 .swiper-slide-active .box-slider .content-box .desc,
 .swiper-slide-active .box-slider .content-box .title,
 .swiper-slide-active .box-slider .content-box .sub-title {
     transform: translateY(0px) !important;
 }
-
 .swiper-slide-active .box-slider .image {
     transform: translateX(0px) !important;
+}
+.gallery-slider2 .swiper-slide-active .image {
+    transition-delay: 300ms;
 }
 .swiper-slide-active .box-slider .image,
 .swiper-slide-active .box-slider .content-box .sub-title {
@@ -149,7 +155,7 @@
         z-index: -1;
     }
 }
-
+.tf-product,
 .tf-post {
     article {
         width: 66%;
@@ -1043,5 +1049,26 @@
                 }
             }
         }
+    }
+}
+
+.dropdown-menu {
+    max-width: 250px;
+    min-width: 250px;
+    margin-top: 8px !important;
+    width: 100%;
+    left: 0;
+    height: auto;
+    padding: 0;
+    top: 0;
+    background: $color-6;
+    border-radius: 0;
+    transform: translate(0px, 52px) !important;
+    border: none;
+    border-left: 1px solid #D1D2D3;
+    border-right: 1px solid #D1D2D3;
+    border-bottom: 1px solid #D1D2D3;
+    &:hover {
+        cursor: pointer;
     }
 }

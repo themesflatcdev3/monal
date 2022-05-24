@@ -1227,3 +1227,128 @@
 }
 
 
+.item-box {
+    position: relative;
+    .image {
+        overflow: hidden;
+        position: relative;
+        background: $color-4;
+        @include flex2;
+        justify-content: center;
+        img {
+            width: $w100;
+        }
+        .add-cart {
+            border-radius: 2px;
+            height: 40px;
+            position: absolute;
+            @include flex(center,center);
+            bottom: -30px;
+            opacity: 0;
+            visibility: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 196px;
+            background: $color-hover;
+            @include font-14;
+            font-weight: bold;
+            font-family: $font-main;
+            text-transform: uppercase;
+            color: $white;
+            span {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+            &:hover {
+                background: $color-6;
+            }
+        }
+        .new {
+            @include transition3;
+            opacity: 0;
+            left: -25px;
+            position: absolute;
+            top: 0;
+            background-color: $color-hover;
+            height: 25px;
+            display: flex;
+            -webkit-mask-image: url(./../../assets/images/product/bgnew.png);
+            mask-image: url(./../../assets/images/product/bgnew.png);
+            -webkit-mask-position: center center;
+            mask-position: center center;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            padding: 21px 0px 39px 0px;
+            span {
+                position: relative;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 25px;
+                font-weight: 500;
+                color: $white;
+                width: 25px;
+                -moz-transform: translateX(50%) translateY(50%) rotate(90deg);
+                -webkit-transform: translateX(50%) translateY(50%) rotate(90deg);
+                transform:  translateX(50%) translateY(50%) rotate(90deg);
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            @include overlay;
+            background: rgba(1, 12, 42, 0.7);
+            opacity: 0;
+            @include transition3;
+        }
+    }
+    .content {
+        padding: 14px 15px 20px;
+        box-shadow: 0px 10px 70px 0px #00000012;
+        background: $white;
+        text-align: center;
+        .star {
+            margin-bottom: 1px;
+        }
+        .name {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+        }
+        .pricing {
+            color: $color-hover;
+            @include font-16;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+    }
+    &.active,
+    &:hover {
+        .add-cart {
+            bottom: 10px;
+            opacity: 1;
+            visibility: visible;
+        }
+        .new {
+            opacity: 1;
+            left: 20px;
+        }
+        .image {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.star {
+    @include flex(center,center);
+    li {
+        margin: 0 2px;
+        span {
+            font-size: 13px;
+        }
+    }
+}

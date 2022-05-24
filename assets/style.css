@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'monal' !important;
-  /* speak: never; */
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Star-1:before {
+  content: "\e949";
+  color: #f7c000;
+}
 .icon-web-1:before {
   content: "\e944";
 
@@ -72,23 +76,23 @@
 }
 .icon-Group13:before {
   content: "\e92e";
-
+ 
 }
 .icon-Icon81:before {
   content: "\e926";
-
+ 
 }
 .icon-Icon71:before {
   content: "\e927";
-
+ 
 }
 .icon-Icon61:before {
   content: "\e928";
-
+ 
 }
 .icon-Icon51:before {
   content: "\e929";
-
+ 
 }
 .icon-Icon4:before {
   content: "\e92a";
@@ -104,7 +108,7 @@
 }
 .icon-play:before {
   content: "\e925";
-
+ 
 }
 .icon-Line:before {
   content: "\e924";
@@ -115,19 +119,19 @@
 }
 .icon-customer-service:before {
   content: "\e931";
-
+ 
 }
 .icon-web-design:before {
   content: "\e932";
-
+ 
 }
 .icon-cyber-security:before {
   content: "\e933";
-
+ 
 }
 .icon-surface:before {
   content: "\e934";
-
+ 
 }
 .icon-app-development:before {
   content: "\e935";
@@ -142,7 +146,7 @@
 }
 .icon-development-1:before {
   content: "\e93c";
-
+ 
 }
 .icon-training-1:before {
   content: "\e93d";
@@ -158,7 +162,7 @@
 }
 .icon-Group:before {
   content: "\e91a";
-
+ 
 }
 .icon-web-development-1:before {
   content: "\e91b";
@@ -177,11 +181,11 @@
 }
 .icon-date:before {
   content: "\e913";
-
+ 
 }
 .icon-Icon8:before {
   content: "\e910";
-
+ 
 }
 .icon-Icon7:before {
   content: "\e911";
@@ -216,18 +220,40 @@
 }
 .icon-coding:before {
   content: "\e90c";
-
+ 
 }
 .icon-Page-1_50:before {
   content: "\e90d";
 }
+.icon-shopping-cart-4-1:before {
+  content: "\e94a";
+ 
+}
+.icon-BG .path1:before {
+  content: "\e945";
+  color: rgb(232, 232, 233);
+}
+.icon-BG .path2:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(0, 176, 252);
+}
+.icon-Icon11 .path1:before {
+  content: "\e947";
+  color: rgb(0, 176, 252);
+}
+.icon-Icon11 .path2:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
 .icon-pin:before {
   content: "\e921";
-
+ 
 }
 .icon-mail3:before {
   content: "\e922";
-
+ 
 }
 .icon-Icon13:before {
   content: "\e91e";
@@ -268,7 +294,7 @@
 }
 .icon-mouse:before {
   content: "\e908";
-
+ 
 }
 .icon-infomation3:before {
   content: "\e905";

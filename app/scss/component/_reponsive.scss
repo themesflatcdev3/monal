@@ -172,6 +172,45 @@
 }
 
 @include res1200 {
+    .tf-product {
+        #sidebar  {
+            .widget {
+                &.widget-recent-posts {
+                    padding: 30px;
+                }
+            }
+        }
+    }
+    .pricing {
+        .tf-pricing {
+            &.style2 {
+                .pricing-fx {
+                    .pricing-box {
+                        .pricing-inner {
+                            padding:30px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .history-box {
+        .box {
+            &.left {
+                .img-box {
+                    padding-right: 30px;
+                    img {
+                        margin-left: 0;
+                    }
+                }
+            }
+            &.right {
+                .img-box {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
     .pg-faq {
         .tf-section {
             &.tf-faq {
@@ -503,6 +542,62 @@
 }
 
 @include res991 {
+    .tf-product {
+        article,
+        #sidebar {
+            width: $w100;
+        }
+        .wrap-fx {
+            display: block;
+        }
+        article {
+            margin-bottom: 50px;
+        }
+        #sidebar {
+            padding-left: 0;
+        }
+    }
+    .pricing {
+        .tf-pricing {
+            &.style2 {
+                .pricing-fx {
+                    flex-wrap: wrap;
+                    .pricing-box {
+                        width: calc(50% - 20px);
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .history-box {
+        &::before {
+            display: none;
+        }
+        .box {
+            .number {
+                width: 20%;
+                span {
+                    display: none;
+                }
+            }
+            .img-box {
+                width: 80%;
+            }
+            &.left {
+                .number {
+                    text-align: right;
+                    padding-left: 0;
+                }
+            }
+            &.right {
+                .number {
+                    text-align: left;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
     .header {
         #site-header-inner {
             padding: 10px 0;
@@ -1175,9 +1270,64 @@
             }
         }
     }
+    .history {
+        .tf-section {
+            &.get-solutions {
+                .box {
+                    padding: 50px;
+                }
+            }
+        }
+    }
 }
 
 @include res767 {
+    .product-flex .item-box {
+        width: calc(50% - 31px);
+    }
+    .history-box {
+        .box {
+            .img-box {
+                .content {
+                    padding: 40px 40px 40px 90px;
+                }
+            }
+        }
+    }
+    .history {
+        .tf-section {
+            &.get-solutions {
+                .image-video {
+                    position: relative;
+                    .popup-youtube {
+                        @include leftcenter;
+                    }
+                }
+                .overlay {
+                    height: 100%;
+                }
+                .box {
+                    margin-top: 0;
+                    margin-right: 0;
+                    max-width: 100%;
+                    padding: 30px;
+                }
+            }
+        }
+    }
+    .pr100 {
+        padding-right: 0;
+    }
+    .about {
+        .wrap-icon-box {
+            .icon-box.st2 {
+                padding: 0;
+                .title {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
     .pg-project {
         .tf-section {
             &.tf-project-detail {
@@ -1744,6 +1894,72 @@
 }
 
 @include res600 {
+    .pricing {
+        .tf-pricing {
+            &.style2 {
+                .pricing-fx {
+                    flex-wrap: wrap;
+                    .pricing-box {
+                        width: calc(100% - 20px);
+                    }
+                }
+            }
+        }
+    }
+    .history-box {
+        .box {
+            .number {
+                font-size: 30px;
+            }
+            .img-box {
+                display: block;
+                background: $white;
+                text-align: center;
+                padding:30px 15px !important;
+                @include transition3;
+                border-radius: 5px;
+                img {
+                    margin-bottom: 30px;
+                }
+                .content {
+                    margin-left: 0;
+                    padding: 0;
+                    background: none;
+                    box-shadow: none;
+                    &::after {
+                        display: none;
+                    }
+                    h5 {
+                        font-size: 18px;
+                    }
+                }
+                &.active {
+                    background: $color-main1;
+                    .content {
+                        background: none;
+                        box-shadow: none;
+                    }
+                }
+                &:hover {
+                    background: $color-main1;
+                    .content {
+                        background: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+            &.left {
+                .img-box {
+                    margin-right: 30px;
+                }
+            }
+            &.right {
+                .img-box {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
     .flat-tabs {
         &.tab1 {
             .content-tab {
@@ -1832,6 +2048,15 @@
     }
 }
 @include res500 {
+    .product-flex .item-box {
+        width: calc(100% - 31px);
+    }
+    .top-bar-product {
+        display: block;
+        #artworks {
+            margin-top: 30px;
+        }
+    }
     .pg-project {
         .tf-section {
             &.tf-project-detail {

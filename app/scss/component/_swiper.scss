@@ -253,3 +253,22 @@
         padding: 20px 0 0 !important;
     }
 }
+
+.swiper-container.gallery-thumbs2 {
+    height: 460px;
+    min-width: 100px;
+    img {
+        min-width: 100px;
+        min-height: 100px;
+    }
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}

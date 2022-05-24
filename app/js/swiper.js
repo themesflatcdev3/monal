@@ -211,3 +211,41 @@ var swiper = new Swiper(".swiper-loop", {
     speed: 2000,
     disableOnInteraction: true
 });
+
+var swiper3 = new Swiper(".gallery-thumbs2", {
+    direction: "vertical",
+    spaceBetween: 20,
+    grabCursor: true,
+    loop: false,
+    breakpoints: {
+        0: {
+            slidesPerView: '3'
+        },
+        991: {
+            slidesPerView: 4,
+            spaceBetween: 0,   
+        },
+    },
+    // shortSwipes: false,
+    // longSwipes: false,
+    allowTouchMove: true,
+    freeMode: true, 
+    disableOnInteraction: true
+  });
+  
+  var swiper4 = new Swiper(".gallery-slider2", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    loop: false,
+    navigation: {
+      nextEl: ".btn-next-customer",
+      prevEl: ".btn-prev-customer",
+    },
+    pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+    },
+    thumbs: {
+        swiper: swiper3,
+    },
+  });

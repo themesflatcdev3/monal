@@ -540,6 +540,18 @@
         });
     };
 
+    var dropdown = function(id){
+        var obj = $(id+'.dropdown');
+        var btn = obj.find('.btn-selector');
+        var dd = obj.find('ul');
+        var opt = dd.find('li');
+            opt.on("click", function() {
+                var txt = $(this).text();
+                opt.removeClass("active");
+                $(this).toggleClass("active"); 
+                btn.text(txt);
+            });
+    };
   
     // Dom Ready
     $(function () {
@@ -556,7 +568,6 @@
         tabs();
         tabs2();
         goTop();
-        AOS.init();
         flatAccordion();
         popupVideo();
         flatCounter();
@@ -566,6 +577,7 @@
         loadmore();
         headerMenu();
         donatProgress();
+        dropdown('#artworks');
         Preloader();
     });
 
