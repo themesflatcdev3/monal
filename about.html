@@ -17,9 +17,11 @@
 </head>
 <body class="header-fixed inner-page about counter-scroll">
         <!-- preloade -->
-        <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+          </div>
         <!-- /preload -->
     <div id="wrapper">
         <!-- Header -->
@@ -47,36 +49,37 @@
                                 <li class="menu-item"><a href="home-3.html">Home 3</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item menu-item-has-children current-menu-item">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="about.html">About 1</a></li>
-                                <li class="menu-item"><a href="about2.html">About 2</a></li>
-                                <li class="menu-item"><a href="team-details.html">OUR TEAM</a></li>
-                                <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                <li class="menu-item"><a href="community.html">Community</a></li>
-                                <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                <li class="menu-item"><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="roadmap.html">Road Map 1</a></li>
-                                <li class="menu-item"><a href="roadmap2.html">Road Map 2</a></li>
+                                <li class="menu-item current-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="team.html">OurTeam</a></li>
+                                <li class="menu-item"><a href="team-details.html">Team Details</a></li>
+                                <li class="menu-item"><a href="service.html">Service</a></li>
+                                <li class="menu-item"><a href="service-details.html">Service Details</a></li>
+                                <li class="menu-item"><a href="history.html">history</a></li>
+                                <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+                                <li class="menu-item"><a href="faq.html">FAQ</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Portfolio</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="item.html">NFT Item</a></li>
-                                <li class="menu-item"><a href="item-details.html">NFT Item Details</a></li>
+                                <li class="menu-item"><a href="porfolio.html">porfolio</a></li>
+                                <li class="menu-item"><a href="porfolio-details.html">porfolio details</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children current-menu-item">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Product</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="product.html">Product</a></li>
+                                <li class="menu-item"><a href="product-details.html">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
                             <a href="#">News</a>
                             <ul class="sub-menu">
-                                <li class="menu-item current-item"><a href="blog-standard.html">blog standard</a></li>
+                                <li class="menu-item"><a href="blog-standard.html">blog standard</a></li>
                                 <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
@@ -99,7 +102,7 @@
                             </form>
                         </div>
                     </div>
-                    <a class="tf-button" href="contact.html">                          
+                    <a class="tf-button" href="service.html">                          
                         <span>Get Solution</span>
                     </a>
                 </div>
@@ -280,7 +283,7 @@
                             <span class="icon-drag-1"></span>
                             <span class="number">01</span>
                         </div>
-                        <h5 class="title"><a href="#">Your Goal Setting</a></h5>
+                        <h5 class="title">Your Goal Setting</h5>
                         <p>Phasellus posuere id ligula id dictum. Praesent rutru</p>
                     </div>
                 </div>
@@ -300,7 +303,7 @@
                             <span class="icon-choose-1"></span>
                             <span class="number">02</span>
                         </div>
-                        <h5 class="title"><a href="#">Select Services</a></h5>
+                        <h5 class="title">Select Services</h5>
                         <p>Phasellus posuere id ligula id dictum. Praesent rutru</p>
                     </div>
                 </div>
@@ -310,7 +313,7 @@
                             <span class="icon-creative-1"></span>
                             <span class="number">03</span>
                         </div>
-                        <h5 class="title"><a href="#">Solve Problem</a></h5>
+                        <h5 class="title">Solve Problem</h5>
                         <p>Phasellus posuere id ligula id dictum. Praesent rutru</p>
                     </div>
                 </div>
@@ -338,7 +341,7 @@
                                         <img src="assets/images/common/team5.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Al Mahmud</h5>
+                                        <h5 class="name"><a href="team-details.html">Al Mahmud</a></h5>
                                         <p class="desc">UI- Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -355,7 +358,7 @@
                                         <img src="assets/images/common/team6.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Michelle monaghan</h5>
+                                        <h5 class="name"><a href="team-details.html">Michelle monaghan</a></h5>
                                         <p class="desc">Graphic Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -372,7 +375,7 @@
                                         <img src="assets/images/common/team7.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Michelle Williams</h5>
+                                        <h5 class="name"><a href="team-details.html">Michelle Williams</a></h5>
                                         <p class="desc">UI- Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -389,7 +392,7 @@
                                         <img src="assets/images/common/team8.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Michael Jordan</h5>
+                                        <h5 class="name"><a href="team-details.html">Michael Jordan</a></h5>
                                         <p class="desc">Software engineer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -413,9 +416,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer-inner">
-                            <div class="overlay"></div>
                             <h3>Solve your IT needs today!</h3>
-                            <a href="#" class="tf-button"><span>Get Solutions</span></a>
+                            <a href="service.html" class="tf-button"><span>Get Solutions</span></a>
                         </div>
                     </div>
                 </div>
@@ -463,7 +465,7 @@
                         </h5>
                         <ul class="widget-link">
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li>
                                 <a href="#">development</a>
@@ -504,7 +506,7 @@
                         </h5>
                         <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
                         <form action="#">
-                            <input type="text" placeholder="Email Address" name="" id="">
+                            <input type="text" placeholder="Email Address" name="email" id="name">
                             <button>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2075_4097)">
@@ -550,8 +552,6 @@
     <script src="app/js/jquery.min.js"></script>
     <script src="app/js/app.js"></script>
     <script src="app/js/jquery.easing.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="app/js/jquery.magnific-popup.min.js"></script>
     <script src="app/js/swiper-bundle.min.js"></script>
     <script src="app/js/swiper.js"></script>
     <script src="app/js/animated.js"></script>

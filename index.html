@@ -17,9 +17,11 @@
     </head>
 <body class="header-fixed main home1 counter-scroll btn-effect1">
         <!-- preloade -->
-        <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+          </div>
         <!-- /preload -->
     <div id="wrapper">
         <!-- Header -->
@@ -50,27 +52,28 @@
                         <li class="menu-item menu-item-has-children">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="about.html">About 1</a></li>
-                                <li class="menu-item"><a href="about2.html">About 2</a></li>
-                                <li class="menu-item"><a href="team-details.html">OUR TEAM</a></li>
-                                <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                <li class="menu-item"><a href="community.html">Community</a></li>
-                                <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                <li class="menu-item"><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="roadmap.html">Road Map 1</a></li>
-                                <li class="menu-item"><a href="roadmap2.html">Road Map 2</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="team.html">OurTeam</a></li>
+                                <li class="menu-item"><a href="team-details.html">Team Details</a></li>
+                                <li class="menu-item"><a href="service.html">Service</a></li>
+                                <li class="menu-item"><a href="service-details.html">Service Details</a></li>
+                                <li class="menu-item"><a href="history.html">history</a></li>
+                                <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+                                <li class="menu-item"><a href="faq.html">FAQ</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Portfolio</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="item.html">NFT Item</a></li>
-                                <li class="menu-item"><a href="item-details.html">NFT Item Details</a></li>
+                                <li class="menu-item"><a href="porfolio.html">porfolio</a></li>
+                                <li class="menu-item"><a href="porfolio-details.html">porfolio details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Product</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="product.html">Product</a></li>
+                                <li class="menu-item"><a href="product-details.html">Product Details</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
@@ -99,7 +102,7 @@
                             </form>
                         </div>
                     </div>
-                    <a class="tf-button" href="contact.html">                          
+                    <a class="tf-button" href="service.html">                          
                         <span>Get Solution</span>
                     </a>
                 </div>
@@ -124,7 +127,7 @@
                                             business</h1>
                                         <p class="desc">Aenean congue mi nulla, eget feugiat nibh fringilla a. Sed consequat</p>
                                         <div class="btn-slider">
-                                            <a class="tf-button" href="contact.html">                          
+                                            <a class="tf-button" href="service.html">                          
                                                 <span>View services</span>
                                             </a>
                                         </div>
@@ -145,7 +148,7 @@
                                             business</h1>
                                         <p class="desc">Aenean congue mi nulla, eget feugiat nibh fringilla a. Sed consequat</p>
                                         <div class="btn-slider">
-                                            <a class="tf-button" href="contact.html">                          
+                                            <a class="tf-button" href="service.html">                          
                                                 <span>View services</span>
                                             </a>
                                         </div>
@@ -166,7 +169,7 @@
                                             business</h1>
                                         <p class="desc">Aenean congue mi nulla, eget feugiat nibh fringilla a. Sed consequat</p>
                                         <div class="btn-slider">
-                                            <a class="tf-button" href="contact.html">                          
+                                            <a class="tf-button" href="service.html">                          
                                                 <span>View services</span>
                                             </a>
                                         </div>
@@ -186,7 +189,7 @@
         </div>
     </section>
 
-    <section class="tf-section tf-service pb0 tf-animated-fadeup">
+    <section class="tf-section tf-service pb0 mobie-pb0 tf-animated-fadeup">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -201,9 +204,9 @@
                         <div class="icon">
                             <span class="icon-Page-1_50"></span>
                         </div>
-                        <h5 class="title"><a href="#">Data Recovery Analysis</a></h5>
+                        <h5 class="title"><a href="service-details.html">Data Recovery Analysis</a></h5>
                         <p>Aenean eleifend ultricies viverra Quisque</p>
-                        <a href="#" class="readmore"><span>Read More</span></a>
+                        <a href="service-details.html" class="readmore"><span>Read More</span></a>
                     </div>
                 </div>      
                 <div class="col-xl-3 col-lg-3 col-md-6 animated-effect">
@@ -212,10 +215,10 @@
                         <div class="icon">
                             <span class="icon-coding"></span>
                         </div>
-                        <h5 class="title"><a href="#">Website
+                        <h5 class="title"><a href="service-details.html">Website
                             Develoment</a></h5>
                         <p>Aenean eleifend ultricies viverra Quisque</p>
-                        <a href="#" class="readmore"><span>Read More</span></a>
+                        <a href="service-details.html" class="readmore"><span>Read More</span></a>
                     </div>
                 </div>   
                 <div class="col-xl-3 col-lg-3 col-md-6 animated-effect">
@@ -224,10 +227,10 @@
                         <div class="icon">
                             <span class="icon-app"></span>
                         </div>
-                        <h5 class="title"><a href="#">Mobile app
+                        <h5 class="title"><a href="service-details.html">Mobile app
                             Developemnt</a></h5>
                         <p>Aenean eleifend ultricies viverra Quisque</p>
-                        <a href="#" class="readmore"><span>Read More</span></a>
+                        <a href="service-details.html" class="readmore"><span>Read More</span></a>
                     </div>
                 </div>   
                 <div class="col-xl-3 col-lg-3 col-md-6 animated-effect">
@@ -236,10 +239,10 @@
                         <div class="icon">
                             <span class="icon-cloud"></span>
                         </div>
-                        <h5 class="title"><a href="#">Mobile app
+                        <h5 class="title"><a href="service-details.html">Mobile app
                             Developemnt</a></h5>
                         <p>Aenean eleifend ultricies viverra Quisque</p>
-                        <a href="#" class="readmore"><span>Read More</span></a>
+                        <a href="service-details.html" class="readmore"><span>Read More</span></a>
                     </div>
                 </div>   
             </div>
@@ -279,17 +282,17 @@
                                 <div class="img">
                                     <img src="assets/images/common/icon1.png" alt="">
                                 </div>
-                                <div class="desc"><a href="#">Technical consultant</a></div>
+                                <div class="desc"><a href="about.html">Technical consultant</a></div>
                             </div>
                             <div class="icon-box st2">
                                 <div class="img style">
                                     <img src="assets/images/common/icon2.png" alt="">
                                 </div>
-                                <div class="desc"><a href="#">Technology Specialist</a></div>
+                                <div class="desc"><a href="about.html">Technology Specialist</a></div>
                             </div>
                         </div>
                         <div class="wrap">
-                            <a href="#" class="tf-button"><span>Read More</span></a>
+                            <a href="about.html" class="tf-button"><span>Read More</span></a>
                             <div class="img-box">
                                 <div class="img">
                                     <img src="assets/images/common/Imagebox1.jpg" alt="">
@@ -329,27 +332,27 @@
                             <rect width="1.99495" height="1.97988" transform="matrix(-1 0 0 1 28 6.01001)" fill="url(#paint5_linear_1666_10595)"/>
                             <defs>
                             <linearGradient id="paint0_linear_1666_10595" x1="2.98115" y1="4.96858" x2="-0.0457025" y2="5.23731" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint1_linear_1666_10595" x1="2.98115" y1="4.96858" x2="-0.0457025" y2="5.23731" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint2_linear_1666_10595" x1="22.4432" y1="0.989942" x2="20.5689" y2="7.27758" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint3_linear_1666_10595" x1="2.99243" y1="0.989942" x2="0.44068" y2="2.13129" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint4_linear_1666_10595" x1="2.99243" y1="0.989942" x2="0.44068" y2="2.13129" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint5_linear_1666_10595" x1="2.99243" y1="0.989942" x2="0.44068" y2="2.13129" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             </defs>
@@ -371,7 +374,7 @@
                         <path d="M1.79163 38.903C5.84025 39.5238 9.67733 40.924 13.6754 41.6721C14.9162 41.9042 15.9651 40.4468 14.9645 39.4571C14.059 38.5612 13.0137 37.8138 11.8967 37.1697C26.2502 31.0503 38.5835 16.8592 40.0929 1.31547C40.188 0.337537 38.8382 0.353644 38.5257 1.1032C32.5812 15.3682 23.3589 26.2748 9.34573 32.2229C9.91814 31.073 10.3734 29.8513 10.667 28.5447C11.3477 25.5113 6.67764 24.2164 6.00202 27.2586C5.33445 30.2626 3.78263 32.758 1.21701 34.503C-0.296004 35.5315 -0.433616 38.5612 1.79163 38.903Z" fill="url(#paint0_linear_2046_3375)"/>
                         <defs>
                         <linearGradient id="paint0_linear_2046_3375" x1="-19.9023" y1="21.1281" x2="31.855" y2="-1.21192" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#CF00FE"/>
+                        <stop offset="1" stop-color="#CF00FE"/>
                         <stop offset="1" stop-color="#005DE0"/>
                         </linearGradient>
                         </defs>
@@ -390,8 +393,8 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
-                                            <a href="#" class="btn">
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
+                                            <a href="porfolio.html" class="btn">
                                                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="1.98743" height="9.93716" transform="matrix(0.709782 -0.704421 0.709782 0.704421 19.5361 1.40015)" fill="white"></rect>
                                                     <rect width="1.98743" height="9.93716" transform="matrix(0.709782 0.704421 -0.709782 0.704421 26.5894 5.6001)" fill="white"></rect>
@@ -414,8 +417,8 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
-                                            <a href="#" class="btn">
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
+                                            <a href="porfolio.html" class="btn">
                                                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="1.98743" height="9.93716" transform="matrix(0.709782 -0.704421 0.709782 0.704421 19.5361 1.40015)" fill="white"></rect>
                                                     <rect width="1.98743" height="9.93716" transform="matrix(0.709782 0.704421 -0.709782 0.704421 26.5894 5.6001)" fill="white"></rect>
@@ -438,8 +441,8 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
-                                            <a href="#" class="btn">
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
+                                            <a href="porfolio.html" class="btn">
                                                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="1.98743" height="9.93716" transform="matrix(0.709782 -0.704421 0.709782 0.704421 19.5361 1.40015)" fill="white"></rect>
                                                     <rect width="1.98743" height="9.93716" transform="matrix(0.709782 0.704421 -0.709782 0.704421 26.5894 5.6001)" fill="white"></rect>
@@ -462,8 +465,8 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
-                                            <a href="#" class="btn">
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
+                                            <a href="porfolio.html" class="btn">
                                                 <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="1.98743" height="9.93716" transform="matrix(0.709782 -0.704421 0.709782 0.704421 19.5361 1.40015)" fill="white"></rect>
                                                     <rect width="1.98743" height="9.93716" transform="matrix(0.709782 0.704421 -0.709782 0.704421 26.5894 5.6001)" fill="white"></rect>
@@ -484,7 +487,7 @@
         </div>
     </section>
 
-    <section class="tf-section tf-team pb0">
+    <section class="tf-section tf-team pb0 mobie-pb0">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 tf-animated-fadeup">
@@ -503,7 +506,7 @@
                                         <img src="assets/images/common/team1.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Al Mahmud</h5>
+                                        <h5 class="name"><a href="team-details.html">Al Mahmud</a></h5>
                                         <p class="desc">UI- Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -520,7 +523,7 @@
                                         <img src="assets/images/common/team2.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Michelle Williams</h5>
+                                        <h5 class="name"><a href="team-details.html">Michelle Williams</a></h5>
                                         <p class="desc">Senior Developer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -537,7 +540,7 @@
                                         <img src="assets/images/common/team3.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Michelle Pfeiffer</h5>
+                                        <h5 class="name"><a href="team-details.html">Michelle Pfeiffer</a></h5>
                                         <p class="desc">UI- Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -554,7 +557,7 @@
                                         <img src="assets/images/common/team4.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Michelle monaghan</h5>
+                                        <h5 class="name"><a href="team-details.html">Michelle monaghan</a></h5>
                                         <p class="desc">UI- Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -589,7 +592,7 @@
                         </div>
                         <p class="txt">Aliquam in varius erat. Nulla in massa ligula. Proin posuere nibh eget facilisis vestibulum.</p>
                         <p class="txt">Fusce nunc urna, scelerisque non egestas nec, auctor maximus dolor. Nam iaculis justo </p>
-                        <a href="#" class="tf-button"><span>Get Solution</span></a>
+                        <a href="service.html" class="tf-button"><span>Get Solution</span></a>
                     </div>
                 </div>
             </div>
@@ -680,7 +683,7 @@
         </div>
     </section>
 
-    <section class="tf-section tf-blog pb0">
+    <section class="tf-section tf-blog pb0 mobie-pb0">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 tf-animated-fadeup">
@@ -698,14 +701,14 @@
                         </div>
                         <div class="content">
                             <ul class="meta">
-                                <li><a href="#">By Admin</a></li>      
-                                <li><a href="#">3 Comments</a></li>  
+                                <li><a href="blog-details.html">By Admin</a></li>      
+                                <li><a href="blog-details.html">3 Comments</a></li>  
                             </ul>
                             <h4 class="title">
-                                <a href="#">Software is our business and business is good</a>
+                                <a href="blog-details.html">Software is our business and business is good</a>
                             </h4>
                             <p>Pellentesque viverra eget velit a tincidunt Sed mattis</p>
-                            <a href="#" class="readmore">Read More</a>
+                            <a href="blog-details.html" class="readmore">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -717,14 +720,14 @@
                         </div>
                         <div class="content">
                             <ul class="meta">
-                                <li><a href="#">By Admin</a></li>      
-                                <li><a href="#">3 Comments</a></li>  
+                                <li><a href="blog-details.html">By Admin</a></li>      
+                                <li><a href="blog-details.html">3 Comments</a></li>  
                             </ul>
                             <h4 class="title">
-                                <a href="#">Software is our business and business is good</a>
+                                <a href="blog-details.html">Software is our business and business is good</a>
                             </h4>
                             <p>Pellentesque viverra eget velit a tincidunt Sed mattis</p>
-                            <a href="#" class="readmore">Read More</a>
+                            <a href="blog-details.html" class="readmore">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -736,14 +739,14 @@
                         </div>
                         <div class="content">
                             <ul class="meta">
-                                <li><a href="#"></span>By Admin</a></li>      
-                                <li><a href="#">3 Comments</a></li>  
+                                <li><a href="blog-details.html">By Admin</a></li>      
+                                <li><a href="blog-details.html">3 Comments</a></li>  
                             </ul>
                             <h4 class="title">
-                                <a href="#">Software is our business and business is good</a>
+                                <a href="blog-details.html">Software is our business and business is good</a>
                             </h4>
                             <p>Pellentesque viverra eget velit a tincidunt Sed mattis</p>
-                            <a href="#" class="readmore">Read More</a>
+                            <a href="blog-details.html" class="readmore">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -813,7 +816,7 @@
                     <div class="title-section">
                         <h2 class="title">Solve your IT needs today!</h2>
                         <p>Aliquam in varius erat. Nulla in massa ligula. Proin posuere</p>
-                        <a href="#" class="tf-button"><span>Get Solution</span></a>
+                        <a href="service.html" class="tf-button"><span>Get Solution</span></a>
                     </div>
                 </div>
                 <div class="col-md-6 tf-animated-fadeup">
@@ -838,7 +841,7 @@
                         </div>
                         <p class="desc">Pellentesque viverra eget velit a tincidunt. Sed mattis enim nisl, sit amet malesuada sapien</p>
                         <form action="#">
-                            <input type="text" placeholder="Email Address" name="" id="">
+                            <input type="text" placeholder="Email Address" name="mail" id="mail">
                             <button>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2075_4097)">
@@ -860,7 +863,7 @@
                         </h5>
                         <ul class="widget-link">
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li>
                                 <a href="#">development</a>
@@ -887,7 +890,7 @@
                                     <li><a href="blog-details.html">The future is bright,
                                         the future is IT</a></li>
                                     <li class="meta-post">
-                                        <a href="#">20 Th Oct 2021</a>
+                                        <a href="blog-details.html">20 Th Oct 2021</a>
                                     </li>
                                 </ul>
                             </li>
@@ -899,7 +902,7 @@
                                     <li><a href="blog-details.html">The future is bright,
                                         the future is IT</a></li>
                                     <li class="meta-post">
-                                        <a href="#">20 Th Oct 2021</a>
+                                        <a href="blog-details.html">20 Th Oct 2021</a>
                                     </li>
                                 </ul>
                             </li>
@@ -975,11 +978,11 @@
     <script src="app/js/jquery.min.js"></script>
     <script src="app/js/app.js"></script>
     <script src="app/js/jquery.easing.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app/js/jquery.magnific-popup.min.js"></script>
     <script src="app/js/swiper-bundle.min.js"></script>
     <script src="app/js/swiper.js"></script>
     <script src="app/js/animated.js"></script>
     <script src="app/js/countto.js"></script>
+    <script src="app/js/plugin.js"></script>
 </body>
 </html>

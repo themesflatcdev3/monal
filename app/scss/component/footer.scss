@@ -2,16 +2,12 @@
 .footer-top {
     .footer-inner {
         margin-bottom: -6%;
-        background: rgba(0, 176, 252, 0.95);
+        background: url('./../../assets/images/backgroup/bgfooter.jpg') center center no-repeat;
+        background-size: cover;
         @include flex(center,space-between);
         padding: 45px 70px;
         position: relative;
-        .overlay {
-            @include overlay;
-            background: url('./../../assets/images/backgroup/bg-footer.jpg') center center no-repeat;
-            background-size: cover;
-            z-index: -2;
-        }
+        border-radius: 5px;
         h3 {
             color: $white;
             margin-bottom: 0;

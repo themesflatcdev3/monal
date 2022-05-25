@@ -144,7 +144,7 @@
                   $('.header__logo.style4').find('img').attr( {src:'assets/images/logo/logo5@2x.png',width:'176',height:'43'} );
 
                   $('.footer__logo').find('img').attr( {src:'assets/images/logo/logo2@2x.png',width:'141',height:'38'} );
-                  $('.footer__logo.style2').find('img').attr( {src:'assets/images/logo/logo3header__logo@2x.png',width:'141',height:'38'} );
+                  $('.footer__logo.style2').find('img').attr( {src:'assets/images/logo/logo3@2x.png',width:'141',height:'38'} );
               }   
           };
 
@@ -501,10 +501,8 @@
       };
 
     var Preloader = function () {
-        setTimeout(function () {
-        $(".preload").fadeOut("slow", function () {
-            $(this).remove();
-        });
+        setTimeout(function() {
+            $('body').addClass('loaded');
         }, 800);
     };
 
@@ -552,6 +550,41 @@
                 btn.text(txt);
             });
     };
+
+    var no_link = function(){
+        $('a.nolink').on('click', function(e){
+          e.preventDefault();
+      });
+    }
+    var btnQuantity = function () {
+        $('.minus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+        
+            if (value > 1) {
+                value = value - 1;
+            } 
+        
+        $input.val(value);
+        
+        });
+        
+        $('.plus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+        
+            if (value > 0) {
+                value = value + 1;
+            } 
+        
+            $input.val(value);
+        });
+   }
+
   
     // Dom Ready
     $(function () {
@@ -578,6 +611,8 @@
         headerMenu();
         donatProgress();
         dropdown('#artworks');
+        btnQuantity();
+        no_link();
         Preloader();
     });
 

@@ -17,9 +17,11 @@
 </head>
 <body class="header-fixed main home2 counter-scroll">
         <!-- preloade -->
-        <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div>
+          <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+          </div>
         <!-- /preload -->
     <div id="wrapper">
         <!-- Header -->
@@ -89,27 +91,28 @@
                         <li class="menu-item menu-item-has-children">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="about.html">About 1</a></li>
-                                <li class="menu-item"><a href="about2.html">About 2</a></li>
-                                <li class="menu-item"><a href="team-details.html">OUR TEAM</a></li>
-                                <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                <li class="menu-item"><a href="community.html">Community</a></li>
-                                <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                <li class="menu-item"><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="roadmap.html">Road Map 1</a></li>
-                                <li class="menu-item"><a href="roadmap2.html">Road Map 2</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="team.html">OurTeam</a></li>
+                                <li class="menu-item"><a href="team-details.html">Team Details</a></li>
+                                <li class="menu-item"><a href="service.html">Service</a></li>
+                                <li class="menu-item"><a href="service-details.html">Service Details</a></li>
+                                <li class="menu-item"><a href="history.html">history</a></li>
+                                <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+                                <li class="menu-item"><a href="faq.html">FAQ</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Portfolio</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="item.html">NFT Item</a></li>
-                                <li class="menu-item"><a href="item-details.html">NFT Item Details</a></li>
+                                <li class="menu-item"><a href="porfolio.html">porfolio</a></li>
+                                <li class="menu-item"><a href="porfolio-details.html">porfolio details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Product</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="product.html">Product</a></li>
+                                <li class="menu-item"><a href="product-details.html">Product Details</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
@@ -248,7 +251,7 @@
                                             part of your
                                             business</h1>
                                         <div class="btn-slider">
-                                            <a class="tf-button" href="contact.html">                          
+                                            <a class="tf-button" href="about.html">                          
                                                 <span>Learn More</span>
                                             </a>
                                         </div>
@@ -268,7 +271,7 @@
                                             part of your
                                             business</h1>
                                         <div class="btn-slider">
-                                            <a class="tf-button" href="contact.html">                          
+                                            <a class="tf-button" href="about.html">                          
                                                 <span>View services</span>
                                             </a>
                                         </div>
@@ -288,7 +291,7 @@
                                             part of your
                                             business</h1>
                                         <div class="btn-slider">
-                                            <a class="tf-button" href="contact.html">                          
+                                            <a class="tf-button" href="about.html">                          
                                                 <span>View services</span>
                                             </a>
                                         </div>
@@ -342,14 +345,14 @@
                                 <div class="img">
                                     <img src="assets/images/common/icon3.png" alt="">
                                 </div>
-                                <div class="desc"><a href="#">network
+                                <div class="desc"><a href="about.html">network
                                     administration</a></div>
                             </div>
                             <div class="icon-box st2 mb0">
                                 <div class="img style">
                                     <img src="assets/images/common/icon4.png" alt="">
                                 </div>
-                                <div class="desc"><a href="#">IT Technology
+                                <div class="desc"><a href="about.html">IT Technology
                                     automation</a></div>
                             </div>
                         </div>
@@ -394,7 +397,7 @@
         </div>
     </section>
 
-        <section class="tf-section tf-service">
+        <section class="tf-section tf-service mobie-pb0">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 tf-animated-fadeup">
@@ -411,10 +414,10 @@
                                     <div class="icon">
                                         <span class="icon-web-development-1"></span>
                                     </div>
-                                    <h5 class="title"><a href="#">Website
+                                    <h5 class="title"><a href="service-details.html">Website
                                         Development</a></h5>
                                     <p>Integer venenatis, orci eget sodales aliquet, tortor sem </p>
-                                    <a href="#" class="readmore"><span>Learn More</span></a>
+                                    <a href="service-details.html" class="readmore"><span>Learn More</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -422,10 +425,10 @@
                                     <div class="icon">
                                         <span class="icon-Group"></span>
                                     </div>
-                                    <h5 class="title"><a href="#">Software
+                                    <h5 class="title"><a href="service-details.html">Software
                                         Development</a></h5>
                                         <p>Integer venenatis, orci eget sodales aliquet, tortor sem </p>
-                                        <a href="#" class="readmore"><span>Learn More</span></a>
+                                        <a href="service-details.html" class="readmore"><span>Learn More</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -433,10 +436,10 @@
                                     <div class="icon">
                                         <span class="icon-Group2"></span>
                                     </div>
-                                    <h5 class="title"><a href="#">Games
+                                    <h5 class="title"><a href="service-details.html">Games
                                         Development</a></h5>
                                         <p>Integer venenatis, orci eget sodales aliquet, tortor sem </p>
-                                        <a href="#" class="readmore"><span>Learn More</span></a>
+                                        <a href="service-details.html" class="readmore"><span>Learn More</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -444,10 +447,10 @@
                                     <div class="icon">
                                         <span class="icon-ux-interface"></span>
                                     </div>
-                                    <h5 class="title"><a href="#">UI-UX
+                                    <h5 class="title"><a href="service-details.html">UI-UX
                                         Designing</a></h5>
                                         <p>Integer venenatis, orci eget sodales aliquet, tortor sem </p>
-                                        <a href="#" class="readmore"><span>Learn More</span></a>
+                                        <a href="service-details.html" class="readmore"><span>Learn More</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -455,10 +458,10 @@
                                     <div class="icon">
                                         <span class="icon-ux-interface"></span>
                                     </div>
-                                    <h5 class="title"><a href="#">UI-UX
+                                    <h5 class="title"><a href="service-details.html">UI-UX
                                         Designing</a></h5>
                                         <p>Integer venenatis, orci eget sodales aliquet, tortor sem </p>
-                                        <a href="#" class="readmore"><span>Learn More</span></a>
+                                        <a href="service-details.html" class="readmore"><span>Learn More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -491,7 +494,7 @@
                         </div>
                         <p class="txt-transform pr75 mb52">Phasellus posuere id ligula id dictum. Praesent rutrum lacinia magna, aliquam vestibulum lorem. 
                             Nunc leo nibh, congue nec luctus in, viverra vel neque.</p>
-                        <a href="#" class="tf-button"><span>Get solutions</span></a>
+                        <a href="service.html" class="tf-button"><span>Get solutions</span></a>
                     </div>
                 </div>
                 <div class="col-md-5 tf-animated-fadeup">
@@ -515,7 +518,7 @@
         </div>
     </section>
 
-    <section class="tf-section tf-project">
+    <section class="tf-section tf-project mobie-pb0">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 tf-animated-fadeup">
@@ -536,27 +539,27 @@
                             <rect width="1.99495" height="1.97988" transform="matrix(-1 0 0 1 28 6.01001)" fill="url(#paint5_linear_1666_10595)"/>
                             <defs>
                             <linearGradient id="paint0_linear_1666_10595" x1="2.98115" y1="4.96858" x2="-0.0457025" y2="5.23731" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint1_linear_1666_10595" x1="2.98115" y1="4.96858" x2="-0.0457025" y2="5.23731" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint2_linear_1666_10595" x1="22.4432" y1="0.989942" x2="20.5689" y2="7.27758" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint3_linear_1666_10595" x1="2.99243" y1="0.989942" x2="0.44068" y2="2.13129" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint4_linear_1666_10595" x1="2.99243" y1="0.989942" x2="0.44068" y2="2.13129" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             <linearGradient id="paint5_linear_1666_10595" x1="2.99243" y1="0.989942" x2="0.44068" y2="2.13129" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#CF00FE"/>
+                            <stop offset="1" stop-color="#CF00FE"/>
                             <stop offset="1" stop-color="#005DE0"/>
                             </linearGradient>
                             </defs>
@@ -586,7 +589,7 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -600,7 +603,7 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -614,7 +617,7 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -628,7 +631,7 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -642,7 +645,7 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -656,7 +659,7 @@
                                     <div class="hover-effect">
                                         <div class="content-box">
                                             <p>IT Technology Solution</p>
-                                            <h4><a href="#">Data Recovery analysis</a></h4>
+                                            <h4><a href="porfolio.html">Data Recovery analysis</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -741,7 +744,7 @@
                                         <img src="assets/images/common/team5.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Al Mahmud</h5>
+                                        <h5 class="name"><a href="team-details.html">Al Mahmud</a></h5>
                                         <p class="desc">UI- Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -758,7 +761,7 @@
                                         <img src="assets/images/common/team6.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Michelle monaghan</h5>
+                                        <h5 class="name"><a href="team-details.html">Michelle monaghan</a></h5>
                                         <p class="desc">Graphic Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -775,7 +778,7 @@
                                         <img src="assets/images/common/team7.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Michelle Williams</h5>
+                                        <h5 class="name"><a href="team-details.html">Michelle Williams</a></h5>
                                         <p class="desc">UI- Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -792,7 +795,7 @@
                                         <img src="assets/images/common/team8.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Michael Jordan</h5>
+                                        <h5 class="name"><a href="team-details.html">Michael Jordan</a></h5>
                                         <p class="desc">Software engineer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -840,7 +843,7 @@
                                 <li>Planning Solution</li>
                                 <li>Enhanced Support</li>
                             </ul>
-                            <a href="#" class="tf-button st2"><span>Buy Now</span></a>
+                            <a href="pricing.html" class="tf-button st2"><span>Buy Now</span></a>
                         </div>
                     </div>
                 </div>
@@ -868,7 +871,7 @@
                                 <li>Planning Solution</li>
                                 <li>Enhanced Support</li>
                             </ul>
-                            <a href="#" class="tf-button st2"><span>Buy Now</span></a>
+                            <a href="pricing.html" class="tf-button st2"><span>Buy Now</span></a>
                         </div>
                     </div>
                 </div>
@@ -893,7 +896,7 @@
                                 <li>Planning Solution</li>
                                 <li>Enhanced Support</li>
                             </ul>
-                            <a href="#" class="tf-button st2"><span>Buy Now</span></a>
+                            <a href="pricing.html" class="tf-button st2"><span>Buy Now</span></a>
                         </div>
                     </div>
                 </div>
@@ -1006,14 +1009,14 @@
                         </div>
                         <div class="content">
                             <ul class="meta">
-                                <li><a href="#">By Admin</a></li>      
-                                <li><a href="#">3 Comments</a></li>  
+                                <li><a href="blog-details.html">By Admin</a></li>      
+                                <li><a href="blog-details.html">3 Comments</a></li>  
                             </ul>
                             <h4 class="title">
-                                <a href="#">The IT Company for small
+                                <a href="blog-details.html">The IT Company for small
                                     businesses</a>
                             </h4>
-                            <a href="#" class="readmore">Learn More</a>
+                            <a href="blog-details.html" class="readmore">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -1025,33 +1028,33 @@
                         </div>
                         <div class="content">
                             <ul class="meta">
-                                <li><a href="#">By Admin</a></li>      
-                                <li><a href="#">3 Comments</a></li>  
+                                <li><a href="blog-details.html">By Admin</a></li>      
+                                <li><a href="blog-details.html">3 Comments</a></li>  
                             </ul>
                             <h4 class="title">
-                                <a href="#">The IT Company for small
+                                <a href="blog-details.html">The IT Company for small
                                     businesses</a>
                             </h4>
-                            <a href="#" class="readmore">Learn More</a>
+                            <a href="blog-details.html" class="readmore">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 tf-animated-fadeup">
-                    <div class="blog-post style2 animated-effect">
+                    <div class="blog-post style2 animated-effect mobie-bt0">
                         <div class="image">
                             <img src="assets/images/post/post12.jpg" alt="">
                             <div class="date"><span>21, February, 2022</span></div>
                         </div>
                         <div class="content">
                             <ul class="meta">
-                                <li><a href="#">By Admin</a></li>      
-                                <li><a href="#">3 Comments</a></li>  
+                                <li><a href="blog-details.html">By Admin</a></li>      
+                                <li><a href="blog-details.html">3 Comments</a></li>  
                             </ul>
                             <h4 class="title">
-                                <a href="#">The IT Company for small
+                                <a href="blog-details.html">The IT Company for small
                                     businesses</a>
                             </h4>
-                            <a href="#" class="readmore">Learn More</a>
+                            <a href="blog-details.html" class="readmore">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -1065,9 +1068,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer-inner">
-                            <div class="overlay"></div>
                             <h3>Solve your IT needs today!</h3>
-                            <a href="#" class="tf-button"><span>Get Solutions</span></a>
+                            <a href="service.html" class="tf-button"><span>Get Solutions</span></a>
                         </div>
                     </div>
                 </div>
@@ -1115,7 +1117,7 @@
                         </h5>
                         <ul class="widget-link">
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li>
                                 <a href="#">development</a>
@@ -1156,7 +1158,7 @@
                         </h5>
                         <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
                         <form action="#">
-                            <input type="text" placeholder="Email Address" name="" id="">
+                            <input type="text" placeholder="Email Address" name="mail" id="mail">
                             <button>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2075_4097)">

@@ -1,21 +1,13 @@
 .footer-top .footer-inner {
   margin-bottom: -6%;
-  background: rgba(0, 176, 252, 0.95);
+  background: url("./../../assets/images/backgroup/bgfooter.jpg") center center no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 45px 70px;
   position: relative;
-}
-.footer-top .footer-inner .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url("./../../assets/images/backgroup/bg-footer.jpg") center center no-repeat;
-  background-size: cover;
-  z-index: -2;
+  border-radius: 5px;
 }
 .footer-top .footer-inner h3 {
   color: #fff;

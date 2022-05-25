@@ -172,6 +172,30 @@
 }
 
 @include res1200 {
+    .pg-contact {
+        .tf-contact {
+            .contact-flex {
+                .box-right {
+                    .icon-box {
+                        padding: 30px 20px 30px;
+                    }
+                }
+            }
+        }
+    }
+    .releted-product h4 {
+        margin-bottom: 30px;
+    }
+    .slider-product {
+        &.swiper-container {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+    .btn-next-product,
+    .btn-prev-product {
+        display: none;
+    }
     .tf-product {
         #sidebar  {
             .widget {
@@ -542,6 +566,64 @@
 }
 
 @include res991 {
+    .home2 {
+        .tf-project {
+            padding: 100px 0 0;
+        }
+        .tf-section {
+            &.tf-team {
+                padding: 100px 0 60px;
+            }
+        }
+    }
+    .swiper-container {
+        &:hover {
+            cursor: ew-resize !important;
+        }
+    }
+    .pg-contact {
+        .tf-contact {
+            .contact-flex {
+                display: block;
+                .box-left {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+                .box-right {
+                    width: 100%;
+                    padding-left: 0;
+                    justify-content: space-between;
+                    .icon-box {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        .tf-contact2 {
+            .contact-flex {
+                padding: 30px;
+                .box-left {
+                    padding-right: 15px;
+                }
+                .box-right {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+    .item-detais {
+        .wrap-fx {
+            display: block;
+            .quantity {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .swiper-container {
+        &.gallery-thumbs2 {
+            height: 340px;
+        }
+    }
     .tf-product {
         article,
         #sidebar {
@@ -1193,6 +1275,9 @@
             }
         }
     }
+    .tf-section.section-contact,
+    .home3 .tf-section.tf-service,
+    .tf-section.tf-partner,
     .tf-section {
         padding: 100px 0;
     }
@@ -1282,6 +1367,93 @@
 }
 
 @include res767 {
+    .flat-tabs.tab1 .menu-tab {
+        flex-wrap: wrap;
+        li {
+            margin-bottom: 5px;
+        }
+    }
+    .service {
+        .tf-service-detail {
+            article {
+                .image-box {
+                    .box {
+                        width: $w100;
+                    }
+                }
+            }
+        }
+    }
+    .main.home3 .page-title {
+        padding: 230px 0 100px;
+    }
+    .item-parner .image {
+        justify-content: center;
+    }
+    .icon-absolute {
+        display: none;
+    }
+    .tf-section {
+        &.get-solution {
+            padding: 0 !important;
+        }
+    }
+    .pg-contact {
+        .tf-section.map {
+            padding: 0 !important;
+        }
+        .tf-contact {
+            .contact-flex {
+                .box-right {
+                    display: block;
+                    .icon-box {
+                        width: $w100;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        .tf-contact2 {
+            .contact-flex {
+                display: block;
+                .box-right {
+                    padding-left: 0;
+                    width: $w100;
+                }
+                .box-left {
+                    margin-bottom: 40px;
+                    padding-right: 0;
+                    width: $w100;
+                }
+            }
+        }
+    }
+    .tf-product-details {
+        .item-detais {
+            padding-left: 0;
+        }
+        .image-thump-product {
+            .gallery-slider2 {
+                margin-left: 20px;
+            }
+            .gallery-thumbs2 {
+                margin-top: 0;
+            }
+            margin-bottom: 40px;
+            img {
+                width: $w100;
+            }
+        }
+        .wrap-fx {
+            display: block;
+        }
+        display: block;
+        .item-detais,
+        .image-thump-product {
+            width: $w100;
+        }
+
+    }
     .product-flex .item-box {
         width: calc(50% - 31px);
     }
@@ -1894,6 +2066,13 @@
 }
 
 @include res600 {
+    .pg-contact {
+        .contact-style1 {
+            fieldset {
+                width: calc(100% - 30px);
+            }
+        }
+    }
     .pricing {
         .tf-pricing {
             &.style2 {

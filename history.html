@@ -17,9 +17,11 @@
 </head>
 <body class="header-fixed inner-page about history">
         <!-- preloade -->
-        <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div>
+          <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+          </div>
         <!-- /preload -->
     <div id="wrapper">
         <!-- Header -->
@@ -47,36 +49,37 @@
                                 <li class="menu-item"><a href="home-3.html">Home 3</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item menu-item-has-children current-menu-item">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="about.html">About 1</a></li>
-                                <li class="menu-item"><a href="about2.html">About 2</a></li>
-                                <li class="menu-item"><a href="team-details.html">OUR TEAM</a></li>
-                                <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                <li class="menu-item"><a href="community.html">Community</a></li>
-                                <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                <li class="menu-item"><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="roadmap.html">Road Map 1</a></li>
-                                <li class="menu-item"><a href="roadmap2.html">Road Map 2</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="team.html">OurTeam</a></li>
+                                <li class="menu-item"><a href="team-details.html">Team Details</a></li>
+                                <li class="menu-item"><a href="service.html">Service</a></li>
+                                <li class="menu-item"><a href="service-details.html">Service Details</a></li>
+                                <li class="menu-item current-item"><a href="history.html">history</a></li>
+                                <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+                                <li class="menu-item"><a href="faq.html">FAQ</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Portfolio</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="item.html">NFT Item</a></li>
-                                <li class="menu-item"><a href="item-details.html">NFT Item Details</a></li>
+                                <li class="menu-item"><a href="porfolio.html">porfolio</a></li>
+                                <li class="menu-item"><a href="porfolio-details.html">porfolio details</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children current-menu-item">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Product</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="product.html">Product</a></li>
+                                <li class="menu-item"><a href="product-details.html">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
                             <a href="#">News</a>
                             <ul class="sub-menu">
-                                <li class="menu-item current-item"><a href="blog-standard.html">blog standard</a></li>
+                                <li class="menu-item"><a href="blog-standard.html">blog standard</a></li>
                                 <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
@@ -99,7 +102,7 @@
                             </form>
                         </div>
                     </div>
-                    <a class="tf-button" href="contact.html">                          
+                    <a class="tf-button" href="service.html">                          
                         <span>Get Solution</span>
                     </a>
                 </div>
@@ -145,7 +148,7 @@
                                         <circle cx="15" cy="15" r="14.5" stroke="#00B0FC"/>
                                         <path d="M8.64062 14.0269C8.32997 14.0277 8.02591 14.1166 7.76362 14.283C7.50133 14.4495 7.29153 14.6868 7.15849 14.9676C7.02546 15.2483 6.97462 15.5609 7.01187 15.8694C7.04911 16.1778 7.17292 16.4693 7.36896 16.7103L11.5481 21.8297C11.6971 22.0148 11.8881 22.1616 12.1052 22.2579C12.3223 22.3543 12.5593 22.3975 12.7965 22.3839C13.3038 22.3567 13.7617 22.0853 14.0537 21.6391L22.7348 7.65827C22.7362 7.65595 22.7377 7.65363 22.7392 7.65135C22.8207 7.52628 22.7943 7.27844 22.6261 7.12274C22.58 7.07998 22.5255 7.04713 22.4661 7.02621C22.4068 7.0053 22.3438 6.99675 22.281 7.00111C22.2182 7.00546 22.157 7.02262 22.1011 7.05154C22.0452 7.08045 21.9958 7.1205 21.9559 7.16923C21.9528 7.17306 21.9496 7.17683 21.9463 7.18055L13.1913 17.0724C13.158 17.11 13.1175 17.1407 13.0723 17.1625C13.027 17.1844 12.9779 17.1971 12.9277 17.1998C12.8775 17.2025 12.8272 17.1952 12.7799 17.1784C12.7325 17.1615 12.689 17.1354 12.6518 17.1016L9.74621 14.4574C9.44443 14.1808 9.05001 14.0272 8.64062 14.0269Z" fill="#00B0FC"/>
                                     </svg>                                        
-                                    <a href="#">cyber security</a>
+                                    <a href="about.html">cyber security</a>
                                 </h5>
                                 <p>Phasellus scelerisque est dui, vel interdum quam </p>
                             </div>
@@ -155,7 +158,7 @@
                                         <circle cx="15" cy="15" r="14.5" stroke="#00B0FC"/>
                                         <path d="M8.64062 14.0269C8.32997 14.0277 8.02591 14.1166 7.76362 14.283C7.50133 14.4495 7.29153 14.6868 7.15849 14.9676C7.02546 15.2483 6.97462 15.5609 7.01187 15.8694C7.04911 16.1778 7.17292 16.4693 7.36896 16.7103L11.5481 21.8297C11.6971 22.0148 11.8881 22.1616 12.1052 22.2579C12.3223 22.3543 12.5593 22.3975 12.7965 22.3839C13.3038 22.3567 13.7617 22.0853 14.0537 21.6391L22.7348 7.65827C22.7362 7.65595 22.7377 7.65363 22.7392 7.65135C22.8207 7.52628 22.7943 7.27844 22.6261 7.12274C22.58 7.07998 22.5255 7.04713 22.4661 7.02621C22.4068 7.0053 22.3438 6.99675 22.281 7.00111C22.2182 7.00546 22.157 7.02262 22.1011 7.05154C22.0452 7.08045 21.9958 7.1205 21.9559 7.16923C21.9528 7.17306 21.9496 7.17683 21.9463 7.18055L13.1913 17.0724C13.158 17.11 13.1175 17.1407 13.0723 17.1625C13.027 17.1844 12.9779 17.1971 12.9277 17.1998C12.8775 17.2025 12.8272 17.1952 12.7799 17.1784C12.7325 17.1615 12.689 17.1354 12.6518 17.1016L9.74621 14.4574C9.44443 14.1808 9.05001 14.0272 8.64062 14.0269Z" fill="#00B0FC"/>
                                     </svg>                                        
-                                    <a href="#">software engineer</a>
+                                    <a href="about.html">software engineer</a>
                                 </h5>
                                 <p>Phasellus scelerisque est dui, vel interdum quam </p>
                             </div>
@@ -225,7 +228,7 @@
                                 great together</h2>
                         </div>
                         <p class="txt-transform mb52">Proin cursus ex a vestibulum mattis. Vivamus in mauris dignissim, imperdiet risus ac, congue nunc</p>
-                        <a href="#" class="tf-button"><span>Learn More</span></a>
+                        <a href="about.html" class="tf-button"><span>Learn More</span></a>
                     </div>
                 </div>
             </div>
@@ -315,9 +318,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer-inner">
-                            <div class="overlay"></div>
                             <h3>Solve your IT needs today!</h3>
-                            <a href="#" class="tf-button"><span>Get Solutions</span></a>
+                            <a href="service.html" class="tf-button"><span>Get Solutions</span></a>
                         </div>
                     </div>
                 </div>
@@ -365,7 +367,7 @@
                         </h5>
                         <ul class="widget-link">
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li>
                                 <a href="#">development</a>
@@ -406,7 +408,7 @@
                         </h5>
                         <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
                         <form action="#">
-                            <input type="text" placeholder="Email Address" name="" id="">
+                            <input type="text" placeholder="Email Address" name="mail" id="mail">
                             <button>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2075_4097)">

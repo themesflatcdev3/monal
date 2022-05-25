@@ -17,14 +17,16 @@
 </head>
 <body class="header-fixed2 main home3 counter-scroll">
         <!-- preloade -->
-        <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div>
+          <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+          </div>
         <!-- /preload -->
     <div id="wrapper">
         <!-- Header -->
  
-    <header id="header_main" class="header style3">
+    <div id="header_main" class="header style3">
         <div id="top-bar">
             <div class="container">
                 <div class="row">
@@ -32,7 +34,7 @@
                         <div class="topbar-inner">
                             <div class="left">
                                 <ul>
-                                    <li>monal@gmail.com</span></li>
+                                    <li>monal@gmail.com</li>
                                     <li>CRGJ+6VP London, UK</li>
                                 </ul>
                             </div>
@@ -71,8 +73,8 @@
                     </div>
                 </div>
             </div>
-    </div>
-    <header id="header_main">
+        </div>
+    <header id="header_main2">
         <div class="container">
             <div id="site-header-inner">
                 <div class="header__logo style4">
@@ -91,27 +93,28 @@
                         <li class="menu-item menu-item-has-children">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="about.html">About 1</a></li>
-                                <li class="menu-item"><a href="about2.html">About 2</a></li>
-                                <li class="menu-item"><a href="team-details.html">OUR TEAM</a></li>
-                                <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                <li class="menu-item"><a href="community.html">Community</a></li>
-                                <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                <li class="menu-item"><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="roadmap.html">Road Map 1</a></li>
-                                <li class="menu-item"><a href="roadmap2.html">Road Map 2</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="team.html">OurTeam</a></li>
+                                <li class="menu-item"><a href="team-details.html">Team Details</a></li>
+                                <li class="menu-item"><a href="service.html">Service</a></li>
+                                <li class="menu-item"><a href="service-details.html">Service Details</a></li>
+                                <li class="menu-item"><a href="history.html">history</a></li>
+                                <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+                                <li class="menu-item"><a href="faq.html">FAQ</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Portfolio</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="item.html">NFT Item</a></li>
-                                <li class="menu-item"><a href="item-details.html">NFT Item Details</a></li>
+                                <li class="menu-item"><a href="porfolio.html">porfolio</a></li>
+                                <li class="menu-item"><a href="porfolio-details.html">porfolio details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Product</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="product.html">Product</a></li>
+                                <li class="menu-item"><a href="product-details.html">Product Details</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
@@ -131,7 +134,7 @@
                         <a href="#" class="show-search header-search-trigger">
                             <span class="icon-Vector"></span>
                         </a>
-                        <a href="#" class="menu-bar-right header-menu"><i class="fas fa-bars"></i></a>
+                        <a href="#" class="menu-bar-right header-menu nolink"><i class="fas fa-bars"></i></a>
                         <div class="top-search">
                             <form action="#" method="get" role="search" class="search-form">
                                 <input type="search" id="s" class="search-field" placeholder="Search..." value="" name="s" title="Search for" required="">
@@ -233,90 +236,7 @@
             </div><!--/inner-sidebar-->
         </div>
     </header>
-        <div id="sidebar" class="side-menu__block">
-            <div class="side-menu__block-overlay custom-cursor__overlay"></div>
-            <div class="inner-sidebar side-menu__block-inner fl-st-1">
-                <div class="side-menu__top justify-content-end">
-                    <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="assets/images/common/close.png" alt="images"></a>
-                </div>
-                <div class="wrap">
-                    <div class="widget widget-search">
-                        <h4 class="widget-title">
-                            Search
-                        </h4>
-                        <form action="#" class="widget-form">
-                            <input type="text" placeholder="Search......" required="">
-                            <button><i class="icon-Vector"></i></button>
-                        </form>
-                    </div>
-                    <div class="widget widget-category">
-                        <h4 class="widget-title">
-                            Services Category
-                        </h4>           
-                        <ul class="list-category">
-                            <li><a href="#">Software Development</a></li>
-                            <li><a href="#">Software Development</a></li>
-                            <li><a href="#">Gaming Development</a></li>
-                            <li><a href="#">UI-UX Designing</a></li>
-                            <li><a href="#">Content Management</a></li>
-                            <li><a href="#">Cyber Securety</a></li>
-                        </ul>
-                    </div>
-                    <div class="widget widget-recent-posts">
-                        <h4 class="widget-title">
-                            Recent Post
-                        </h4>
-                        <ul class="recent-posts">
-                            <li>
-                                <img src="assets/images/post/thump1.jpg" alt="">
-                                <ul class="content">
-                                    <li><a href="blog-details.html">Not just another Tech company</a></li>
-                                    <li class="meta-post">
-                                        <a href="#">21, Feb, 2022</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="recent-posts">
-                            <li>
-                                <img src="assets/images/post/thump2.jpg" alt="">
-                                <ul class="content">
-                                    <li><a href="blog-details.html">Not just another Tech company</a></li>
-                                    <li class="meta-post">
-                                        <a href="#">21, Feb, 2022</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="recent-posts">
-                            <li>
-                                <img src="assets/images/post/thump3.jpg" alt="">
-                                <ul class="content">
-                                    <li><a href="blog-details.html">Not just another Tech company</a></li>
-                                    <li class="meta-post">
-                                        <a href="#">21, Feb, 2022</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="widget widget-tags mobie-bt0">
-                        <h4 class="widget-title">
-                            Tags
-                        </h4>
-                        <ul class="list-tags">
-                            <li><a href="#">Technology</a></li>
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Solution</a></li>
-                            <li><a href="#">Developement</a></li>
-                            <li><a href="#">Designing</a></li>
-                            <li><a href="#">Cyber Securety</a></li>
-                        </ul>        
-                    </div>
-                </div>
-            </div><!--/inner-sidebar-->
-        </div>
-    </header>
+    </div>
     <!-- end Header -->
 
     <section class="page-title">
@@ -334,7 +254,7 @@
                                             digital world</h1>
                                         <p class="desc">Aenean congue mi nulla, eget feugiat nibh fringilla a. Sed consequat sapien non nunc iaculis porta. Proin tortor diam,</p>
                                         <div class="btn-slider">
-                                            <a class="tf-button" href="contact.html">                          
+                                            <a class="tf-button" href="service.html">                          
                                                 <span class="line">Get Started</span><span class="icon"><i class="fal fa-long-arrow-right"></i></span>
                                             </a>
                                             <a href="https://www.youtube.com/watch?v=7vQznLKEfBs" class="video popup-youtube">
@@ -355,7 +275,7 @@
                                             digital world</h1>
                                         <p class="desc">Aenean congue mi nulla, eget feugiat nibh fringilla a. Sed consequat sapien non nunc iaculis porta. Proin tortor diam,</p>
                                         <div class="btn-slider">
-                                            <a class="tf-button" href="contact.html">                          
+                                            <a class="tf-button" href="service.html">                          
                                                 <span class="line">Get Started</span><span class="icon"><i class="fal fa-long-arrow-right"></i></span>
                                             </a>
                                             <a href="https://www.youtube.com/watch?v=7vQznLKEfBs" class="video popup-youtube">
@@ -376,7 +296,7 @@
                                             digital world</h1>
                                         <p class="desc">Aenean congue mi nulla, eget feugiat nibh fringilla a. Sed consequat sapien non nunc iaculis porta. Proin tortor diam,</p>
                                         <div class="btn-slider">
-                                            <a class="tf-button" href="contact.html">                          
+                                            <a class="tf-button" href="service.html">                          
                                                 <span class="line">Get Started</span><span class="icon"><i class="fal fa-long-arrow-right"></i></span>
                                             </a>
                                             <a href="https://www.youtube.com/watch?v=7vQznLKEfBs" class="video popup-youtube">
@@ -408,7 +328,7 @@
                                     <div class="bg"><span class="icon-Icon10"></span></div>
                                 </div>
                                 <div class="content">
-                                    <h5><a href="#">machine learning</a></h5>
+                                    <h5><a href="service.html">machine learning</a></h5>
                                     <p>Suspendisse sed auctor nisl. Etiam blandit </p>
                                 </div>
                             </div>
@@ -417,7 +337,7 @@
                                     <div class="bg"><span class="icon-Icon2"></span></div>
                                 </div>
                                 <div class="content">
-                                    <h5><a href="#">artificial intelligence</a></h5>
+                                    <h5><a href="service.html">artificial intelligence</a></h5>
                                     <p>Suspendisse sed auctor nisl. Etiam blandit </p>
                                 </div>
                             </div>
@@ -426,7 +346,7 @@
                                     <div class="bg"><span class="icon-Icon3"></span></div>
                                 </div>
                                 <div class="content">
-                                    <h5><a href="#">augmented reality</a></h5>
+                                    <h5><a href="service.html">augmented reality</a></h5>
                                     <p>Suspendisse sed auctor nisl. Etiam blandit </p>
                                 </div>
                             </div>
@@ -468,7 +388,7 @@
                                     <img src="assets/images/common/icon5.png" alt="">
                                 </div>
                                 <div class="content">
-                                    <h5><a href="#">iT management</a></h5>
+                                    <h5><a href="about.html">iT management</a></h5>
                                     <p>Aenean congue mi nulla, eget </p>
                                 </div>
                             </div>
@@ -477,14 +397,14 @@
                                     <img src="assets/images/common/icon6.png" alt="">
                                 </div>
                                 <div class="content">
-                                    <h5><a href="#">Connecting People</a></h5>
+                                    <h5><a href="about.html">Connecting People</a></h5>
                                     <p>Aenean congue mi nulla, eget </p>
                                 </div>
                             </div>
                         </div>
                         <div class="divider"></div>
                         <div class="wrap">
-                            <a class="tf-button" href="#">                          
+                            <a class="tf-button" href="about.html">                          
                                 <span class="line">Discover More</span><span class="icon"><i class="fal fa-long-arrow-right"></i></span>
                             </a>
                             <div class="img-box">
@@ -571,7 +491,7 @@
                         <div class="title-section">
                             <h2 class="title">Leveraging tech to drive a better
                                 IT experience</h2>
-                                <a class="tf-button" href="#">                          
+                                <a class="tf-button" href="service.html">                          
                                     <span class="line">Get Started</span><span class="icon"><i class="fal fa-long-arrow-right"></i></span>
                                 </a>
                         </div>
@@ -585,7 +505,7 @@
                                 <h2 class="title">we provide IT Technology Solution</h2>
                             </div>
                             <div class="wrap-btn">
-                                <a class="tf-button style2" href="#">                          
+                                <a class="tf-button style2" href="service.html">                          
                                     <span class="line">View all Services</span><span class="icon"><i class="fal fa-long-arrow-right"></i></span>
                                 </a>
                             </div>
@@ -597,9 +517,9 @@
                                         <div class="bg"><span class="icon-app-development"></span></div>
                                     </div>
                                     <div class="content">
-                                        <h5><a href="#">Apps Development</a></h5>
+                                        <h5><a href="service-details.html">Apps Development</a></h5>
                                         <p>Praesent venenatis lectus leo, ut aliquam magna venenatis sit amet.</p>
-                                        <a href="#" class="learnmore"><span>Learn More</span></a>
+                                        <a href="service-details.html" class="learnmore"><span>Learn More</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -609,9 +529,9 @@
                                         <div class="bg"><span class="icon-surface"></span></div>
                                     </div>
                                     <div class="content">
-                                        <h5><a href="#">Apps Development</a></h5>
+                                        <h5><a href="service-details.html">Apps Development</a></h5>
                                         <p>Praesent venenatis lectus leo, ut aliquam magna venenatis sit amet.</p>
-                                        <a href="#" class="learnmore"><span>Learn More</span></a>
+                                        <a href="service-details.html" class="learnmore"><span>Learn More</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -621,9 +541,9 @@
                                         <div class="bg"><span class="icon-cyber-security"></span></div>
                                     </div>
                                     <div class="content">
-                                        <h5><a href="#">Cyber Securety</a></h5>
+                                        <h5><a href="service-details.html">Cyber Securety</a></h5>
                                         <p>Praesent venenatis lectus leo, ut aliquam magna venenatis sit amet.</p>
-                                        <a href="#" class="learnmore"><span>Learn More</span></a>
+                                        <a href="service-details.html" class="learnmore"><span>Learn More</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -633,9 +553,9 @@
                                         <div class="bg"><span class="icon-web-design"></span></div>
                                     </div>
                                     <div class="content">
-                                        <h5><a href="#">Website Designing</a></h5>
+                                        <h5><a href="service-details.html">Website Designing</a></h5>
                                         <p>Praesent venenatis lectus leo, ut aliquam magna venenatis sit amet.</p>
-                                        <a href="#" class="learnmore"><span>Learn More</span></a>
+                                        <a href="service-details.html" class="learnmore"><span>Learn More</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -736,14 +656,14 @@
                                 <span class="icon">
                                     <i class="far fa-check"></i>
                                 </span>
-                                <h4 class="title"><a href="#">Experience IT.</a></h4>
+                                <h4 class="title"><a href="about.html">Experience IT.</a></h4>
                                 <p>Quisque eu nibh lorem. Nulla dignissim lacus feugiat mi viverra convallis.</p>
                             </div>
                             <div class="box animated-effect">
                                 <span class="icon">
                                     <i class="far fa-check"></i>
                                 </span>
-                                <h4 class="title"><a href="#">Network Assurance</a></h4>
+                                <h4 class="title"><a href="about.html">Network Assurance</a></h4>
                                 <p>Quisque eu nibh lorem. Nulla dignissim lacus feugiat mi viverra convallis.</p>
                             </div>
                         </div>
@@ -773,7 +693,7 @@
                                         <img src="assets/images/common/team11.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">chris evans</h5>
+                                        <h5 class="name"><a href="team-details.html">chris evans</a></h5>
                                         <p class="desc">UI Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -790,7 +710,7 @@
                                         <img src="assets/images/common/team10.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">andujar argentina</h5>
+                                        <h5 class="name"><a href="team-details.html">andujar argentina</a></h5>
                                         <p class="desc">front end developer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -807,7 +727,7 @@
                                         <img src="assets/images/common/team12.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">Victoria Abigail</h5>
+                                        <h5 class="name"><a href="team-details.html">Victoria Abigail</a></h5>
                                         <p class="desc">Graphic Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -824,7 +744,7 @@
                                         <img src="assets/images/common/team9.jpg" alt="">
                                     </div>
                                     <div class="content">
-                                        <h5 class="name">michele morrone</h5>
+                                        <h5 class="name"><a href="team-details.html">michele morrone</a></h5>
                                         <p class="desc">Graphic Designer</p>
                                         <ul class="social">
                                             <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -854,7 +774,7 @@
                                 We’re Very Friendly</h2>
                         </div>
                         <p class="desc">Praesent venenatis lectus leo, ut aliquam magna venenatis sit amet. Nunc ac nibh consequat</p>
-                        <a class="tf-button" href="#">                          
+                        <a class="tf-button" href="contact.html">                          
                             <span class="line">Contact Us</span><span class="icon"><i class="fal fa-long-arrow-right"></i></span>
                         </a>
                     </div>
@@ -929,7 +849,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 tf-animated-fadeup">
-                    <div class="blog-post style3 animated-effect">
+                    <div class="blog-post style3 animated-effect mobie-bt0">
                         <div class="image">
                             <img src="assets/images/post/post15.jpg" alt="">                      
                         </div>
@@ -1012,7 +932,6 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer-inner tf-animated-fadeup">
-                            <div class="overlay"></div>
                             <div class="left animated-effect">
                                 <h3>Do Subscribe Now get update</h3>
                                 <p>21. million clients Joining Wiht Us</p>
@@ -1020,7 +939,7 @@
                             <div class="right animated-effect">
                                 <form action="#" class="subscribe-form">
                                     <span class="icon-iconmail"></span>
-                                    <input type="email" placeholder="Email Address..." name="" id="">
+                                    <input type="email" placeholder="Email Address..." name="mail" id="mail">
                                     <button class="tf-button style2">                          
                                         <span class="line">Subscribe Now</span><span class="icon"><i class="fal fa-long-arrow-right"></i></span>
                                     </button>
@@ -1048,7 +967,7 @@
                                 <path d="M6.9375 0.84375V2.92871L0.375 7.20117V24.9062H26.625V7.20117L20.0625 2.92871V0.84375H6.9375ZM9.125 3.03125H17.875V11.4395L13.5 14.2764L9.125 11.4395V3.03125ZM10.2188 5.21875V7.40625H16.7812V5.21875H10.2188ZM6.9375 5.52637V10.0039L3.48535 7.78223L6.9375 5.52637ZM20.0625 5.52637L23.5146 7.78223L20.0625 10.0039V5.52637ZM10.2188 8.5V10.6875H16.7812V8.5H10.2188ZM2.5625 9.79883L13.5 16.874L24.4375 9.79883V22.7188H2.5625V9.79883Z" fill="url(#paint0_linear_1220_41)"/>
                                 <defs>
                                 <linearGradient id="paint0_linear_1220_41" x1="-4" y1="12.5" x2="31" y2="12.5" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#005DE0"/>
+                                <stop offset="1" stop-color="#005DE0"/>
                                 <stop offset="1" stop-color="#00B0FC"/>
                                 </linearGradient>
                                 </defs>
@@ -1063,7 +982,7 @@
                         </h5>
                         <ul class="widget-link">
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li>
                                 <a href="#">Latest Post</a>
@@ -1075,7 +994,7 @@
                                 <a href="#">Advertising</a>
                             </li>
                             <li>
-                                <a href="#">Contact Us</a>
+                                <a href="contact.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>

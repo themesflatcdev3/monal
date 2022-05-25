@@ -17,9 +17,11 @@
 </head>
 <body class="header-fixed inner-page pg-team">
         <!-- preloade -->
-        <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div>
+          <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+          </div>
         <!-- /preload -->
     <div id="wrapper">
         <!-- Header -->
@@ -47,36 +49,37 @@
                                 <li class="menu-item"><a href="home-3.html">Home 3</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item menu-item-has-children current-menu-item">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="about.html">About 1</a></li>
-                                <li class="menu-item"><a href="about2.html">About 2</a></li>
-                                <li class="menu-item"><a href="team-details.html">OUR TEAM</a></li>
-                                <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                <li class="menu-item"><a href="community.html">Community</a></li>
-                                <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                <li class="menu-item"><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="roadmap.html">Road Map 1</a></li>
-                                <li class="menu-item"><a href="roadmap2.html">Road Map 2</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item current-item"><a href="team.html">OurTeam</a></li>
+                                <li class="menu-item"><a href="team-details.html">Team Details</a></li>
+                                <li class="menu-item"><a href="service.html">Service</a></li>
+                                <li class="menu-item"><a href="service-details.html">Service Details</a></li>
+                                <li class="menu-item"><a href="history.html">history</a></li>
+                                <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+                                <li class="menu-item"><a href="faq.html">FAQ</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Portfolio</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="item.html">NFT Item</a></li>
-                                <li class="menu-item"><a href="item-details.html">NFT Item Details</a></li>
+                                <li class="menu-item"><a href="porfolio.html">porfolio</a></li>
+                                <li class="menu-item"><a href="porfolio-details.html">porfolio details</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children current-menu-item">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Product</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="product.html">Product</a></li>
+                                <li class="menu-item"><a href="product-details.html">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
                             <a href="#">News</a>
                             <ul class="sub-menu">
-                                <li class="menu-item current-item"><a href="blog-standard.html">blog standard</a></li>
+                                <li class="menu-item"><a href="blog-standard.html">blog standard</a></li>
                                 <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
@@ -99,7 +102,7 @@
                             </form>
                         </div>
                     </div>
-                    <a class="tf-button" href="contact.html">                          
+                    <a class="tf-button" href="service.html">                          
                         <span>Get Solution</span>
                     </a>
                 </div>
@@ -135,7 +138,7 @@
                             <img src="assets/images/common/team1.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h5 class="name">Al Mahmud</h5>
+                            <h5 class="name"><a href="team-details.html"></a></h5>
                             <p class="desc">UI- Designer</p>
                             <ul class="social">
                                 <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -152,7 +155,7 @@
                             <img src="assets/images/common/team2.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h5 class="name">Michelle Williams</h5>
+                            <h5 class="name"><a href="team-details.html">Michelle Williams</a></h5>
                             <p class="desc">Senior Developer</p>
                             <ul class="social">
                                 <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -169,7 +172,7 @@
                             <img src="assets/images/common/team3.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h5 class="name">Michelle Pfeiffer</h5>
+                            <h5 class="name"><a href="team-details.html">Michelle Pfeiffer</a></h5>
                             <p class="desc">UI- Designer</p>
                             <ul class="social">
                                 <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -186,7 +189,7 @@
                             <img src="assets/images/common/team4.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h5 class="name">Michelle monaghan</h5>
+                            <h5 class="name"><a href="team-details.html">Michelle monaghan</a></h5>
                             <p class="desc">UI- Designer</p>
                             <ul class="social">
                                 <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -203,7 +206,7 @@
                             <img src="assets/images/common/team13.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h5 class="name">James Charlie</h5>
+                            <h5 class="name"><a href="team-details.html">James Charlie</a></h5>
                             <p class="desc">UI- Designer</p>
                             <ul class="social">
                                 <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -220,7 +223,7 @@
                             <img src="assets/images/common/team14.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h5 class="name">Madison Ava</h5>
+                            <h5 class="name"><a href="team-details.html">Madison Ava</a></h5>
                             <p class="desc">UI- Designer</p>
                             <ul class="social">
                                 <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -237,7 +240,7 @@
                             <img src="assets/images/common/team15.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h5 class="name">Michelle Obama</h5>
+                            <h5 class="name"><a href="team-details.html">Michelle Obama</a></h5>
                             <p class="desc">UI- Designer</p>
                             <ul class="social">
                                 <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -254,7 +257,7 @@
                             <img src="assets/images/common/team16.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h5 class="name">Thomas Roberts</h5>
+                            <h5 class="name"><a href="team-details.html">Thomas Roberts</a></h5>
                             <p class="desc">UI- Designer</p>
                             <ul class="social">
                                 <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
@@ -278,7 +281,7 @@
                         <h2>Let’s build something
                             Great together</h2>
                         <p>Phasellus laoreet aliquet augue. Ut odio felis, auctor vel fringilla ac, finibus vitae elit. In convallis tellus nibh,</p>
-                        <a href="#" class="tf-button"><span>Meet Our Team</span></a>
+                        <a href="contact.html" class="tf-button"><span>Meet Our Team</span></a>
                     </div>
                 </div>
             </div>
@@ -342,16 +345,16 @@
                     <form action="#" class="contact-form contact-style1 animated-effect">
                         <div class="wrap-fx">
                             <fieldset>
-                                <input type="text" placeholder="Full Name" name="" id="">
+                                <input type="text" placeholder="Full Name" name="name" id="name">
                             </fieldset>
                             <fieldset>
-                                <input type="email" placeholder="Email Address" name="" id="">
+                                <input type="email" placeholder="Email Address" name="email" id="email">
                             </fieldset>
                             <fieldset>
-                                <input type="tel" placeholder="Phone No:" name="" id="">
+                                <input type="tel" placeholder="Phone No:" name="tel" id="tel">
                             </fieldset>
                             <fieldset>
-                                <input type="text" placeholder="Subject" name="" id="">
+                                <input type="text" placeholder="Subject" name="subject" id="subject">
                             </fieldset>
                             <fieldset class="massage">
                                 <textarea placeholder="Massage" rows="5" tabindex="4" name="message" class="message" id="message"></textarea>
@@ -370,9 +373,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer-inner">
-                            <div class="overlay"></div>
                             <h3>Solve your IT needs today!</h3>
-                            <a href="#" class="tf-button"><span>Get Solutions</span></a>
+                            <a href="service.html" class="tf-button"><span>Get Solutions</span></a>
                         </div>
                     </div>
                 </div>
@@ -420,7 +422,7 @@
                         </h5>
                         <ul class="widget-link">
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li>
                                 <a href="#">development</a>
@@ -461,7 +463,7 @@
                         </h5>
                         <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
                         <form action="#">
-                            <input type="text" placeholder="Email Address" name="" id="">
+                            <input type="text" placeholder="Email Address" name="mail" id="mail">
                             <button>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2075_4097)">

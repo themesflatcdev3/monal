@@ -17,9 +17,11 @@
 </head>
 <body class="header-fixed inner-page pricing">
         <!-- preloade -->
-        <div class="preload preload-container">
-            <div class="preload-logo"></div>
-        </div>
+          <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+          </div>
         <!-- /preload -->
     <div id="wrapper">
         <!-- Header -->
@@ -50,33 +52,34 @@
                         <li class="menu-item menu-item-has-children">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="about.html">About 1</a></li>
-                                <li class="menu-item"><a href="about2.html">About 2</a></li>
-                                <li class="menu-item"><a href="team-details.html">OUR TEAM</a></li>
-                                <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                <li class="menu-item"><a href="community.html">Community</a></li>
-                                <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                <li class="menu-item"><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="roadmap.html">Road Map 1</a></li>
-                                <li class="menu-item"><a href="roadmap2.html">Road Map 2</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="team.html">OurTeam</a></li>
+                                <li class="menu-item"><a href="team-details.html">Team Details</a></li>
+                                <li class="menu-item"><a href="service.html">Service</a></li>
+                                <li class="menu-item"><a href="service-details.html">Service Details</a></li>
+                                <li class="menu-item"><a href="history.html">history</a></li>
+                                <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+                                <li class="menu-item"><a href="faq.html">FAQ</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Portfolio</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="item.html">NFT Item</a></li>
-                                <li class="menu-item"><a href="item-details.html">NFT Item Details</a></li>
+                                <li class="menu-item"><a href="porfolio.html">porfolio</a></li>
+                                <li class="menu-item"><a href="porfolio-details.html">porfolio details</a></li>
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children current-menu-item">
+                            <a href="#">Product</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="product.html">Product</a></li>
+                                <li class="menu-item current-item"><a href="product-details.html">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
                             <a href="#">News</a>
                             <ul class="sub-menu">
-                                <li class="menu-item current-item"><a href="blog-standard.html">blog standard</a></li>
+                                <li class="menu-item"><a href="blog-standard.html">blog standard</a></li>
                                 <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
@@ -99,7 +102,7 @@
                             </form>
                         </div>
                     </div>
-                    <a class="tf-button" href="contact.html">                          
+                    <a class="tf-button" href="service.html">                          
                         <span>Get Solution</span>
                     </a>
                 </div>
@@ -129,10 +132,10 @@
     <section class="tf-section tf-product-details">
         <div class="container">
             <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 tf-animated-fadeup">
                         <div class="wrap-fx">
                             <div class="image-thump-product">
-                                <div class="swiper-container gallery-thumbs2 p-l10 m-t-118 animated-effect">
+                                <div class="swiper-container gallery-thumbs2 animated-effect">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <img src="assets/images/product/img17.png" alt="">
@@ -173,18 +176,219 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item-detais">
-                                <h4>T-shirt Flannel Dress</h4>
-                                <ul class="star">
-                                    <li><span class="icon-Star-1"></span></li>
-                                    <li><span class="icon-Star-1"></span></li>
-                                    <li><span class="icon-Star-1"></span></li>
-                                    <li><span class="icon-Star-1"></span></li>
-                                    <li><span class="icon-Star-1"></span></li>
-                                </ul>
+                            <div class="item-detais animated-effect">
+                                <h3 class="name-product">T-shirt Flannel Dress</h3>
+                                <div class="review">
+                                    <ul class="star">
+                                        <li><span class="icon-Star-1"></span></li>
+                                        <li><span class="icon-Star-1"></span></li>
+                                        <li><span class="icon-Star-1"></span></li>
+                                        <li><span class="icon-Star-1"></span></li>
+                                        <li><span class="icon-Star-1"></span></li>
+                                    </ul>
+                                    <p>02 Customar reviews </p>
+                                </div>
+                                <div class="pricing">
+                                    $79.23
+                                </div>
+                                <p class="desc">Aliquam ut magna non metus rhoncus tristique. 
+                                    Nam id felis nisl. Quisque auctor libero eleifend libero sodales pellentesque. Etiam lobortis augue enim,
+                                </p>
+                               <div class="wrap-fx">
+                                    <div class="quantity">
+                                        <a class="btn-quantity minus-btn"><i class="far fa-minus"></i></a>
+                                        <span></span>
+                                        <input type="text" name="name" value="1" class="quantity-number">
+                                        <a class="btn-quantity plus-btn"><i class="fal fa-plus"></i></a>
+                                    </div>
+                                    <a href="porfolio-details.html" class="add-cart"><span class="icon-shopping-cart-4-1"></span>Add to Cart</a>
+                               </div>
+                               <div class="information">
+                                   <div class="sku">
+                                       <span class="style">sku:</span><span>124834</span>
+                                   </div>
+                                   <div class="category">
+                                    <span class="style">Category:</span><span>t-shart flannel fress Pant</span>
+                                </div>
+                                <div class="share">
+                                    <span class="style">Share :</span>
+                                    <ul class="social">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>                           
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                               </div>
                             </div>
                         </div>
-                    </div>       
+                        <div class="description animated-effect">
+                            <h4>Description</h4>
+                            <p>Aliquam ut magna non metus rhoncus tristique. Nam id felis nisl. 
+                                Quisque auctor libero eleifend libero sodales pellentesque. 
+                                Etiam lobortis augue enim, quis vehicula dolor elementum nec. 
+                                Nam placerat dictum neque eget rutrum. 
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                                Donec euismod vestibulum nisl, 
+                            </p>
+                            <p>in mollis magna interdum sit amet. Aenean consectetur felis ut efficitur ullamcorper. 
+                                Quisque non velit varius risus elementum condimentum. Nulla facilisi. 
+                                Vivamus quis ex gravida, lobortis nisi a, vestibulum sapien.
+                            </p>
+                            <p>Nullam efficitur justo mauris, a tincidunt erat accumsan ut. Quisque nec elementum ante. 
+                                Sed in enim a diam tincidunt consectetur quis ac felis. 
+                                Donec at sapien ut risus mollis imperdiet. In hac habitasse platea dictumst.
+                            </p>
+                        </div>
+                    </div>    
+                    <div class="col-md-12 tf-animated-fadeup">
+                        <div class="releted-product">
+                            <h4 class="text-center animated-effect">Releted product</h4>
+                            <div class="swiper-container slider-product animated-effect">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="item-box">
+                                            <div class="image">
+                                                <img src="assets/images/product/img4.png" alt="">
+                                                <a href="porfolio-details.html" class="add-cart"><span class="icon-shopping-cart-4-1"></span>Add to Cart</a>
+                                                <div class="new"><span>new</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <ul class="star">
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                </ul>
+                                                <h5 class="name"><a href="#">T-shirt Baby</a></h5>
+                                                <p class="pricing">$79.23</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-box">
+                                            <div class="image">
+                                                <img src="assets/images/product/img7.png" alt="">
+                                                <a href="porfolio-details.html" class="add-cart"><span class="icon-shopping-cart-4-1"></span>Add to Cart</a>
+                                                <div class="new"><span>new</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <ul class="star">
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                </ul>
+                                                <h5 class="name"><a href="product-details.html">T-shirt Hoodie</a></h5>
+                                                <p class="pricing">$79.23</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-box">
+                                            <div class="image">
+                                                <img src="assets/images/product/img8.png" alt="">
+                                                <a href="porfolio-details.html" class="add-cart"><span class="icon-shopping-cart-4-1"></span>Add to Cart</a>
+                                                <div class="new"><span>new</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <ul class="star">
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                </ul>
+                                                <h5 class="name"><a href="product-details.html">Trunks Swim briefs</a></h5>
+                                                <p class="pricing">$79.23</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-box">
+                                            <div class="image">
+                                                <img src="assets/images/product/img9.png" alt="">
+                                                <a href="porfolio-details.html" class="add-cart"><span class="icon-shopping-cart-4-1"></span>Add to Cart</a>
+                                                <div class="new"><span>new</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <ul class="star">
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                </ul>
+                                                <h5 class="name"><a href="product-details.html">T-shirt Clothing Sleeve</a></h5>
+                                                <p class="pricing">$79.23</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-box">
+                                            <div class="image">
+                                                <img src="assets/images/product/img10.png" alt="">
+                                                <a href="porfolio-details.html" class="add-cart"><span class="icon-shopping-cart-4-1"></span>Add to Cart</a>
+                                                <div class="new"><span>new</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <ul class="star">
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                </ul>
+                                                <h5 class="name"><a href="product-details.html">T-shirt Flannel Dress</a></h5>
+                                                <p class="pricing">$79.23</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-box">
+                                            <div class="image">
+                                                <img src="assets/images/product/img11.png" alt="">
+                                                <a href="porfolio-details.html" class="add-cart"><span class="icon-shopping-cart-4-1"></span>Add to Cart</a>
+                                                <div class="new"><span>new</span></div>
+                                            </div>
+                                            <div class="content">
+                                                <ul class="star">
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                    <li><span class="icon-Star-1"></span></li>
+                                                </ul>
+                                                <h5 class="name"><a href="product-details.html">T-shirt Dress shirt</a></h5>
+                                                <p class="pricing">$79.23</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-next-product"><i class="far fa-angle-right"></i></div>
+                            <div class="btn-prev-product"><i class="far fa-angle-left"></i></div>
+                        </div>
+                       
+                    </div>   
             </div>
         </div>
     </section>
@@ -195,9 +399,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer-inner">
-                            <div class="overlay"></div>
                             <h3>Solve your IT needs today!</h3>
-                            <a href="#" class="tf-button"><span>Get Solutions</span></a>
+                            <a href="service.html" class="tf-button"><span>Get Solutions</span></a>
                         </div>
                     </div>
                 </div>
@@ -245,7 +448,7 @@
                         </h5>
                         <ul class="widget-link">
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li>
                                 <a href="#">development</a>
@@ -286,7 +489,7 @@
                         </h5>
                         <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
                         <form action="#">
-                            <input type="text" placeholder="Email Address" name="" id="">
+                            <input type="text" placeholder="Email Address" name="mail" id="mail">
                             <button>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2075_4097)">
