@@ -251,7 +251,7 @@
 }
 .widget-link li a::before {
   position: absolute;
-  left: 2px;
+  left: 0px;
   top: 0px;
   font-size: 15px;
   font-family: "Font Awesome 5 Pro";
@@ -268,7 +268,7 @@
   font-weight: 400;
 }
 .widget-link li a:hover {
-  padding-left: 24px;
+  padding-left: 20px;
   color: #00B0FC;
 }
 .widget-link li a:hover::before {
@@ -318,14 +318,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #00B0FC;
-  color: #fff;
+  background: #F6F6F6;
+  color: #494A4D;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 26px;
 }
-.wrap-widget .widget.widget-tag ul li a:hover {
-  background: #7141B1;
+.wrap-widget .widget.widget-tag ul li a.active, .wrap-widget .widget.widget-tag ul li a:hover {
+  background: #00B0FC;
+  color: #fff;
 }
 .wrap-widget .widget .title-widget {
   margin-right: 30px;

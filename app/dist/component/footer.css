@@ -119,7 +119,7 @@
   height: 2px;
   background: #fff;
   content: "";
-  z-index: -1;
+  z-index: 0;
 }
 
 #footer {
@@ -559,7 +559,7 @@
   width: 14px;
   height: 4px;
   background: #005DE0;
-  top: 18px;
+  top: 20px;
 }
 #footer.style3 .widget-link li a:hover {
   color: #005DE0;

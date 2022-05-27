@@ -580,8 +580,10 @@
             <div class="overlay"></div>
             <div class="row">
                 <div class="col-xl-7 col-lg-6 col-md-12 tf-animated-fadeleft">
-                    <div class="image-about mr-12 animated-effect">
+                    <div class="image-about image-video style2 mr-12 animated-effect">
                         <img src="assets/images/common/imgabout2.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=7vQznLKEfBs" class="popup-youtube"><div class="play"><i class="fas fa-play"></i></div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 col-md-12 tf-animated-fadeup">
@@ -600,6 +602,8 @@
     </section>
 
     <section class="tf-section tf-testimonior">
+        <div class="overlay"></div>
+        <div class="overlay2"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-6 col-md-12 tf-animated-fadeup">
@@ -611,18 +615,83 @@
                         </div>
                         <p class="txt-transform pr65">Pellentesque gravida lectus vitae nisi luctus, finibus aliquet ligula ultrices.</p>
                         <div class="wrap-img mt40">
-                            <div class="image"><img src="assets/images/common/imgtestimonior1.jpg" alt=""></div>
-                            <div class="image"><img src="assets/images/common/imgtestimonior2.jpg" alt=""></div>
-                            <div class="image"><img src="assets/images/common/imgtestimonior3.jpg" alt=""></div>
-                            <div class="image"><img src="assets/images/common/imgtestimonior4.jpg" alt=""></div>
-                            <div class="image style"><img src="assets/images/common/imgtestimonior5.jpg" alt=""></div>
-                            <div class="image style"><a href="#"><i class="far fa-plus"></i></a></div>
+                            <div class="swiper-container slider-testimonior-thum">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="image"><img src="assets/images/common/imgtestimonior1.jpg" alt=""></div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image"><img src="assets/images/common/imgtestimonior2.jpg" alt=""></div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image"><img src="assets/images/common/imgtestimonior3.jpg" alt=""></div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image"><img src="assets/images/common/imgtestimonior4.jpg" alt=""></div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image style"><img src="assets/images/common/imgtestimonior5.jpg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image style"><a href="#" class="nolink"><i class="far fa-plus"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-6 col-md-12 tf-animated-fadeup position-relative">
                     <div class="swiper-container slider-testimonior animated-effect">
                         <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonior-box">
+                                    <div class="image">
+                                        <img src="assets/images/common/imgtestimonior6.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p>Proin tortor mauris, consectetur sit amet faucibus mattis, pretium ac felis. Vestibulum</p>
+                                        <h4>Al Mahmud</h4>
+                                        <p class="desc">
+                                            UI- Designer
+                                        </p>
+                                        <img class="quote" src="assets/images/common/quote.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonior-box">
+                                    <div class="image">
+                                        <img src="assets/images/common/imgtestimonior6.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p>Proin tortor mauris, consectetur sit amet faucibus mattis, pretium ac felis. Vestibulum</p>
+                                        <h4>Al Mahmud</h4>
+                                        <p class="desc">
+                                            UI- Designer
+                                        </p>
+                                        <img class="quote" src="assets/images/common/quote.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonior-box">
+                                    <div class="image">
+                                        <img src="assets/images/common/imgtestimonior6.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p>Proin tortor mauris, consectetur sit amet faucibus mattis, pretium ac felis. Vestibulum</p>
+                                        <h4>Al Mahmud</h4>
+                                        <p class="desc">
+                                            UI- Designer
+                                        </p>
+                                        <img class="quote" src="assets/images/common/quote.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="swiper-slide">
                                 <div class="testimonior-box">
                                     <div class="image">
@@ -809,7 +878,6 @@
 
     <section class="tf-section get-solution">
         <div class="overlay"></div>
-        <div class="overlay2"></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 tf-animated-fadeup">
@@ -840,9 +908,9 @@
                             </a>
                         </div>
                         <p class="desc">Pellentesque viverra eget velit a tincidunt. Sed mattis enim nisl, sit amet malesuada sapien</p>
-                        <form action="#">
-                            <input type="text" placeholder="Email Address" name="mail" id="mail">
-                            <button>
+                        <form action="#" id="subscribe-form">
+                            <input type="text" placeholder="Email Address" name="mail" id="subscribe-email">
+                            <button type="submit" id="subscribe-button">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2075_4097)">
                                     <path d="M16.4453 20C16.5209 20 16.597 19.9857 16.6696 19.9553C16.8888 19.865 17.0312 19.6509 17.0312 19.4141V0.585919C17.0312 0.349044 16.8888 0.135021 16.6696 0.0446301C16.4499 -0.0463465 16.1987 0.00459099 16.031 0.171661L3.1404 13.1014C2.97275 13.269 2.9224 13.5208 3.01337 13.74C3.10376 13.9591 3.31779 14.1016 3.55466 14.1016H10.3433L16.031 19.8284C16.1432 19.9405 16.2931 20 16.4453 20Z" fill="white"/>

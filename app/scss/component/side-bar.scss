@@ -240,7 +240,7 @@
             text-transform: capitalize;
             &::before {
                 position: absolute;
-                left: 2px;
+                left: 0px;
                 top: 0px;
                 font-size: 15px;
                 font-family: "Font Awesome 5 Pro";
@@ -253,7 +253,7 @@
                 font-weight: 400;
             }
             &:hover {
-                padding-left: 24px;
+                padding-left: 20px;
                 color: $color-hover;
                 &::before {
                     opacity: 1;
@@ -293,13 +293,15 @@
                         height: 34px;
                         padding: 0 21px;
                         @include flex(center,center);
-                        background: $color-hover;
-                        color: $white;
+                        background: $color-4;
+                        color: $txt-color;
                         font-family: $font-main2;
                         font-size: 14px;
                         line-height: 26px;
+                        &.active,
                         &:hover {
-                            background: $color-6;
+                            background: $color-hover;
+                            color: $white;
                         }
                     }
                 }

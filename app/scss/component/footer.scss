@@ -107,7 +107,7 @@
                 height: 2px;
                 background: $white;
                 content: "";
-                z-index: -1;
+                z-index: 0;
             }
         }
     }
@@ -570,7 +570,7 @@
                         width: 14px;
                         height: 4px;
                         background: #005DE0;
-                        top: 18px;
+                        top: 20px;
                     }
                     &:hover {
                         color: #005DE0;

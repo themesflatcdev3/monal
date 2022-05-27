@@ -204,7 +204,7 @@
                             <p class="txt-transform">Aliquam ut magna non metus rhoncus tristique. Nam id felis nisl. Quisque auctor libero eleifend libero</p>
                         </div>
                         <div class="box-right">
-                            <form action="#" class="contact-form contact-style1">
+                            <form action="contact/contact-process.php" class="contact-form contact-style1" id="contactform">
                                 <div class="wrap-fx">
                                     <fieldset>
                                         <input type="text" placeholder="Full Name" name="name" id="name">
@@ -216,7 +216,11 @@
                                         <input type="tel" placeholder="Phone :" name="tel" id="tel">
                                     </fieldset>
                                     <fieldset>
-                                        <input type="text" placeholder="Subject" name="subject" id="subject">
+                                        <select name="subject" id="subject" required="">
+                                            <option value="">Subject</option>
+                                            <option value="Subject 01">Subject 01</option>
+                                            <option value="Subject 02">Subject 02</option>
+                                        </select>
                                     </fieldset>
                                     <fieldset class="massage">
                                         <textarea placeholder="Massage" rows="5" tabindex="4" name="message" class="message" id="message"></textarea>
@@ -332,9 +336,9 @@
                             Subscribe
                         </h5>
                         <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
-                        <form action="#">
-                            <input type="text" placeholder="Email Address" name="mail" id="mail">
-                            <button>
+                        <form action="#" id="subscribe-form">
+                            <input type="text" placeholder="Email Address" name="email" id="subscribe-email">
+                            <button type="submit" id="subscribe-button">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2075_4097)">
                                     <path d="M16.4453 20C16.5209 20 16.597 19.9857 16.6696 19.9553C16.8888 19.865 17.0312 19.6509 17.0312 19.4141V0.585919C17.0312 0.349044 16.8888 0.135021 16.6696 0.0446301C16.4499 -0.0463465 16.1987 0.00459099 16.031 0.171661L3.1404 13.1014C2.97275 13.269 2.9224 13.5208 3.01337 13.74C3.10376 13.9591 3.31779 14.1016 3.55466 14.1016H10.3433L16.031 19.8284C16.1432 19.9405 16.2931 20 16.4453 20Z" fill="white"/>
@@ -379,12 +383,8 @@
     <script src="app/js/jquery.min.js"></script>
     <script src="app/js/app.js"></script>
     <script src="app/js/jquery.easing.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="app/js/jquery.magnific-popup.min.js"></script>
-    <script src="app/js/swiper-bundle.min.js"></script>
-    <script src="app/js/swiper.js"></script>
     <script src="app/js/animated.js"></script>
-    <script src="app/js/countto.js"></script>
     <script src="app/js/plugin.js"></script>
+    <script src="app/js/jquery-validate.js"></script>
 </body>
 </html>

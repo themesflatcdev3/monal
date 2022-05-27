@@ -39,6 +39,13 @@
     }
 }
 @include res1600 { 
+    .home2 {
+        .header {
+            .main-nav {
+                left: 25%;
+            }
+        }
+    }
     .header {
         .main-nav {
             left: 38%;
@@ -56,6 +63,31 @@
     }
 }
 @include res1440 { 
+    .main.home2 {
+        .header {
+            #main-nav {
+                left: 18%;
+                width: 60%;
+                .menu {
+                    li {
+                        margin-right: 15px;                      
+                        a {
+                            font-size: 15px;
+                            padding-right: 15px;
+                        }
+                    }
+                }
+            }
+            .menu-bar-right {
+                margin-left: 15px;
+            }
+            #site-header-inner {
+                .tf-button {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
     .about {
         .tf-about {
              &.style2 {
@@ -143,8 +175,10 @@
     }
     .header {
         #main-nav {
-            left: 23%;
+            left: 22%;
+            width: 57%;
             .menu {
+                justify-content: flex-end;
                 li {
                     margin-right: 20px;
                 }
@@ -154,7 +188,7 @@
             display: none;
         }
         .header-search {
-            margin-right: 20px;
+            margin-right: 15px;
         }
     }
     .box-slider .image .img {
@@ -172,6 +206,13 @@
 }
 
 @include res1200 {
+    .wrap-testimonior-style {
+        margin-left: 50px;
+    }
+    .section-contact .content {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
     .pg-contact {
         .tf-contact {
             .contact-flex {
@@ -540,6 +581,9 @@
     .content-about .wrap {
         padding-right: 0;
     }
+    .home2 .tf-section.tf-testimonior .testimonior-box .content {
+        padding: 50px 30px 50px 70px;
+    }
     .testimonior-box {
         .content {
             padding: 50px 30px 50px 70px;
@@ -566,6 +610,46 @@
 }
 
 @include res991 {
+    .mt129 {
+        margin-top: 0;
+    }
+    .wrap-testimonior-style {
+        margin: 0;
+    }
+    .pd30 {
+        padding: 0;
+    }
+    .pricing {
+        .tf-pricing {
+            .title-section {
+                .title {
+                    margin-left: 0;
+                }
+            }
+            &.style {
+                .title-section {
+                    .sub-title {
+                        margin-left: 0;
+                        padding-left: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .service .tf-service.style {
+        .title-section {
+            .sub-title {
+                margin-left: 0;
+                padding-left: 70px;
+            }
+            .title {
+                margin-left: 0;
+            }
+        }           
+    }
+    .image-video.style2 {
+        padding-right: 0;
+    }
     .home2 {
         .tf-project {
             padding: 100px 0 0;
@@ -960,6 +1044,10 @@
                     .feature-box {
                         .box {
                             padding: 30px 20px;
+                            display: block;
+                            .icon {
+                                margin-bottom: 20px;
+                            }
                         }
                     }
                 }
@@ -972,10 +1060,10 @@
                 padding: 230px 0 150px;
             }
             .header__logo {
-                margin-top: -90px;
+                margin-top: -50px;
             }
             #site-header-inner {
-                height: 50px;
+                height: 90px;
             }
             .header {
                 .header-right {
@@ -994,6 +1082,14 @@
         padding-right: 0;
     }
     .home2 {
+        #top-bar {
+            height: auto;
+            .topbar-inner {
+                .right {
+                    justify-content: center;
+                }
+            }
+        }
         &.main {
             .page-title {
                 padding: 90px 0;
@@ -1042,15 +1138,11 @@
     }
     #top-bar {
         @include flex(center,center);
-        height: 90px;
         .topbar-inner {
             height: auto;
             display: block;
             text-align: center;
             .right {
-                height: 40px;
-                justify-content: center;
-                width: $w100;
                 .social {
                     margin-left: 0;
                     li {
@@ -1083,6 +1175,11 @@
             }
         }
     }
+    .home3 {
+        #top-bar .topbar-inner .right {
+            display: none;
+        }
+    }
     #footer {
         &.style2 {
             .widget {
@@ -1090,8 +1187,16 @@
                 &.widget-infomation,
                 &.widget-recent-posts,
                 &.widget-service {
-                    padding-left: 15px;
                     width: 50%;
+                }
+                &.widget-logo,
+                &.widget-recent-posts {
+                    padding-left: 15px;
+                    padding-right: 30px;
+                }
+                &.widget-infomation,
+                &.widget-service {
+                    padding-left: 30px;
                 }
             }
             .footer-main {
@@ -1247,7 +1352,7 @@
     .main {
         &.home1 {
             .page-title {
-                background: url(./../../assets/images/backgroup/bgslider1.jpg) 120px center no-repeat;
+                background: url(./../../assets/images/backgroup/bgslider1.jpg) left center no-repeat;
                 background-size: cover;
             }
             .tf-section {
@@ -1275,7 +1380,14 @@
             }
         }
     }
-    .tf-section.section-contact,
+    .tf-section.section-contact {
+        padding: 100px 0 0;
+        .content {
+            padding: 0 0 30px ;
+        }
+    }
+    .about .tf-about.style2,
+    .service .tf-service-detail,
     .home3 .tf-section.tf-service,
     .tf-section.tf-partner,
     .tf-section {
@@ -1320,16 +1432,26 @@
     #footer {
         .widget {
             margin-bottom: 40px;
-            &.widget-logo,
             &.widget-subscribe,
             &.widget-infomation,
+            &.widget-logo,
             &.widget-service {
-                padding:0 15px;
                 width: 50%;
             }
+            &.widget-infomation,
+            &.widget-logo {
+                padding-left: 15px;
+                padding-right: 30px;
+            }
+
+            &.widget-subscribe,
+            &.widget-service {
+                padding-left: 30px;
+                padding-right: 15px;
+            }
+
         }
         .footer-main {
-            // padding: 120px 0 30px;
             .footer-bottom {
                 margin-top: 40px;
 
@@ -1344,6 +1466,18 @@
             .footer-main {
                 .widget-logo {
                     padding-right: 15px;
+                }
+                .widget {
+                    &.widget-logo,
+                    &.widget-service.style {
+                        padding-left: 15px;
+                        padding-right: 30px;
+                    }
+                    &.widget-recent-posts,
+                    &.widget-service {
+                        padding-left: 30px;
+                        padding-right: 15px;
+                    }
                 }
             }
         }
@@ -1364,9 +1498,85 @@
             }
         }
     }
+    .ml-20 {
+        margin-left: 0;
+    }
 }
 
 @include res767 {
+    .home2 .tf-section.tf-testimonior .testimonior-box .content {
+       padding: 40px 15px 40px 60px;
+    }
+    .testimonior-box {
+        .content {
+           padding: 40px 15px 40px 60px;
+        }
+    }
+    .post.style {
+        .content {
+            .title {
+                padding-right: 0;
+            }
+        }
+    }
+    .swiper-container.gallery-thumbs2 {
+        height: auto;
+    }
+    .gallery-thumbs2 {
+        .swiper-slide {
+            width: 100px !important;
+            height: 100px !important; 
+        }
+    }
+    #footer {
+        .widget {
+            margin-bottom: 40px;
+            &.widget-subscribe,
+            &.widget-infomation,
+            &.widget-logo,
+            &.widget-service {
+                width: 50%;
+            }
+            &.widget-infomation,
+            &.widget-logo,
+            &.widget-subscribe,
+            &.widget-service {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+        }
+        &.style2 {
+            .widget {
+                &.widget-logo,
+                &.widget-recent-posts,
+                &.widget-infomation,
+                &.widget-service {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+            .footer-main {
+                padding: 70px 0;
+            }
+        }
+        &.style3 {
+            .footer-main {
+                .widget-logo {
+                    padding-right: 15px;
+                }
+                .widget {
+                    &.widget-logo,
+                    &.widget-service.style,
+                    &.widget-recent-posts,
+                    &.widget-service {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
     .flat-tabs.tab1 .menu-tab {
         flex-wrap: wrap;
         li {
@@ -1434,10 +1644,12 @@
         }
         .image-thump-product {
             .gallery-slider2 {
-                margin-left: 20px;
+                margin-left: 0;
             }
             .gallery-thumbs2 {
-                margin-top: 0;
+                position: relative;
+                top: 0;
+                margin-top: 40px;
             }
             margin-bottom: 40px;
             img {
@@ -1451,6 +1663,7 @@
         .item-detais,
         .image-thump-product {
             width: $w100;
+            display: block;
         }
 
     }

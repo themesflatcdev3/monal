@@ -243,7 +243,7 @@
 -------------------------------------------------------------- */
 #header_main.is-fixed {
     @include transition5;
-    z-index: 99;
+    z-index: 999;
     opacity: 0;
     position  : fixed;
     top       : -140px;
@@ -286,10 +286,13 @@
 .top-search {
     position: absolute;
     right: -16px;
-    top: 165%;
+    top: 150%;
     width: 250px;
     opacity: 0;
     visibility: hidden;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    border-radius: 5px;
     .search-form {
         position: relative;
         .search-field:focus,
@@ -311,7 +314,7 @@
         .search {
             position: absolute;
             right: 20px;
-            top: 20px;
+            top: 15px;
             border: none;
             background: transparent;
             i {

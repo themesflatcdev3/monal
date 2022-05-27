@@ -6,7 +6,7 @@ $address = "themesflat.com";
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $error = false;
-$fields = array('name','email','tel','subject','message' );
+$fields = array('name','email','message' );
 
 foreach ( $fields as $field ) {
 	if ( empty($_POST[$field]) || trim($_POST[$field]) == '' )
@@ -17,8 +17,6 @@ if ( !$error ) {
 
 	$name = stripslashes($_POST['name']);
 	$mail = stripslashes($_POST['email']);	
-	$subject = stripslashes($_POST['tel']);
-	$message = stripslashes($_POST['subject']);
 	$message = stripslashes($_POST['message']);
 
 	$e_subject = 'You\'ve been contacted by ' . $email . '.';

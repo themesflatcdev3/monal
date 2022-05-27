@@ -60,6 +60,9 @@
                 line-height: 30px;
                 font-family: $font-main;
                 font-weight: bold;
+                background: $bg-gradient;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
             &::before {
                 opacity: 0;
@@ -68,7 +71,7 @@
                 content: "";
                 height: 2px;
                 width: 20px;
-                background: #9000FF;
+                background: $bg-gradient;
                 bottom: -28px;
                 left: 3px;
             }
@@ -104,7 +107,9 @@
                     visibility: visible;
                 }
                 &::after {
-                    color: $color-7;
+                    background: $bg-gradient;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
@@ -192,6 +197,7 @@
 }
 
 .testimonior-pagination {
+    z-index: 99;
     position: absolute;
     bottom: 3px;
     left: -60px;
@@ -257,7 +263,6 @@
 .swiper-container.gallery-thumbs2 {
     height: 460px;
     min-width: 100px;
-    margin-top: 5px;
     img {
         min-width: 100px;
         min-height: 100px;
@@ -290,9 +295,11 @@
     background: $color-4;
     border-radius: 50%;
     i {
+        @include transition3;
         color: $color-main1;
         font-size: 25px;
     }
+    &:hover,
     &.swiper-button-disabled {
         background: $color-hover;
         i {

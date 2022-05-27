@@ -574,6 +574,11 @@
             text-transform: capitalize;
             margin-bottom: 18px;
         }
+        @keyframes rainbow { 
+            0%{background-position:left}
+            50%{background-position:right}
+            100%{background-position:left}
+          }
         .readmore {
             text-transform: uppercase;
             font-size: 14px;
@@ -582,6 +587,12 @@
             font-weight: bold;
             position: relative;
             padding-right: 21px;
+            color: $txt-color;
+            background: $bg-gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 100% 100%;
+            animation: rainbow 2s ease-in-out infinite;
             &::after {
                 position: absolute;
                 right: 0;
@@ -595,7 +606,7 @@
                 font-size: 12px;
             }
             &:hover {
-                color: $color-7;
+                color: transparent;
             }
         }
     }
@@ -640,8 +651,11 @@
             }
             .readmore {
                 color: $color-main1;
+                background: none;
                 &::after {
                     color: $color-hover;
+                    background: none;
+                    -webkit-text-fill-color:$color-hover;
                 }
                 &:hover {
                     color: $color-hover;

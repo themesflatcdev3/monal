@@ -91,7 +91,7 @@
             left: 0;
             top: 11px;
             transform: rotate(-180deg);
-            background: linear-gradient(246.06deg, #CF00FE 15.37%, rgba(255, 255, 255, 0) 87.05%);
+            background: linear-gradient(246.06deg, #00B0FC 15.37%, rgba(255, 255, 255, 0) 116.95%);
         }
     }
     .title {
@@ -375,6 +375,7 @@
 }
 .get-solution {
     position: relative;
+    background: rgba(1, 12, 42, 0.95);
 
     .overlay {
         @include overlay;
@@ -382,15 +383,11 @@
         background-size: cover;
         z-index: -2;
     }
-    .overlay2 {
-        @include overlay;
-        z-index: -1;
-        background: rgba(1, 12, 42, 0.95);
-    }
     .title-section {
         padding: 60px 0;
         text-align: left;
         margin-bottom: 0;
+        margin-top: 10px;
         .title {
             margin-right: -60px;
             color: $white;
@@ -499,6 +496,7 @@
                     top: 15px;
                 }
                 >a {
+                    text-decoration: none;
                     color: $color-main1;
                     font-size: 16px;
                     line-height: 24px;
@@ -513,32 +511,42 @@
                         font-family: "Font Awesome 5 Pro"; 
                     }
                 }
-                .list-chooser {
-                    opacity: 0;
-                    z-index: 9999;
-                    top: 100%;
-                    left: auto;
-                    right: 0;
-                    position: absolute;
-                    width: 150px;
-                    background: $bg-gradient;
-                    visibility: hidden;
-                    @include transition3;
-                    padding:10px 20px;
-                    li {
-                        &:first-child {
-                            margin-bottom: 10px;
-                        }
-                        a {
-                            color: $white;
-                            font-size: 16px;
-                            line-height: 24px;
-                            font-family: $font-main;
-                            position: relative;
-                            padding-right: 20px;
+                .dropdown-menu {
+                    &.list-chooser {
+                        opacity: 0;
+                        z-index: 9999;
+                        top: 100%;
+                        transform: translate(0px, 49px) !important;
+                        margin-top: 0 !important;
+                        left: auto;
+                        right: 0;
+                        position: absolute;
+                        width: 150px;
+                        max-width: 150px;
+                        min-width: 150px;
+                        background: $white;
+                        visibility: hidden;
+                        @include transition3;
+                        border: none;
+                        box-shadow: $box-shadow2;
+                        li {
+                            @include transition3;
+                            &:hover,&.active {
+                                background: $color-hover;
+                                color: $white;
+                            }
+                            a {
+                                color: $white;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-family: $font-main;
+                                position: relative;
+                                padding-right: 20px;
+                            }
                         }
                     }
                 }
+
                 &:hover .list-chooser {
                     opacity: 1;
                     top: 100%;
@@ -914,7 +922,9 @@
             width: calc(100% - 30px);
             margin-bottom: 23px;
         }
+        select,
         input {
+            width: $w100;
             border-radius: 4px;
             height: 60px;
             background: $color-4;
@@ -924,6 +934,7 @@
             color: #76777A;
             @include font-16;
             padding: 5px 20px;
+            outline: none;
             &::placeholder {
                 font-family: $font-main4;
                 color: #76777A;
@@ -932,6 +943,11 @@
             &:focus {
                 border-color: #7141B1;
             }
+        }
+        select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
         }
         textarea {
             border-radius: 4px;

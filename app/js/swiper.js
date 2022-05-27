@@ -58,7 +58,7 @@ var swiper =  new Swiper(".slider-project", {
 
 var swiper =  new Swiper(".slider-project2", {
     slidesPerView: 1,
-    loop: false, 
+    loop: true, 
     spaceBetween: 30,
     breakpoints: {
         0: {
@@ -108,8 +108,10 @@ var swiper =  new Swiper(".slider-team", {
     },
 });
 
-var swiper =  new Swiper(".slider-testimonior", {
-    slidesPerView: 1,
+var swiper4 =  new Swiper(".slider-testimonior-thum", {
+    freeMode: true,
+    watchSlidesProgress: true,
+    slidesPerView: 5,
     loop: false, 
     spaceBetween: 0,
     pagination: {
@@ -118,9 +120,28 @@ var swiper =  new Swiper(".slider-testimonior", {
     },
     breakpoints: {
         1280: {
-            slidesPerView: 1,
+            slidesPerView: 5,
             spaceBetween: 0,
         },
+    },
+});
+
+var swiper =  new Swiper(".slider-testimonior", {
+    slidesPerView: 1,
+    loop: true, 
+    spaceBetween: 50,
+    pagination: {
+        el: ".testimonior-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1280: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+        },
+    },
+    thumbs: {
+        swiper: swiper4,
     },
 });
 
@@ -204,26 +225,27 @@ var swiper = new Swiper(".swiper-loop", {
             slidesPerView: 3
         },
     },
-    autoplay: {
-    delay: 0.3, 
-    }, 
-    speed: 2000,
     disableOnInteraction: true
 });
 
 var swiper3 = new Swiper(".gallery-thumbs2", {
-    direction: "vertical",
     spaceBetween: 20,
     grabCursor: true,
     slidesPerView: 2,
-    loop: false,
+    loop: true,
     breakpoints: {
         500: {
-            slidesPerView: 3,
+            slidesPerView: 4,
+            loop: true,
+        },
+        767: {
+            slidesPerView: 4,
+            direction: "vertical",
         },
         991: {
             slidesPerView: 4,
             spaceBetween: 20,  
+            direction: "vertical",
         },
     },
     allowTouchMove: true,

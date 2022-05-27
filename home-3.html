@@ -39,11 +39,14 @@
                                 </ul>
                             </div>
                             <div class="right">
-                                <div class="language">
-                                    <a href="#">English</a>
-                                    <ul class="list-chooser">
-                                        <li><a href="#" class="active">English</a></li>
-                                        <li><a href="#">France</a></li>
+                                <div class="dropdown selector-drop language" id="language">
+                                    <a href="javascript:void(0);" class="btn-selector btn-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="boder"></span>English
+                                    </a>
+                                    
+                                    <ul class="dropdown-menu dropdown-menu-right list-chooser">
+                                        <li class="dropdown-item active" data-toggle="modal" data-target="#delete_client">English</li>
+                                        <li class="dropdown-item" data-toggle="modal" data-target="#edit_client">France</li>
                                     </ul>
                                 </div>
                                 <ul class="social">
@@ -270,7 +273,7 @@
                             <div class="swiper-slide">
                                 <div class="box-slider">
                                     <div class="content-box">
-                                        <p class="sub-title">We’re the best</p>
+                                        <p class="sub-title">We’re professional</p>
                                         <h1 class="title">Building a
                                             digital world</h1>
                                         <p class="desc">Aenean congue mi nulla, eget feugiat nibh fringilla a. Sed consequat sapien non nunc iaculis porta. Proin tortor diam,</p>
@@ -291,7 +294,7 @@
                             <div class="swiper-slide">
                                 <div class="box-slider">
                                     <div class="content-box">
-                                        <p class="sub-title">We’re the best</p>
+                                        <p class="sub-title">We’re professional</p>
                                         <h1 class="title">Building a
                                             digital world</h1>
                                         <p class="desc">Aenean congue mi nulla, eget feugiat nibh fringilla a. Sed consequat sapien non nunc iaculis porta. Proin tortor diam,</p>
@@ -482,8 +485,10 @@
     </section>
 
     <section class="tf-section tf-service mobie-pb0">
+            <div class="bg-img"><img src="assets/images/backgroup/bg-vectorservice.png" alt=""></div>
             <div class="overlay"></div>
             <div class="overlay2"></div>
+            <div class="overlay3"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 tf-animated-fadeup">
@@ -570,58 +575,58 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 animated-effect">
-                    <div class="swiper-container swiper-loop ">
+                    <div class="swiper-container swiper-loop">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="img-box effect2">
+                                <a href="assets/images/common/img6project.jpg" class="img-box effect2 popup-gallery">
                                     <img src="assets/images/common/img6project.jpg" alt="">
                                     <div class="icon">
                                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0.000976562H50V50.001H0V52.001H50V100.001H52V52.001H100V50.001H52V0.000976562Z" fill="white"/>
                                         </svg>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="img-box effect2">
+                                <a href="assets/images/common/img7project.jpg" class="img-box effect2 popup-gallery">
                                     <img src="assets/images/common/img7project.jpg" alt="">
                                     <div class="icon">
                                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0.000976562H50V50.001H0V52.001H50V100.001H52V52.001H100V50.001H52V0.000976562Z" fill="white"/>
                                         </svg>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="img-box effect2">
+                                <a href="assets/images/common/img8project.jpg" class="img-box effect2 popup-gallery">
                                     <img src="assets/images/common/img8project.jpg" alt="">
                                     <div class="icon">
                                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0.000976562H50V50.001H0V52.001H50V100.001H52V52.001H100V50.001H52V0.000976562Z" fill="white"/>
                                         </svg>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <div class="img-box effect2">
+                                <a href="assets/images/common/img9project.jpg" class="img-box effect2 popup-gallery">
                                     <img src="assets/images/common/img9project.jpg" alt="">
                                     <div class="icon">
                                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0.000976562H50V50.001H0V52.001H50V100.001H52V52.001H100V50.001H52V0.000976562Z" fill="white"/>
                                         </svg>
                                     </div>
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="img-box effect2">
+                                <a href="assets/images/common/img10project.jpg" class="img-box effect2 popup-gallery">
                                     <img src="assets/images/common/img10project.jpg" alt="">
                                     <div class="icon">
                                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0.000976562H50V50.001H0V52.001H50V100.001H52V52.001H100V50.001H52V0.000976562Z" fill="white"/>
                                         </svg>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -766,7 +771,7 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 tf-animated-fadeup">
+                <div class="col-lg-6 col-md-12 tf-animated-fadeup">
                     <div class="content">
                         <div class="title-section style2">
                             <p class="sub-title">Contact Us</p>
@@ -779,7 +784,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="right-box tf-animated-fadeup">
                         <div class="box animated-effect">
                             <div class="wrap">
@@ -937,10 +942,10 @@
                                 <p>21. million clients Joining Wiht Us</p>
                             </div>
                             <div class="right animated-effect">
-                                <form action="#" class="subscribe-form">
+                                <form action="#" class="subscribe-form" id="subscribe-form">
                                     <span class="icon-iconmail"></span>
-                                    <input type="email" placeholder="Email Address..." name="mail" id="mail">
-                                    <button class="tf-button style2">                          
+                                    <input type="email" placeholder="Email Address..." name="mail" id="subscribe-email" required>
+                                    <button type="submit" class="tf-button style2" id="subscribe-button">                          
                                         <span class="line">Subscribe Now</span><span class="icon"><i class="fal fa-long-arrow-right"></i></span>
                                     </button>
                                 </form>

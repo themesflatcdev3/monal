@@ -254,6 +254,10 @@
         }
         .readmore {
             padding-right: 22px;
+            span {
+                @include transition3;
+                color: $color-main1;
+            }
             &::after {
                 right: 0;
             }
@@ -266,12 +270,30 @@
                 background: #e2c5f8;
                 left: 0;
             }
+            span {
+                &::after,
+                &::before {
+                    color: $color-hover;
+                }
+            }
         }
         &::before {
             display: none;
         }
         &:hover {
             background: $color-main1;
+            .readmore {
+                span {
+                    color: $color-hover;
+                    &::before,
+                    &::after {
+                        color: $color-hover;
+                    }
+                }
+                &::before {
+                    background: $color-hover;
+                }
+            }
             .icon {
                 span {
                     color: $white;
@@ -310,9 +332,10 @@
             margin-left: auto;
             margin-right: auto;
             position: relative;
-            margin-bottom: 22px;
+            margin-bottom: 20px;
             span {
                 color: $color-hover;
+                line-height: 1;
                 &::after {
                     width: auto;
                     height: auto;
@@ -354,6 +377,11 @@
             font-size: 22px;
             line-height: 34px;
             margin-bottom: 19px;
+            a {
+                &:hover {
+                    color: $color-hover;
+                }
+            }
         }
         p {
             margin-bottom: 0;
@@ -405,7 +433,7 @@
             z-index: 1;
             opacity: 0;
             @include transition3;
-            border-radius: 5px;
+            border-radius: 0;
         }
         &:hover {
             margin-top: -20px;
@@ -832,6 +860,7 @@
                 opacity: 0;
                 visibility: hidden;
                 background: rgba(1, 12, 42, 0.5);
+                border-radius: 0;
             }
         }
         .content {
@@ -932,8 +961,13 @@
         }
         .quote {
             position: absolute;
-            bottom: 60px;
-            right: 8%;
+            bottom: 53px;
+            right: 16%;
+        }
+    }
+    &.style {
+        .content {
+            box-shadow: 0px 10px 50px 0px #00000012;
         }
     }
 }

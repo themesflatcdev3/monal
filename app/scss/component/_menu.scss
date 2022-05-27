@@ -6,13 +6,13 @@
     margin: 0 auto;
     width: 100%;
     left: 0;
-    z-index: 9999;
+    z-index: 9999999;
     box-shadow: 0 0 50px 10px rgb(0 0 0 / 10%);
     -webkit-box-shadow: 0 0 50px 10px rgb(0 0 0 / 10%);
     -moz-box-shadow: 0 0 50px 10px rgba(0,0,0,.3);
     padding-left: 0;
     position: absolute;
-    top: 114%;
+    top: 100%;
     overflow-y: auto;
     background: $white;
     max-height: 60vh;
@@ -78,7 +78,15 @@
         color: $color-hover;
     }
 }
-
+.home2 {
+    .mobile-button {
+        &:before,
+        &:after,
+        span {
+        background-color: $color-6;
+        }
+    }
+}
 /* Mobile Menu Button */
 .mobile-button {
     @include transition3;
